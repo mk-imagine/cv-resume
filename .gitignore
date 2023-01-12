@@ -1,0 +1,20 @@
+# MacOS
+.DS_Store
+
+# vscode
+.vscode
+
+# LaTeX auxiliary build files
+*.log
+*.toc
+*.out
+*.aux
+*.gz
+*.bak
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.run.xml
+*/*.pdf
