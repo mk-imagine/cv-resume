@@ -1,5 +1,5 @@
 \documentclass[hidelinks, 10pt]{article}
-\usepackage{amssymb, multicol, graphicx, hyperref}
+\usepackage{amssymb, multicol, graphicx, hyperref, lipsum}
 \hypersetup{
 	pdftitle={Resume},
 	pdfsubject={Resume},
@@ -334,6 +334,62 @@ Dean's List, San Francisco State University\hfill 2018, 2019, 2020, 2021, 2022
 \vspace{4mm}
 
 \begin{minipage}[ct]{0.9\linewidth}
+\textbf{Graduate Research Assistant}\hfill Aug 2023 to Present\\
+\emph{San Francisco State University} -- San Francisco, CA\\
+Principal Investigator: Dr. Hui Yang\\
+{\textsc{Foundation Models for Student Advising}}
+\vspace{1mm}\\
+\lipsum[1]
+	% \makeatletter
+	% \let\orig@listi\@listi
+	% \def\@listi{\orig@listi\topsep=0.25\baselineskip}
+	% \makeatother
+    % \begin{itemize}
+    % 	\setlength\itemsep{-0.25em}
+    % 	\item Investigation of clustering for early detection and
+    % 	categorization of phishing emails with an emphasis on computational speed and
+    % 	performance.
+	% 	\item Restructure and optimize Python C extensions that parse and
+	% 	analyze emails.  Reduced memory usage by 95\% and increased data
+	% 	utilization by 5\%.
+	% 	\item Develop and validate thread-based and process-based
+	% 	parallelization (asynchronous).  Reduced total processing time by 80\%.
+	% 	\item Examine and analyze tradeoffs between dimensional reduction (PCA) and
+	% 	maintaining data precision.
+    % \end{itemize}
+\end{minipage}
+
+\vspace{4mm}
+
+\begin{minipage}[ct]{0.9\linewidth}
+\textbf{Graduate Research Assistant}\hfill Aug 2023 to Present\\
+\emph{San Francisco State University} -- San Francisco, CA\\
+Principal Investigator: Dr. Shasta Ihorn\\
+{\textsc{Artificial Intelligence Scholarships that Improve \\Academic Achievement, Retention, and Career Success (AI-STAARS)}}
+\vspace{1mm}\\
+\lipsum[1]
+	% \makeatletter
+	% \let\orig@listi\@listi
+	% \def\@listi{\orig@listi\topsep=0.25\baselineskip}
+	% \makeatother
+    % \begin{itemize}
+    % 	\setlength\itemsep{-0.25em}
+    % 	\item Investigation of clustering for early detection and
+    % 	categorization of phishing emails with an emphasis on computational speed and
+    % 	performance.
+	% 	\item Restructure and optimize Python C extensions that parse and
+	% 	analyze emails.  Reduced memory usage by 95\% and increased data
+	% 	utilization by 5\%.
+	% 	\item Develop and validate thread-based and process-based
+	% 	parallelization (asynchronous).  Reduced total processing time by 80\%.
+	% 	\item Examine and analyze tradeoffs between dimensional reduction (PCA) and
+	% 	maintaining data precision.
+    % \end{itemize}
+\end{minipage}
+
+\vspace{4mm}
+
+\begin{minipage}[ct]{0.9\linewidth}
 \textbf{Research Engineering Intern}\hfill Jun 2022 to Aug 2022\\
 \emph{Cofense Inc.} -- Leesburg, VA\\
 Research Supervisor: Chip McSweeney, Senior Research Engineer\\
@@ -517,10 +573,30 @@ Present\\
 
 \vspace{1.5mm}
 
+\textsc{CS\{Research\} Club}\hfill Aug 2023 to Present\\
+\emph{President/Founder}, Aug 2023 to Present
+
+\vspace{1.5mm}
+
+\textsc{Artificial Intelligence Club}\hfill Aug 2023 to Present\\
+\emph{Treasurer}, Aug 2023 to Present
+
+\vspace{1.5mm}
+
 \textsc{Society for Industrial and Applied Mathematics} (SIAM)\hfill Oct 2021 to Present\\
 \end{minipage}
 
 \vspace{4mm}
+\pagebreak
+
+%%%%%%%%%%%%%%% THIRD PAGE %%%%%%%%%%%%%%%%%%
+\begin{tikzpicture}[overlay,remember picture]
+    \draw [line width=3.5pt,rounded corners=4pt,
+        ]
+        ($ (current page.north west) + (1cm,-1cm) $)
+        rectangle
+        ($ (current page.south east) + (-1cm,1cm) $);
+\end{tikzpicture}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % EMPLOYMENT HISTORY
@@ -534,6 +610,22 @@ Present\\
 \textsc{Program Lead}\hfill 2023 to Present\\
 {\emph{San Francisco State University} - San Francisco, CA}\\
 Artificial Intelligence Scholarships that Improve Academic Achievement, Retention, and Career Success (AI-STAARS)
+\end{minipage}
+
+\vspace{2.5mm}
+
+\begin{minipage}[ct]{0.9\linewidth}
+\textsc{CS Program Liaison}\hfill 2023 to Present\\
+{\emph{San Francisco State University} - San Francisco, CA}\\
+Center for Science and Mathematics Education (CSME)
+\end{minipage}
+
+\vspace{2.5mm}
+
+\begin{minipage}[ct]{0.9\linewidth}
+\textsc{Graduate Research Assistant}\hfill 2023 to Present\\
+{\emph{San Francisco State University} - San Francisco, CA}\\
+Research in Foundation Models for Student Advising
 \end{minipage}
 
 \vspace{2.5mm}
@@ -631,7 +723,7 @@ Google Cloud (Compute Engine, Storage, Domains), Google Analytics, NGINX
     	($ (current page.south east) - (1.9cm,-0.5cm) $)
 		rectangle
 		($ (current page.south east) - (6.7cm,-1.5cm) $);
-	\node [draw=none] at (14.95,-3.8) {\fontsize{23}{23}\selectfont
+	\node [draw=none] at (14.95,-8.65) {\fontsize{23}{23}\selectfont
 	\textbf{Mark S. Kim}};
 \end{tikzpicture}
 
