@@ -4,6 +4,9 @@
 # vscode
 .vscode
 
+# Adobe Stock
+AdobeStock*.*
+
 # LaTeX auxiliary build files
 *.log
 *.toc
