@@ -21,3 +21,4 @@ AdobeStock*.*
 *.fls
 *.run.xml
 */*.pdf
+**/aux/
