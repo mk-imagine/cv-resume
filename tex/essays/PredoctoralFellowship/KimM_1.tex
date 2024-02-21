@@ -1,0 +1,90 @@
+\documentclass[12pt]{article}
+\usepackage[letterpaper]{geometry}
+\usepackage{setspace}
+\geometry{top=0.9in, bottom=0.9in, left=0.9in, right=0.9in}
+\doublespacing
+
+\makeatletter
+\def\@maketitle{%
+  \newpage
+  \null
+  \vskip 2em%
+  \begin{center}%
+    {\large
+        \begin{tabular}[t]{c}%
+        \@author
+        \end{tabular}\par}%
+  \let \footnote \thanks
+    {\LARGE \@title \par}%
+    %{\large \@date}%
+  \end{center}%
+  \par
+  \vskip 1.5em}
+\makeatother
+
+\author{Mark Kim}
+\title{Essay 1}
+
+\begin{document}
+\maketitle
+
+The explosion of deep learning has made technologies such as OpenAI's ChatGPT
+and Google's Gemini household names.  The excitement that follows such
+attention, however, engenders a narrow-minded focus, constraining what is
+possible only to what has become available.  Despite their ability
+to learn to complete complex specialized tasks and mimic human written
+composition, such models can only give shallow understanding on how our minds
+operate. We may be able to infer some properties of low-level brain function
+from these neural networks, but insight into higher cognition eludes us.  These higher
+functions of cognition are what pique my curiosity.  In particular, I wish to
+delve into the inner workings of motivation and long-term passions, but studying
+these things directly is untenable as the factors involved with any individual's
+motivations are not only intractably numerous, but also may not be feasibly
+measurable.  My ultimate goal is to instead investigate and model biologically
+plausible neural networks as a proxy of brain function.
+
+State-of-the-art deep learning algorithms today rely on mechanisms that are
+biologically implausible.  They depend on gradient back-propagation, which
+computes the gradient of an objective function with respect to the weights of a
+neural network.  Such back-propagation raises problematic issues that
+demonstrate the improbability of such a process in biology.  First,
+back-propagation is a purely linear computation, while biological neurons apply
+both linear and non-linear operations. Credit assignment, which is the act of
+determining the influence that an action taken will have on future rewards, in
+such a paradigm, would require precise knowledge of the gradient in both
+directions and exact symmetry for the weights.  Futhermore, artificial neurons
+communicate by continuous values, while their biological counterparts
+communicate through action potentials, which are binary in nature.  Finally,
+most deep learning models have discrete training and prediction stages.
+
+Although there has been research towards biologically plausible machine
+learning, this area of exploration is still in its infancy.  There are many
+avenues of study in this field with a plethora of opportunities to expand upon
+already completed research.  Much of the current research attempts to address
+one or more of the problems associated with gradient back-propagation.
+% the previous sentence is slightly off-kilter.
+One
+area of research that is of particular interest to me is continual learning, which is a
+hallmark of human intelligence.  Recent work into continual learning use a
+combination of multiple techniques to allow artificial neural networks to
+consolidate synapses to mitigate forgetting and strengthen connections between
+contextual information.  Nevertheless, the research still relied on
+back-propagation of fully connected networks.  Brain synapses are unidirectional
+with physically distinct feed-forward and feedback connections. It is also
+believed that the brain is capable of localized learning. Investigating neuron
+architectures with these features in continual learning is an exciting prospect
+of study for me.
+
+Researching novel neural networks that more closely mimic biological systems could
+help uncover some of the mechanisms of higher cognition.  Likewise, creating a model of
+cognition that closely simulates biological brains could unlock new insight into
+neurological diseases, mental illness and wellness, and learning.  By pursuing a
+doctoral degree in Computational Cognitive Science, I will be among
+multidisciplinary experts that would be best equipped to assist me with my
+research interests.  Although my long-term goals align more with affective
+science, affect is intimately linked with cognition and behavior.  It is my hope
+that through my journey I will be making incremental discoveries towards
+unearthing a greater understanding of affect, cognition, and the
+interrelationship between both.
+
+\end{document}
