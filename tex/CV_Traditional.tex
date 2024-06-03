@@ -1,131 +1,26 @@
 \documentclass[hidelinks, 10pt]{article}
 \usepackage{amssymb, multicol, graphicx, hyperref}
-% \usepackage[T1]{fontenc}
+\usepackage[T1]{fontenc}
 \usepackage{fontspec}
 \hypersetup{
 	pdftitle={Resume},
 	pdfsubject={Resume},
 	pdfauthor={Mark Kim}
-	% pdfkeywords={YA.NET (A\#/A sharp), A-0 System, A+ (A plus), A++, ABAP, ABC, ABC
-	% ALGOL, ACC, Accent (Rational Synergy), Ace DASL (Distributed Application
-	% Specification Language), Action!, ActionScript, Actor, Ada, Adenine (Haystack),
-	% AdvPL, Agda, Agilent VEE (Keysight VEE), Agora, AIMMS, Aldor, Alef, ALF, ALGOL
-	% 58, ALGOL 60, ALGOL 68, ALGOL W, Alice (Alice ML), Alma-0, AmbientTalk, Amiga E,
-	% AMOS (AMOS BASIC), AMPL, Analitik, AngelScript, Apache Pig latin, Apex
-	% (Salesforce.com, Inc), APL, App Inventor for Android's visual block language
-	% (MIT App Inventor), AppleScript, APT, Arc, ARexx, Argus, Assembly language
-	% (ASM), AutoHotkey, AutoIt, AutoLISP / Visual LISP, Averest, AWK, Axum, Babbage,
-	% Ballerina, Bash, BASIC, Batch file (Windows/MS-DOS), bc (basic calculator),
-	% BCPL, BeanShell, Bertrand, BETA, BLISS, Blockly, BlooP, Boo, Boomerang, Bosque,
-	% C – ISO/IEC 9899, C-- (C minus minus), C++ (C plus plus) – ISO/IEC 14882, C*,
-	% C\# (C sharp) – ISO/IEC 23270, C/AL, Caché ObjectScript, C Shell (csh), Caml,
-	% Carbon, Cayenne (Lennart Augustsson), CDuce, Cecil, CESIL (Computer Education in
-	% Schools Instruction Language), Céu, Ceylon, CFEngine, Cg (High-Level
-	% Shader/Shading Language [HLSL]), Ch, Chapel (Cascade High Productivity
-	% Language), Charm, CHILL, CHIP-8, ChucK, Cilk (also Cilk++ and Cilk plus),
-	% Control Language, Claire, Clarion, Clean, Clipper, CLIPS, CLIST, Clojure, CLU,
-	% CMS-2, COBOL – ISO/IEC 1989, CobolScript – COBOL Scripting language, Cobra,
-	% CoffeeScript, ColdFusion, COMAL, COMIT, Common Intermediate Language (CIL),
-	% Common Lisp (also known as CL), COMPASS, Component Pascal, Constraint Handling
-	% Rules (CHR), COMTRAN, Cool, Coq, Coral 66, CorVision, COWSEL, CPL, Cryptol,
-	% Crystal, Csound, Cuneiform, Curl, Curry, Cybil, Cyclone, Cypher Query Language,
-	% Cython, CEEMAC, Dart, Darwin, DataFlex, Datalog, DATATRIEVE, dBase, dc, DCL
-	% (DIGITAL Command Language), Delphi, DinkC, DIBOL, Dog, Draco, DRAKON, Dylan,
-	% DYNAMO, DAX (Data Analysis Expressions), E, Ease, Easy PL/I, EASYTRIEVE PLUS,
-	% eC, ECMAScript, Edinburgh IMP, EGL, Eiffel, ELAN, Elixir, Elm, Emacs Lisp,
-	% Emerald, Epigram, EPL (Easy Programming Language), Erlang, es, Escher, ESPOL,
-	% Esterel, Etoys, Euclid, Euler, Euphoria, EusLisp Robot Programming Language, CMS
-	% EXEC (EXEC), EXEC 2, Executable UML, Ezhil, F\# (F sharp), F*, Factor, Fantom,
-	% FAUST, FFP, fish, Fjölnir, FL, FlagShip, Flavors, Flex, Flix, FlooP, FLOW-MATIC
-	% (B0), FOCAL (Formulating On-Line Calculations in Algebraic Language/FOrmula
-	% CALculator), FOCUS, FOIL, FORMAC (FORMula MAnipulation Compiler), @Formula,
-	% Forth, Fortran – ISO/IEC 1539, Fortress, FP, FoxBase/FoxPro, Franz Lisp,
-	% Futhark, F-Script, Game Maker Language, GameMonkey Script, GAMS (General
-	% Algebraic Modeling System), GAP, G-code, GDScript (Godot), Genie, GDL (Geometric
-	% Description Language), GEORGE, GLSL (OpenGL Shading Language), GNU E, GNU Guile
-	% (GNU Ubiquitous Intelligent Language for Extensions), Go, Go!, GOAL (Game
-	% Oriented Assembly Lisp), Gödel, Golo, GOM (Good Old Mad), Google Apps Script,
-	% Gosu, GOTRAN (IBM 1620), GPSS (General Purpose Simulation System), GraphTalk
-	% (Computer Sciences Corporation), GRASS, Grasshopper, Groovy (Apache Groovy),
-	% Hack, HAGGIS, HAL/S, Halide (programming language), Hamilton C shell, Harbour,
-	% Hartmann pipelines, Haskell, Haxe, Hermes, High Level Assembly (HLA), HLSL,
-	% Hollywood, HolyC (TempleOS), Hop, Hopscotch, Hope, Hume, HyperTalk, Hy, Io,
-	% Icon, IBM Basic assembly language, IBM HAScript, IBM Informix-4GL, IBM RPG, IDL,
-	% Idris, Inform, ISLISP, J\# (J sharp), J++ (J plus plus), JADE, Jai, JAL, Janus
-	% (concurrent constraint programming language), Janus (time-reversible computing
-	% programming language), JASS, Java, JavaFX Script, JavaScript, Jess, JCL, JEAN,
-	% Join Java, JOSS, Joule, JOVIAL, Joy, JScript, JScript .NET, Julia, Jython,
-	% Kaleidoscope, Karel, KEE, Kixtart, Klerer-May System, KIF (Knowledge Interchange
-	% Format), Kojo, Kotlin, KRC, KRL, KRL (KUKA Robot Language), KRYPTON, KornShell
-	% (ksh), Kodu, Kv (Kivy), LabVIEW, Ladder, LANSA, Lasso, Lava, LC-3, Lean,
-	% Legoscript, LIL, LilyPond, Limbo, Limnor, LINC, Lingo, LINQ, LIS, LISA, Language
-	% H, Lisp – ISO/IEC 13816, Lite-C, Lithe, Little b, LLL, Logo, Logtalk,
-	% LotusScript, LPC, LSE, LSL, LiveCode, LiveScript, Lua, Lucid, Lustre, LYaPAS,
-	% Lynx, M Formula language, M2001, M4, M\#, Machine code, MAD (Michigan Algorithm
-	% Decoder), MAD/I, Magik, Magma, Máni, Maple, MAPPER (now part of BIS), MARK-IV
-	% (now VISION:BUILDER), Mary, MATLAB, MASM Microsoft Assembly x86, MATH-MATIC,
-	% Maude system, Maxima (see also Macsyma), Max (Max Msp – Graphical Programming
-	% Environment), MaxScript internal language 3D Studio Max, Maya (MEL), MDL,
-	% Mercury, Mesa, MHEG-5 (Interactive TV programming language), Microcode,
-	% Microsoft Power Fx, MIIS, Milk (programming language), MIMIC, Mirah, Miranda,
-	% MIVA Script, ML, Model 204, Modelica, Modula, Modula-2, Modula-3, Mohol, MOO,
-	% Mortran, Mouse, MPD, MSL, MUMPS, MuPAD, Mutan, Mystic Programming Language
-	% (MPL), NASM, Napier88, Neko, Nemerle, NESL, Net.Data, NetLogo, NetRexx, NewLISP,
-	% NEWP, Newspeak, NewtonScript, Nial, Nickle (NITIN), Nim, Nix (Systems
-	% configuration language), NPL, Not eXactly C (NXC), Not Quite C (NQC), NSIS, Nu,
-	% NWScript, NXT-G, o:XML, Oak, Oberon, OBJ2, Object Lisp, ObjectLOGO, Object REXX,
-	% Object Pascal, Objective-C, Obliq, OCaml, occam, occam-pi, Octave, OmniMark,
-	% Opa, Opal, Open Programming Language (OPL), OpenCL, OpenEdge Advanced Business
-	% Language (ABL), OpenVera, OpenQASM, OPS5, OptimJ, Orc, ORCA/Modula-2, Oriel,
-	% Orwell, Oxygene, Oz, P, P4, ParaSail, PARI/GP, Pascal – ISO 7185, Pascal Script,
-	% PCASTL, PCF, PEARL, PeopleCode, Perl, PDL, Pharo, PHP, Pico, Picolisp, Pict,
-	% Pike, PILOT, Pipelines, Pizza, PL-11, PL/0, PL/B, PL/C, PL/I – ISO 6160, PL/M,
-	% PL/P, PL/S, PL/SQL, PL360, PLANC, Plankalkül, Planner, PLEX, PLEXIL, Plus,
-	% POP-11, POP-2, PostScript, PortablE, POV-Ray SDL, Powerhouse, PowerBuilder – 4GL
-	% GUI application generator from Sybase, PowerShell, PPL, Processing,
-	% Processing.js, Prograph, Project Verona, Prolog, PROMAL, Promela, PROSE modeling
-	% language, PROTEL, ProvideX, Pro*C, Pure, Pure Data, PureScript, PWCT, Python, Q
-	% (programming language from Kx Systems), Q\# (Microsoft programming language),
-	% Qalb, Quantum Computation Language, QtScript, QuakeC, QPL, .QL, R, R++, Racket,
-	% Raku, RAPID, Rapira, Ratfiv, Ratfor, rc, Reason, REBOL, Red, Redcode, REFAL,
-	% REXX, Ring, ROOP, RPG, RPL, RSL, RTL/2, Ruby, Rust, S, S2, S3, S-Lang, S-PLUS,
-	% SA-C, SabreTalk, SAIL, SAKO, SAS, SASL, Sather, Sawzall, Scala, Scheme, Scilab,
-	% Scratch, Script.NET, Sed, Seed7, Self, SenseTalk, SequenceL, Serpent, SETL,
-	% Short Code, SIMPOL, SIGNAL, SiMPLE, SIMSCRIPT, Simula, Simulink, SISAL, SKILL,
-	% SLIP, SMALL, Smalltalk, SML, Strongtalk, Snap!, SNOBOL (SPITBOL), Snowball, SOL,
-	% Solidity, SOPHAEROS, Source, SPARK, Speakeasy, Speedcode, SPIN, SP/k, SPS, SQL,
-	% SQR, Squeak, Squirrel, SR, S/SL, Starlogo, Strand, Stata, Stateflow, Subtext,
-	% SBL, SuperCollider, Superplan, SuperTalk, Swift (Apple programming language),
-	% Swift (parallel scripting language), SYMPL, TACL, TACPOL, TADS (Text Adventure
-	% Development System), TAL, Tcl, Tea, TECO (Text Editor and Corrector), TELCOMP,
-	% TeX, TEX (Text Executive Programming Language), TIE, TMG (TransMo Griffer),
-	% compiler-compiler, Tom, Toi, Topspeed (Clarion), TPU (Text Processing Utility),
-	% Trac, TTM, T-SQL (Transact-SQL), Transcript (LiveCode), TTCN (Tree and Tabular
-	% Combined Notation), Turing, TUTOR (PLATO Author Language), TXL, TypeScript,
-	% Tynker, Ubercode, UCSD Pascal, Umple, Unicon, Uniface, UNITY, UnrealScript,
-	% Vala, Vim script, Viper (Ethereum/Ether (ETH)), Visual DataFlex, Visual
-	% DialogScript, Visual FoxPro, Visual J++ (Visual J plus plus), Visual LISP,
-	% Visual Objects, Visual Prolog, WATFIV, WATFOR (WATerloo FORtran IV),
-	% WebAssembly, WebDNA, Whiley, Winbatch, Wolfram Language, Wyvern, X++ (X plus
-	% plus/Microsoft Dynamics AX), X10, xBase++ (xBase plus plus), XBL, XC (targets
-	% XMOS architecture), xHarbour, XL, Xojo, XOTcl, Xod, XPL, XPL0, XQuery, XSB,
-	% XSharp (X\#), XSLT, Xtend, Yorick, YQL, Yoix, Z notation, Z shell, Zebra, ZPL,
-	% ZPL2, Zeno, ZetaLisp, Zig, Zonnon, ZOPL, ZPL, Z++} 
 }
-%
+
 \usepackage[dvipsnames]{xcolor}
-%
+
 \usepackage[letterpaper,margin=0.7in,heightrounded]{geometry}
-%
+
 \usepackage{tikz}
 \usetikzlibrary{positioning}
 \usetikzlibrary{patterns}
 \usetikzlibrary{calc}
-%
+
 \usepackage{ebgaramond}
-%
+
 \graphicspath{ {./images/} }
-%
+
 \DeclareSymbolFont{numbers}{T1}{EBGaramond-LF}{m}{n}
 \SetSymbolFont{numbers}{bold}{T1}{EBGaramond-LF}{bx}{n}
 \DeclareMathSymbol{0}\mathalpha{numbers}{"30}
@@ -138,90 +33,10 @@
 \DeclareMathSymbol{7}\mathalpha{numbers}{"37}
 \DeclareMathSymbol{8}\mathalpha{numbers}{"38}
 \DeclareMathSymbol{9}\mathalpha{numbers}{"39}
-%
+
 \setlength\columnsep{1pt}
 
 \begin{document}
-
-% \newcommand{\altura}{.45cm}
-% \begin{tikzpicture}[remember picture, overlay, x=1cm, y=-\altura, node distance=0,outer sep=0,inner sep=0, opacity=0]
-% 	\tikzset{xshift=-1cm,yshift=-0.2cm}
-% 	\tikzstyle{nome}=[draw, rectangle,anchor=west, minimum height=\altura,
-% 	minimum width=25cm,fill=yellow!30,text width=25cm, scale=0.75]
-% 	\node[nome] (p0) {\parbox{25cm}{A.NET (A\#/A sharp), A-0 System, A+ (A plus), A++, ABAP, ABC, ABC ALGOL, ACC, Accent (Rational Synergy), MATLAB, Net.Data, XSB, XSharp (X\#), }};
-% 	\node[nome] (p1) [below = of p0] {\parbox{25cm}{Ace DASL (Distributed Application Specification Language), Action!, ActionScript, Actor, Ada, Adenine (Haystack), AdvPL, Agda, XSLT, Xtend, }};
-% 	\node[nome] (p2) [below = of p1] {\parbox{25cm}{Agilent VEE (Keysight VEE), Agora, AIMMS, Aldor, Alef, ALF, ALGOL 58, ALGOL 60, ALGOL 68, ALGOL W, Alice (Alice ML), Alma-0, AmbientTalk, }};
-% 	\node[nome] (p3) [below = of p2] {\parbox{25cm}{Amiga E, AMOS (AMOS BASIC), AMPL, Analitik, AngelScript, Apache Pig latin, Apex (Salesforce.com, Inc), APL, X++ (X plus plus/Microsoft Dynamics AX), }};
-% 	\node[nome] (p4) [below = of p3] {\parbox{25cm}{App Inventor for Android's visual block language (MIT App Inventor), AppleScript, APT, Arc, ARexx, Argus, Assembly language (ASM), AutoHotkey, }};
-% 	\node[nome] (p5) [below = of p4] {\parbox{25cm}{AutoIt, AutoLISP / Visual LISP, Averest, AWK, Axum, Babbage, Ballerina, Bash, BASIC, Batch file (Windows/MS-DOS), bc (basic calculator), BCPL, }};
-% 	\node[nome] (p6) [below = of p5] {\parbox{25cm}{BeanShell, Bertrand, BETA, BLISS, Blockly, BlooP, Boo, Boomerang, Bosque, C – ISO/IEC 9899, C-- (C minus minus), Xojo, XOTcl, Xod, XPL, }};
-% 	\node[nome] (p7) [below = of p6] {\parbox{25cm}{C++ (C plus plus) – ISO/IEC 14882, C*, C\# (C sharp) – ISO/IEC 23270, C/AL, Caché ObjectScript, C Shell (csh), Caml, Carbon, XPL0, XQuery, }};
-% 	\node[nome] (p8) [below = of p7] {\parbox{25cm}{Cayenne (Lennart Augustsson), CDuce, Cecil, CESIL (Computer Education in Schools Instruction Language), Céu, Ceylon, CFEngine, Yorick, YQL, }};
-% 	\node[nome] (p9) [below = of p8] {\parbox{25cm}{Cg (High-Level Shader/Shading Language [HLSL]), Ch, Chapel (Cascade High Productivity Language), Charm, CHILL, CHIP-8, ChucK, Yoix, Z notation, }};
-% 	\node[nome] (p10) [below = of p9] {\parbox{25cm}{Cilk (also Cilk++ and Cilk plus), Control Language, Claire, Clarion, Clean, Clipper, CLIPS, CLIST, Clojure, CLU, CMS-2, COBOL – ISO/IEC 1989, }};
-% 	\node[nome] (p11) [below = of p10] {\parbox{25cm}{CobolScript – COBOL Scripting language, Cobra, CoffeeScript, ColdFusion, COMAL, COMIT, Common Intermediate Language (CIL), }};
-% 	\node[nome] (p12) [below = of p11] {\parbox{25cm}{Common Lisp (also known as CL), COMPASS, Component Pascal, Constraint Handling Rules (CHR), COMTRAN, Cool, Coq, Coral 66, CorVision, }};
-% 	\node[nome] (p13) [below = of p12] {\parbox{25cm}{CPL, Cryptol, Crystal, Csound, Cuneiform, Curl, Curry, Cybil, Cyclone, Cypher Query Language, Cython, CEEMAC, Dart, Darwin, DataFlex, Datalog, }};
-% 	\node[nome] (p14) [below = of p13] {\parbox{25cm}{DATATRIEVE, dBase, dc, DCL (DIGITAL Command Language), Delphi, DinkC, DIBOL, Dog, Draco, DRAKON, Dylan, DYNAMO, COWSEL, }};
-% 	\node[nome] (p15) [below = of p14] {\parbox{25cm}{DAX (Data Analysis Expressions), E, Ease, Easy PL/I, EASYTRIEVE PLUS, eC, ECMAScript, Edinburgh IMP, EGL, Eiffel, ELAN, Elixir, Elm, }};
-% 	\node[nome] (p16) [below = of p15] {\parbox{25cm}{Emacs Lisp, Emerald, Epigram, EPL (Easy Programming Language), Erlang, es, Escher, ESPOL, Esterel, Etoys, Euclid, Euler, Euphoria, Z shell, Zebra, ZPL, }};
-% 	\node[nome] (p17) [below = of p16] {\parbox{25cm}{EusLisp Robot Programming Language, CMS EXEC (EXEC), EXEC 2, Executable UML, Ezhil, F\# (F sharp), F*, Factor, Fantom, FAUST, FFP, fish, }};
-% 	\node[nome] (p18) [below = of p17] {\parbox{25cm}{Fjölnir, FL, FlagShip, Flavors, Flex, Flix, FlooP, FLOW-MATIC (B0), X10, xBase++ (xBase plus plus), XBL, XC (targets XMOS architecture), xHarbour, XL, }};
-% 	\node[nome] (p19) [below = of p18] {\parbox{25cm}{FOCAL (Formulating On-Line Calculations in Algebraic Language/FOrmula CALculator), FOCUS, FOIL, FORMAC (FORMula MAnipulation Compiler), }};
-% 	\node[nome] (p20) [below = of p19] {\parbox{25cm}{@Formula, Forth, Fortran – ISO/IEC 1539, Fortress, FP, FoxBase/FoxPro, Franz Lisp, Futhark, F-Script, Game Maker Language, GameMonkey Script, }};
-% 	\node[nome] (p21) [below = of p20] {\parbox{25cm}{GAMS (General Algebraic Modeling System), GAP, G-code, GDScript (Godot), Genie, GDL (Geometric Description Language), GEORGE, Zonnon, ZOPL, }};
-% 	\node[nome] (p22) [below = of p21] {\parbox{25cm}{GLSL (OpenGL Shading Language), GNU E, GNU Guile (GNU Ubiquitous Intelligent Language for Extensions), Go, Go!, ZPL2, Zeno, ZetaLisp, Zig, }};
-% 	\node[nome] (p23) [below = of p22] {\parbox{25cm}{GOAL (Game Oriented Assembly Lisp), Gödel, Golo, GOM (Good Old Mad), Google Apps Script, Gosu, GOTRAN (IBM 1620), ZPL, Z++}};
-% 	\node[nome] (p24) [below = of p23] {\parbox{25cm}{GPSS (General Purpose Simulation System), GraphTalk (Computer Sciences Corporation), GRASS, Grasshopper, Groovy (Apache Groovy), Hack, HAGGIS, }};
-% 	\node[nome] (p25) [below = of p24] {\parbox{25cm}{HAL/S, Halide (programming language), Hamilton C shell, Harbour, Hartmann pipelines, Haskell, Haxe, Hermes, High Level Assembly (HLA), HLSL, }};
-% 	\node[nome] (p26) [below = of p25] {\parbox{25cm}{Hollywood, HolyC (TempleOS), Hop, Hopscotch, Hope, Hume, HyperTalk, Hy, Io, Icon, IBM Basic assembly language, IBM HAScript, IBM Informix-4GL, }};
-% 	\node[nome] (p27) [below = of p26] {\parbox{25cm}{IBM RPG, IDL, Idris, Inform, ISLISP, J\# (J sharp), J++ (J plus plus), JADE, Jai, JAL, Janus (concurrent constraint programming language), }};
-% 	\node[nome] (p28) [below = of p27] {\parbox{25cm}{Janus (time-reversible computing programming language), JASS, Java, JavaFX Script, JavaScript, Jess, JCL, JEAN, Join Java, JOSS, Joule, JOVIAL, }};
-% 	\node[nome] (p29) [below = of p28] {\parbox{25cm}{Joy, JScript, JScript .NET, Julia, Jython, Kaleidoscope, Karel, KEE, Kixtart, Klerer-May System, KIF (Knowledge Interchange Format), Kojo, }};
-% 	\node[nome] (p30) [below = of p29] {\parbox{25cm}{Kotlin, KRC, KRL, KRL (KUKA Robot Language), KRYPTON, KornShell (ksh), Kodu, Kv (Kivy), LabVIEW, Ladder, LANSA, Lasso, Lava, LC-3, Lean, }};
-% 	\node[nome] (p31) [below = of p30] {\parbox{25cm}{Legoscript, LIL, LilyPond, Limbo, Limnor, LINC, Lingo, LINQ, LIS, LISA, Language H, Lisp – ISO/IEC 13816, Lite-C, Lithe, Little b, LLL, Logo, }};
-% 	\node[nome] (p32) [below = of p31] {\parbox{25cm}{Logtalk, LotusScript, LPC, LSE, LSL, LiveCode, LiveScript, Lua, Lucid, Lustre, LYaPAS, Lynx, M Formula language, M2001, M4, M\#, Machine code, }};
-% 	\node[nome] (p33) [below = of p32] {\parbox{25cm}{MAD (Michigan Algorithm Decoder), MAD/I, Magik, Magma, Máni, Maple, MAPPER (now part of BIS), MARK-IV (now VISION:BUILDER), Mary, }};
-% 	\node[nome] (p34) [below = of p33] {\parbox{25cm}{MASM Microsoft Assembly x86, MATH-MATIC, Maude system, Maxima (see also Macsyma), Max (Max Msp – Graphical Programming Environment), }};
-% 	\node[nome] (p35) [below = of p34] {\parbox{25cm}{MaxScript internal language 3D Studio Max, Maya (MEL), MDL, Mercury, Mesa, MHEG-5 (Interactive TV programming language), Microcode, }};
-% 	\node[nome] (p36) [below = of p35] {\parbox{25cm}{Microsoft Power Fx, MIIS, Milk (programming language), MIMIC, Mirah, Miranda, MIVA Script, ML, Model 204, Modelica, Modula, Modula-2, Modula-3, }};
-% 	\node[nome] (p37) [below = of p36] {\parbox{25cm}{Mohol, MOO, Mortran, Mouse, MPD, MSL, MUMPS, MuPAD, Mutan, Mystic Programming Language (MPL), NASM, Napier88, Neko, Nemerle, NESL, }};
-% 	\node[nome] (p38) [below = of p37] {\parbox{25cm}{NetLogo, NetRexx, NewLISP, NEWP, Newspeak, NewtonScript, Nial, Nickle (NITIN), Nim, Nix (Systems configuration language), NPL, }};
-% 	\node[nome] (p39) [below = of p38] {\parbox{25cm}{Not eXactly C (NXC), Not Quite C (NQC), NSIS, Nu, NWScript, NXT-G, o:XML, Oak, Oberon, OBJ2, Object Lisp, ObjectLOGO, Object REXX, }};
-% 	\node[nome] (p40) [below = of p39] {\parbox{25cm}{Object Pascal, Objective-C, Obliq, OCaml, occam, occam-$\pi$, Octave, OmniMark, Opa, Opal, Open Programming Language (OPL), OpenCL, }};
-% 	\node[nome] (p41) [below = of p40] {\parbox{25cm}{OpenEdge Advanced Business Language (ABL), OpenVera, OpenQASM, OPS5, OptimJ, Orc, ORCA/Modula-2, Oriel, Orwell, Oxygene, Oz, P, P4, ParaSail, }};
-% 	\node[nome] (p42) [below = of p41] {\parbox{25cm}{PARI/GP, Pascal – ISO 7185, Pascal Script, PCASTL, PCF, PEARL, PeopleCode, Perl, PDL, Pharo, PHP, Pico, Picolisp, Pict, Pike, PILOT, Pipelines, }};
-% 	\node[nome] (p43) [below = of p42] {\parbox{25cm}{Pizza, PL-11, PL/0, PL/B, PL/C, PL/I – ISO 6160, PL/M, PL/P, PL/S, PL/SQL, PL360, PLANC, Plankalkül, Planner, PLEX, PLEXIL, Plus, POP-11, }};
-% 	\node[nome] (p44) [below = of p43] {\parbox{25cm}{POP-2, PostScript, PortablE, POV-Ray SDL, Powerhouse, PowerBuilder – 4GL GUI application generator from Sybase, PowerShell, PPL, Processing, }};
-% 	\node[nome] (p45) [below = of p44] {\parbox{25cm}{Processing.js, Prograph, Project Verona, Prolog, PROMAL, Promela, PROSE modeling language, PROTEL, ProvideX, Pro*C, Pure, Pure Data, }};
-% 	\node[nome] (p46) [below = of p45] {\parbox{25cm}{PureScript, PWCT, Python, Q (programming language from Kx Systems), Q\# (Microsoft programming language), Qalb, Quantum Computation Language, }};
-% 	\node[nome] (p47) [below = of p46] {\parbox{25cm}{QtScript, QuakeC, QPL, .QL, R, R++, Racket, Raku, RAPID, Rapira, Ratfiv, Ratfor, rc, Reason, REBOL, Red, Redcode, REFAL, REXX, Ring, ROOP, RPG, }};
-% 	\node[nome] (p48) [below = of p47] {\parbox{25cm}{RPL, RSL, RTL/2, Ruby, Rust, S, S2, S3, S-Lang, S-PLUS, SA-C, SabreTalk, SAIL, SAKO, SAS, SASL, Sather, Sawzall, Scala, Scheme, Scilab, }};
-% 	\node[nome] (p49) [below = of p48] {\parbox{25cm}{Scratch, Script.NET, Sed, Seed7, Self, SenseTalk, SequenceL, Serpent, SETL, Short Code, SIMPOL, SIGNAL, SiMPLE, SIMSCRIPT, Simula, Simulink, }};
-% 	\node[nome] (p50) [below = of p49] {\parbox{25cm}{SISAL, SKILL, SLIP, SMALL, Smalltalk, SML, Strongtalk, Snap!, SNOBOL (SPITBOL), Snowball, SOL, Solidity, SOPHAEROS, Source, SPARK, Speakeasy, }};
-% 	\node[nome] (p51) [below = of p50] {\parbox{25cm}{Speedcode, SPIN, SP/k, SPS, SQL, SQR, Squeak, Squirrel, SR, S/SL, Starlogo, Strand, Stata, Stateflow, Subtext, SBL, SuperCollider, Superplan, }};
-% 	\node[nome] (p52) [below = of p51] {\parbox{25cm}{SuperTalk, Swift (Apple programming language), Swift (parallel scripting language), SYMPL, TACL, TACPOL, }};
-% 	\node[nome] (p53) [below = of p52] {\parbox{25cm}{TADS (Text Adventure Development System), TAL, Tcl, Tea, TECO (Text Editor and Corrector), TELCOMP, TeX, }};
-% 	\node[nome] (p54) [below = of p53] {\parbox{25cm}{TEX (Text Executive Programming Language), TIE, TMG (TransMo Griffer), compiler-compiler, Tom, Toi, Topspeed (Clarion), }};
-% 	\node[nome] (p55) [below = of p54] {\parbox{25cm}{TPU (Text Processing Utility), Trac, TTM, T-SQL (Transact-SQL), Transcript (LiveCode), TTCN (Tree and Tabular Combined Notation), Turing, }};
-% 	\node[nome] (p56) [below = of p55] {\parbox{25cm}{TUTOR (PLATO Author Language), TXL, TypeScript, Tynker, Ubercode, UCSD Pascal, Umple, Unicon, Uniface, UNITY, UnrealScript, Vala, Vim script, }};
-% 	\node[nome] (p57) [below = of p56] {\parbox{25cm}{Viper (Ethereum/Ether (ETH)), Visual DataFlex, Visual DialogScript, Visual FoxPro, Visual J++ (Visual J plus plus), Visual LISP, }};
-% 	\node[nome] (p58) [below = of p57] {\parbox{25cm}{Visual Objects, Visual Prolog, WATFIV, WATFOR (WATerloo FORtran IV), WebAssembly, WebDNA, Whiley, Winbatch, Wolfram Language, Wyvern, }};
-% 	\node[nome] (p59) [below = of p58] {\parbox{25cm}{}};
-% 	\node[nome] (p60) [below = of p59] {\parbox{25cm}{}};
-% 	\node[nome] (p61) [below = of p60] {\parbox{25cm}{}};
-% 	\node[nome] (p62) [below = of p61] {\parbox{25cm}{}};
-% 	\node[nome] (p63) [below = of p62] {\parbox{25cm}{}};
-% 	\node[nome] (p64) [below = of p63] {\parbox{25cm}{}};
-% 	\node[nome] (p65) [below = of p64] {\parbox{25cm}{}};
-% 	\node[nome] (p66) [below = of p65] {\parbox{25cm}{}};
-% 	\node[nome] (p67) [below = of p66] {\parbox{25cm}{}};
-% 	\node[nome] (p68) [below = of p67] {\parbox{25cm}{}};
-% 	\node[nome] (p69) [below = of p68] {\parbox{25cm}{}};
-% 	\node[nome] (p70) [below = of p69] {\parbox{25cm}{}};
-% 	\node[nome] (p71) [below = of p70] {\parbox{25cm}{}};
-% 	\node[nome] (p72) [below = of p71] {\parbox{25cm}{}};
-% \end{tikzpicture}
 
 \pagestyle{empty}
 % \begin{tikzpicture}[overlay,remember picture]
@@ -248,24 +63,36 @@
 % \end{tikzpicture}
 
 \begin{tikzpicture}[overlay,remember picture]
-	\node (address) at ($ (current page.north east) + (-5.2,-.9) $) 
-	{\large{\raisebox{-0.8mm}{\includegraphics[scale=0.055]{phone.png}}\, 510.499.7953 \enspace {\scriptsize{$\blacklozenge$}} \enspace 
-	\href{mailto:mkim797@yahoo.com}{\raisebox{-0.8mm}{\includegraphics[scale=0.055]{env.png}}
-	mkim797@yahoo.com}}};
-	\node (address) at ($ (current page.north east) + (-4,-1.75) $) 
-	{\large\href{https://www.linkedin.com/in/mkim797}{\raisebox{-0.8mm}{\includegraphics[scale=0.055]{li.png}}\hspace{0.7mm}
-	mkim797} \enspace {\scriptsize{$\blacklozenge$}} \enspace 
-	\href{https://github.com/mkim797/}{\raisebox{-0.8mm}{\includegraphics[scale=0.055]{gh.png}}\hspace{0.5mm} mkim797}};
-    \draw [line width=3.5pt,rounded corners=4pt,
-        ]
-        ($ (current page.north west) + (1cm,-1.3cm) $)
-        rectangle
-        ($ (current page.south east) + (-1cm,1cm) $);
+    \node (address) at ($ (current page.north east) + (-5.2,-.9) $)
+    {\large{
+            \raisebox{-0.8mm}
+            {\includegraphics[scale=0.055]{phone.png}}
+            \, 510.499.7953
+            \enspace {\scriptsize{$\blacklozenge$}} \enspace
+            \href{mailto:mkim797@yahoo.com}
+            {\raisebox{-0.8mm}
+                {\includegraphics[scale=0.055]{env.png}}
+                mkim797@yahoo.com}}};
+    \node (address) at ($ (current page.north east) + (-4,-1.75) $)
+    {\large\href{https://www.linkedin.com/in/mkim797}
+        {\raisebox{-0.8mm}
+            {\includegraphics[scale=0.055]{li.png}}
+            \hspace{0.7mm} mkim797}
+        \enspace {\scriptsize{$\blacklozenge$}} \enspace
+        \href{https://github.com/mk-imagine/}
+        {\raisebox{-0.8mm}
+            {\includegraphics[scale=0.055]{gh.png}}
+            \hspace{0.5mm} mk-imagine}};
+    \draw [line width=3.5pt,rounded corners=4pt]
+    ($ (current page.north west) + (1cm,-1.3cm) $)
+    rectangle
+    ($ (current page.south east) + (-1cm,1cm) $);
     \draw [fill=white,draw=none]
-    	($ (current page.north west) + (2cm,-0.5cm) $)
-		rectangle
-		($ (current page.north west) + (8.85cm,-2cm) $);
-	\node [draw=none] at (3.05,0.9) {\fontsize{33}{21}\selectfont \textbf{Mark S. Kim}};
+    ($ (current page.north west) + (2cm,-0.5cm) $)
+    rectangle
+    ($ (current page.north west) + (8.85cm,-2cm) $);
+    \node [draw=none] at (3.05,0.9) 
+    {\fontsize{33}{21}\selectfont \textbf{Mark S. Kim}};
 \end{tikzpicture}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -280,267 +107,235 @@
 \vspace{4mm}
 
 \begin{minipage}[ct]{0.9\linewidth}
-{\textsc{San Francisco State University}}\hfill 2023 to Present\\
-\emph{Data Science and Artificial Intelligence, M.S.}\\
-GPA: $4.00$\\
-Anticipated Graduation: May 2025
+    {\textsc{San Francisco State University}}\hfill 2023 to Present\\
+    \emph{Data Science and Artificial Intelligence, M.S.}\\
+    GPA: $4.00$\\
+    Anticipated Graduation: May 2025
 \end{minipage}
 
 \vspace{4mm}
 
 \begin{minipage}[ct]{0.9\linewidth}
-{\textsc{San Francisco State University}}\hfill 2018 to 2023\\
-\emph{Computer Science, B.S.}\\
-GPA: $4.00$\\
-\emph{Mathematics: Advanced Studies, B.A.}\\
-GPA: $3.98$
+    {\textsc{San Francisco State University}}\hfill 2018 to 2023\\
+    \emph{Computer Science, B.S.}\\
+    GPA: $4.00$\\
+    \emph{Mathematics: Advanced Studies, B.A.}\\
+    GPA: $3.98$
 \end{minipage}
 
-\vspace{7mm}
-{\centering
+% \vspace{4mm}
+
 % \begin{minipage}[ct]{0.9\linewidth}
 % {\textsc{University of California at Davis}}\hfill 1995 to 2000\\
 % \emph{Uncompleted Genetics B.S.}
 % \end{minipage}
 
-% \vspace{4mm}
+\vspace{7mm}
+{\centering
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% RESEARCH & FELLOWSHIPS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % RESEARCH & FELLOWSHIPS
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\hrulefill{\fontsize{14}{14}\selectfont \textbf{\ \ Research \& Fellowships\ \ }}\hrulefill
+    \hrulefill{\fontsize{14}{14}\selectfont \textbf{\ \ Research \& Fellowships\ \ }}\hrulefill
 
-\vspace{4mm}
+    \vspace{4mm}
 
-\begin{minipage}[ct]{0.9\linewidth}
-\textbf{Graduate Research Assistant}\hfill Aug 2023 to Present\\
-\emph{San Francisco State University} -- San Francisco, CA\\
-Principal Investigator: Dr. Hui Yang\\
-{\textsc{AdvisingGPT: Foundation Models for Student Advising}}
-\vspace{1mm}\\
-An exploration of using foundation models such as ChatGPT, Cohere Command, and Google
-GeminiPro, to provide automated course equivalency evaluation and personalized
-program roadmaps to maximize student success rates. The techniques employed
-include: prompt engineering, in-context learning, and fine-tuning of LLMs;
-document-level embeddings search and ranking; and retrieval augmented
-generation.  Ongoing performance evaluation is executed by thoroughly analyzing
-confusion matrices, F1-score, and ROC/AUC.
-	% \makeatletter
-	% \let\orig@listi\@listi
-	% \def\@listi{\orig@listi\topsep=0.25\baselineskip}
-	% \makeatother
-    % \begin{itemize}
-    % 	\setlength\itemsep{-0.25em}
-    % 	\item Investigation of clustering for early detection and
-    % 	categorization of phishing emails with an emphasis on computational speed and
-    % 	performance.
-	% 	\item Restructure and optimize Python C extensions that parse and
-	% 	analyze emails.  Reduced memory usage by 95\% and increased data
-	% 	utilization by 5\%.
-	% 	\item Develop and validate thread-based and process-based
-	% 	parallelization (asynchronous).  Reduced total processing time by 80\%.
-	% 	\item Examine and analyze tradeoffs between dimensional reduction (PCA) and
-	% 	maintaining data precision.
-    % \end{itemize}
-\end{minipage}
+    \begin{minipage}[ct]{0.9\linewidth}
+        \textbf{Graduate Researcher}\hfill Aug 2023 to Present\\
+        \emph{San Francisco State University} -- San Francisco, CA\\
+        Principal Investigator: Dr. Hui Yang\\
+        {\textsc{AdvisingGPT: Foundation Models for Student Advising}}
+        \vspace{1mm}\\
+        An exploration of using foundation models such as ChatGPT, Mistral, Llama$3$, and Google
+        Gemini Pro, to provide automated course equivalency evaluation and personalized
+        program roadmaps to maximize student success rates. The techniques employed
+        include: prompt engineering, in-context learning, and instruction fine-tuning of
+        foundation models;
+        document-level embeddings search and ranking; and retrieval augmented
+        generation.  Ongoing performance evaluation is executed with
+        confusion matrices, F$1$-score, and ROC/AUC.
+    \end{minipage}
 
-\vspace{4mm}
+    \vspace{4mm}
 
-\begin{minipage}[ct]{0.9\linewidth}
-\textbf{Program Lead/Graduate Research Assistant}\hfill Jan 2023 to Present\\
-\emph{San Francisco State University} -- San Francisco, CA\\
-Principal Investigator: Dr. Anagha Kulkarni\\
-{\textsc{Artificial Intelligence Scholarships that Improve \\Academic Achievement, Retention, and Career Success (AI-STAARS)}}
-\vspace{1mm}\\
-Lead a three pronged support system to improve student success by reinforcing
-foundational knowledge, providing intensive advising, and engaging students in a
-winter and summer accelerated pathways Machine Learning and AI program.  Besides providing these
-activities, the program was developed to investigate how the program could improve
-students' sense of belonging and identity with the field of Computer Science,
-and the effect that they may have on students' retention and success.
-Qualitative research is occuring through observations of student engagement
-during discussions, interviews, and surveys.
-	% \makeatletter
-	% \let\orig@listi\@listi
-	% \def\@listi{\orig@listi\topsep=0.25\baselineskip}
-	% \makeatother
-    % \begin{itemize}
-    % 	\setlength\itemsep{-0.25em}
-    % 	\item Investigation of clustering for early detection and
-    % 	categorization of phishing emails with an emphasis on computational speed and
-    % 	performance.
-	% 	\item Restructure and optimize Python C extensions that parse and
-	% 	analyze emails.  Reduced memory usage by 95\% and increased data
-	% 	utilization by 5\%.
-	% 	\item Develop and validate thread-based and process-based
-	% 	parallelization (asynchronous).  Reduced total processing time by 80\%.
-	% 	\item Examine and analyze tradeoffs between dimensional reduction (PCA) and
-	% 	maintaining data precision.
-    % \end{itemize}
-\end{minipage}
+    \begin{minipage}[ct]{0.9\linewidth}
+        \textbf{Program Lead/Graduate Researcher}\hfill Jan 2023 to Present\\
+        \emph{San Francisco State University} -- San Francisco, CA\\
+        Principal Investigator: Dr. Anagha Kulkarni\\
+        {\textsc{Artificial Intelligence Scholarships that Improve \\Academic Achievement, Retention, and Career Success (AI-STAARS)}}
+        \vspace{1mm}\\
+        Lead a three pronged support system to improve student success by reinforcing
+        foundational knowledge, providing intensive advising, and engaging students in a
+        winter and summer accelerated pathways Machine Learning and AI program.  Besides providing these
+        activities, the program was developed to investigate how the program could improve
+        students' sense of belonging and identity with the field of Computer Science,
+        and the effect that they may have on students' retention and success.
+        Qualitative research is occuring through observations of student engagement
+        during discussions, interviews, and surveys.
+    \end{minipage}
 
-\vspace{4mm}
+    \vspace{4mm}
 
-\begin{minipage}[ct]{0.9\linewidth}
-\textbf{Research Engineering Intern}\hfill Jun 2022 to Aug 2022\\
-\emph{Cofense Inc.} -- Leesburg, VA\\
-Research Supervisor: Chip McSweeney, Senior Research Engineer\\
-{\textsc{Phishing Emails: Clustering and Analysis}}
-\vspace{1mm}\\
-An investigation of clustering for the early detection and categorization of
-phishing emails with an emphasis on computational speed and performance.  Python
-C extensions that parse and analyze emails were restructured and optimized,
-which reduced memory usage by 95\% and increased data utilization by 5\%.
-Similarly, development and validation of thead-based and process-based
-asynchronous parallelization of the Python code base reduced processing time by
-80\%. Tradeoffs between dimensional reduction (PCA) and maintaining data
-precision were examined and analyzed.
-	% \makeatletter
-	% \let\orig@listi\@listi
-	% \def\@listi{\orig@listi\topsep=0.25\baselineskip}
-	% \makeatother
-    % \begin{itemize}
-    % 	\setlength\itemsep{-0.25em}
-    % 	\item Investigation of clustering for early detection and
-    % 	categorization of phishing emails with an emphasis on computational speed and
-    % 	performance.
-	% 	\item Restructure and optimize Python C extensions that parse and
-	% 	analyze emails.  Reduced memory usage by 95\% and increased data
-	% 	utilization by 5\%.
-	% 	\item Develop and validate thread-based and process-based
-	% 	parallelization (asynchronous).  Reduced total processing time by 80\%.
-	% 	\item Examine and analyze tradeoffs between dimensional reduction (PCA) and
-	% 	maintaining data precision.
-    % \end{itemize}
-\end{minipage}
+    \begin{minipage}[ct]{0.9\linewidth}
+        \textbf{Research Engineering Intern}\hfill Jun 2022 to Aug 2022\\
+        \emph{Cofense Inc.} -- Leesburg, VA\\
+        Research Supervisor: Chip McSweeney, Senior Research Engineer\\
+        {\textsc{Phishing Emails: Clustering and Analysis}}
+        \vspace{1mm}\\
+        An investigation of clustering for the early detection and categorization of
+        phishing emails with an emphasis on computational speed and performance.  Python
+        C extensions that parse and analyze emails were restructured and optimized,
+        which reduced memory usage by $95$\% and increased data utilization by $5$\%.
+        Similarly, development and validation of thead-based and process-based
+        asynchronous parallelization of the Python code base reduced processing time by
+        $80$\%. Tradeoffs between dimensional reduction (PCA) and maintaining data
+        precision were examined and analyzed.
+        % \makeatletter
+        % \let\orig@listi\@listi
+        % \def\@listi{\orig@listi\topsep=0.25\baselineskip}
+        % \makeatother
+        % \begin{itemize}
+        % 	\setlength\itemsep{-0.25em}
+        % 	\item Investigation of clustering for early detection and
+        % 	categorization of phishing emails with an emphasis on computational speed and
+        % 	performance.
+        % 	\item Restructure and optimize Python C extensions that parse and
+        % 	analyze emails.  Reduced memory usage by 95\% and increased data
+        % 	utilization by 5\%.
+        % 	\item Develop and validate thread-based and process-based
+        % 	parallelization (asynchronous).  Reduced total processing time by 80\%.
+        % 	\item Examine and analyze tradeoffs between dimensional reduction (PCA) and
+        % 	maintaining data precision.
+        % \end{itemize}
+    \end{minipage}
 
-\vspace{4mm}
+    \vspace{4mm}
 
-\begin{minipage}[ct]{0.9\linewidth}
-\textbf{Independent Study and Research Literature Review}\hfill Jan 2022 to May 2022\\
-\emph{San Francisco State University Department of Mathematics} -- San Francisco, CA\\
-Research Supervisor: Dr. Serkan Hosten\\
-{\textsc{Graphical Models for Brain Networks}}
-\vspace{1mm}\\
-Studied and explored \emph{Graphical Models} by Steffen Lauritzen which
-culminated in an examination of the research completed by Ranciati, Saverio et
-al. in ``Fused graphical lasso for brain networks with symmetries.''
-	% \makeatletter
-	% \let\orig@listi\@listi
-	% \def\@listi{\orig@listi\topsep=0.25\baselineskip}
-	% \makeatother
-    % \begin{itemize}
-    % 	\setlength\itemsep{-0.25em}
-    % 	\item Study and exploration of \emph{Graphical Models} by Steffen
-    % 	Lauritzen and ``Fused graphical lasso for brain networks with
-    % 	symmetries'' by Ranciati, Saverio et al.
-    % \end{itemize}
-\end{minipage}
+    \begin{minipage}[ct]{0.9\linewidth}
+        \textbf{Independent Study and Research Literature Review}\hfill Jan 2022 to May 2022\\
+        \emph{San Francisco State University Department of Mathematics} -- San Francisco, CA\\
+        Research Supervisor: Dr. Serkan Hosten\\
+        {\textsc{Graphical Models for Brain Networks}}
+        \vspace{1mm}\\
+        Studied and explored \emph{Graphical Models} by Steffen Lauritzen which
+        culminated in an examination of the research completed by Ranciati, Saverio et
+        al. in ``Fused graphical lasso for brain networks with symmetries.''
+        % \makeatletter
+        % \let\orig@listi\@listi
+        % \def\@listi{\orig@listi\topsep=0.25\baselineskip}
+        % \makeatother
+        % \begin{itemize}
+        % 	\setlength\itemsep{-0.25em}
+        % 	\item Study and exploration of \emph{Graphical Models} by Steffen
+        % 	Lauritzen and ``Fused graphical lasso for brain networks with
+        % 	symmetries'' by Ranciati, Saverio et al.
+        % \end{itemize}
+    \end{minipage}
 
-\vspace{4mm}
+    \vspace{4mm}
 
-\begin{minipage}[ct]{0.9\linewidth}
-\textbf{NSF REU Scholar and Researcher}\hfill Jun 2021 to Aug 2021\\
-\emph{University of Houston Department of Computer Science} -- Houston, TX\\
-Funding by the National Science Foundation\\
-Principal Investigator: Dr. Ernst Leiss\\
-Research Supervisor: Dr. Ionnis Pavlidis\\
-{\textsc{Frontiers of Data-Driven Computing REU}}
-\vspace{1mm}\\
-Developed and implemented multi-threaded retrieval algorithms for over 10 million
-records of affective research data (documents and authors) from Scopus, PubMed,
-and Web of Science. Performed exploratory clustering and co-occurrence matrix
-analysis of retrieved data to facilitate the investigation of a quantitative history of
-affective research.
-	% \makeatletter
-	% \let\orig@listi\@listi
-	% \def\@listi{\orig@listi\topsep=0.25\baselineskip}
-	% \makeatother
-    % \begin{itemize}
-    % 	\setlength\itemsep{-0.25em}
-    % 	\item Develop and implement retrieval algorithms for affective research
-    % 	data (documents and authors) from Scopus, PubMed, and Web of Science.
-	% 	\item Exploratory clustering and co-occurrence matrix analysis of
-	% 	retrieved data for a quantitative history of affective research.
-    % \end{itemize}
-\end{minipage}
+    \begin{minipage}[ct]{0.9\linewidth}
+        \textbf{NSF REU Scholar and Researcher}\hfill Jun 2021 to Aug 2021\\
+        \emph{University of Houston Department of Computer Science} -- Houston, TX\\
+        Funding by the National Science Foundation\\
+        Principal Investigator: Dr. Ernst Leiss\\
+        Research Supervisor: Dr. Ionnis Pavlidis\\
+        {\textsc{Frontiers of Data-Driven Computing REU}}
+        \vspace{1mm}\\
+        Developed and implemented multi-threaded retrieval algorithms for over 10 million
+        records of affective research data (documents and authors) from Scopus, PubMed,
+        and Web of Science. Performed exploratory clustering and co-occurrence matrix
+        analysis of retrieved data to facilitate the investigation of a quantitative history of
+        affective research.
+        % \makeatletter
+        % \let\orig@listi\@listi
+        % \def\@listi{\orig@listi\topsep=0.25\baselineskip}
+        % \makeatother
+        % \begin{itemize}
+        % 	\setlength\itemsep{-0.25em}
+        % 	\item Develop and implement retrieval algorithms for affective research
+        % 	data (documents and authors) from Scopus, PubMed, and Web of Science.
+        % 	\item Exploratory clustering and co-occurrence matrix analysis of
+        % 	retrieved data for a quantitative history of affective research.
+        % \end{itemize}
+    \end{minipage}
 
-\vspace{4mm}
+    \vspace{4mm}
 
-\begin{minipage}[ct]{0.9\linewidth}
-\textbf{Innovation and Entrepreneurship Fellow}\hfill Sept 2020 to May 2021\\
-\emph{San Francisco State University Lam Family College of Business} -- San Francisco, CA\\
-Faculty Director: Dr. Sybil Yang\\
-{\textsc{COB Innovation and Entrepreneurship Fellowship}}
-\vspace{1mm}\\
-Collaborated with co-founders to design and develop a software-based test
-preparation platform for disenfranchised students.
-	% \makeatletter
-	% \let\orig@listi\@listi
-	% \def\@listi{\orig@listi\topsep=0.25\baselineskip}
-	% \makeatother
-    % \begin{itemize}
-    % 	\setlength\itemsep{-0.25em}
-    % 	\item Cross-functional collaboration with co-founders to design and develop test preparation platform for disenfranchised students.
-    % \end{itemize}
-\end{minipage}
+    \begin{minipage}[ct]{0.9\linewidth}
+        \textbf{Innovation and Entrepreneurship Fellow}\hfill Sept 2020 to May 2021\\
+        \emph{San Francisco State University Lam Family College of Business} -- San Francisco, CA\\
+        Faculty Director: Dr. Sybil Yang\\
+        {\textsc{COB Innovation and Entrepreneurship Fellowship}}
+        \vspace{1mm}\\
+        Collaborated with co-founders to design and develop a software-based test
+        preparation platform for disenfranchised students.
+        % \makeatletter
+        % \let\orig@listi\@listi
+        % \def\@listi{\orig@listi\topsep=0.25\baselineskip}
+        % \makeatother
+        % \begin{itemize}
+        % 	\setlength\itemsep{-0.25em}
+        % 	\item Cross-functional collaboration with co-founders to design and develop test preparation platform for disenfranchised students.
+        % \end{itemize}
+    \end{minipage}
 
-\vspace{4mm}
+    \vspace{4mm}
 
-\begin{minipage}[ct]{0.9\linewidth}
-\textbf{Undergraduate Research Assistant}\hfill Apr 2020 to Jun 2020\\
-\emph{San Francisco State University Department of Mathematics} -- San Francisco, CA\\
-Research Supervisor: Dr. Shandy Hauk\\
-{\textsc{Remote Instruction Pedagogy in Mathematics}}
-\vspace{1mm}\\
-Provided an academic literature review of research in pedagogical best practices
-for remote instruction.  This review was to inform new research in remote
-instruction in response to the COVID-$19$ pandemic.
-	% \makeatletter
-	% \let\orig@listi\@listi
-	% \def\@listi{\orig@listi\topsep=0.25\baselineskip}
-	% \makeatother
-    % \begin{itemize}
-    % 	\setlength\itemsep{-0.25em}
-    % 	\item Academic literature review of research in pedagogical best practices for remote instruction.
-    % \end{itemize}
-\end{minipage}
+    \begin{minipage}[ct]{0.9\linewidth}
+        \textbf{Undergraduate Research Assistant}\hfill Apr 2020 to Jun 2020\\
+        \emph{San Francisco State University Department of Mathematics} -- San Francisco, CA\\
+        Research Supervisor: Dr. Shandy Hauk\\
+        {\textsc{Remote Instruction Pedagogy in Mathematics}}
+        \vspace{1mm}\\
+        Provided an academic literature review of research in pedagogical best practices
+        for remote instruction.  This review was to inform new research in remote
+        instruction in response to the COVID-$19$ pandemic.
+        % \makeatletter
+        % \let\orig@listi\@listi
+        % \def\@listi{\orig@listi\topsep=0.25\baselineskip}
+        % \makeatother
+        % \begin{itemize}
+        % 	\setlength\itemsep{-0.25em}
+        % 	\item Academic literature review of research in pedagogical best practices for remote instruction.
+        % \end{itemize}
+    \end{minipage}
 
-\vspace{4mm}
+    \vspace{4mm}
 
-%%%%%%%%%%%%%%% SECOND PAGE %%%%%%%%%%%%%%%%%%
-\begin{tikzpicture}[overlay,remember picture]
-    \draw [line width=3.5pt,rounded corners=4pt,
+    %%%%%%%%%%%%%%% SECOND PAGE %%%%%%%%%%%%%%%%%%
+    \begin{tikzpicture}[overlay,remember picture]
+        \draw [line width=3.5pt,rounded corners=4pt,
         ]
         ($ (current page.north west) + (1cm,-1cm) $)
         rectangle
         ($ (current page.south east) + (-1cm,1cm) $);
-\end{tikzpicture}
+    \end{tikzpicture}
 
-\begin{minipage}[ct]{0.9\linewidth}
-\textbf{Undergraduate Research Assistant}\hfill Nov 2019 to Jan 2020\\
-\emph{San Francisco State University Department of Mathematics} -- San Francisco, CA\\
-Research Supervisor: Dr. Alexandra Piryatinska\\
-{\textsc{Change-point Analysis Algorithm Development}}
-\vspace{1mm}\\
-Attended workshops in numerical methods and statistics theory in preparation for
-research in change-point analysis and algorithm development.  Studied completed
-change-point analysis research and began work on adapting existing Matlab code
-to Python.
-    % \makeatletter
-    % \let\orig@listi\@listi
-    % \def\@listi{\orig@listi\topsep=0.25\baselineskip}
-    % \makeatother
-    % \begin{itemize}
-    %     \setlength\itemsep{-0.25em}
-    %     \item Workshops in numerical methods and statistics theory in
-    %     preparation for research in change-point analysis and algorithm
-    %     development.
-    %     \item Study of completed change-point analysis research with the goal of
-    %     adapting Matlab code to Python.
-    % \end{itemize}
-\end{minipage}
+    \begin{minipage}[ct]{0.9\linewidth}
+        \textbf{Undergraduate Research Assistant}\hfill Nov 2019 to Jan 2020\\
+        \emph{San Francisco State University Department of Mathematics} -- San Francisco, CA\\
+        Research Supervisor: Dr. Alexandra Piryatinska\\
+        {\textsc{Change-point Analysis Algorithm Development}}
+        \vspace{1mm}\\
+        Attended workshops in numerical methods and statistics theory in preparation for
+        research in change-point analysis and algorithm development.  Studied completed
+        change-point analysis research and began work on adapting existing Matlab code
+        to Python.
+        % \makeatletter
+        % \let\orig@listi\@listi
+        % \def\@listi{\orig@listi\topsep=0.25\baselineskip}
+        % \makeatother
+        % \begin{itemize}
+        %     \setlength\itemsep{-0.25em}
+        %     \item Workshops in numerical methods and statistics theory in
+        %     preparation for research in change-point analysis and algorithm
+        %     development.
+        %     \item Study of completed change-point analysis research with the goal of
+        %     adapting Matlab code to Python.
+        % \end{itemize}
+    \end{minipage}
 
 }
 
@@ -555,19 +350,19 @@ to Python.
 \vspace{4mm}
 
 \begin{minipage}[ct]{0.9\linewidth}
-First place final presentation -- Frontiers in Data-Driven Computing REU,
-University of Houston\hfill Aug 2021
+    First place final presentation -- Frontiers in Data-Driven Computing REU,
+    University of Houston\hfill Aug 2021
 
-\vspace{1.5mm}
+    \vspace{1.5mm}
 
-Finalist -- Entrepreneurship Symposium Innovation Pitch Competition, San
-Francisco State University\hfill May 2021
+    Finalist -- Entrepreneurship Symposium Innovation Pitch Competition, San
+    Francisco State University\hfill May 2021
 
-\vspace{1.5mm}
+    \vspace{1.5mm}
 
-Dean's List, San Francisco State University\hfill 2018, 2019, 2020, 2021, 2022
+    Dean's List, San Francisco State University\hfill 2018, 2019, 2020, 2021, 2022, 2023
 \end{minipage}
-    
+
 \vspace{7mm}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -579,29 +374,31 @@ Dean's List, San Francisco State University\hfill 2018, 2019, 2020, 2021, 2022
 \vspace{4mm}
 
 \begin{minipage}[ct]{0.9\linewidth}
-\textsc{Association for Computing Machinery} (ACM), SFSU Student Chapter\hfill Sept 2019 to
-Present\\
-\emph{Treasurer}, May 2023 to Present\\
-\emph{President}, Jan 2022 to May 2023
+    \textsc{Association for Computing Machinery} (ACM), SFSU Student Chapter\hfill
+    Sept 2019 to Present\\
+    \emph{Graduate Mentor}, May 2024 to Present\\
+    \emph{Treasurer}, May 2023 to May 2024\\
+    \emph{President}, Jan 2022 to May 2023
 
-\vspace{1.5mm}
+    \vspace{1.5mm}
 
-\textsc{SF Hacks}\hfill May 2022 to Present\\
-\emph{Treasurer}, May 2022 to Present
+    \textsc{SF Hacks}\hfill May 2022 to Present\\
+    \emph{Graduate Mentor}, May 2024 to Present\\
+    \emph{Treasurer}, May 2022 to May 2024
 
-\vspace{1.5mm}
+    \vspace{1.5mm}
 
-\textsc{CS}\{\textsc{Research}\}\textsc{ Club}\hfill Aug 2023 to Present\\
-\emph{President/Founder}, Aug 2023 to Present
+    \textsc{CS}\{\textsc{Research}\}\textsc{ Club}\hfill Aug 2023 to Present\\
+    \emph{President/Founder}, Aug 2023 to Present
 
-\vspace{1.5mm}
+    \vspace{1.5mm}
 
-\textsc{Artificial Intelligence Club}\hfill Aug 2023 to Present\\
-\emph{Treasurer}, Aug 2023 to Present
+    \textsc{Artificial Intelligence Club}\hfill Aug 2023 to Present\\
+    \emph{Treasurer}, Aug 2023 to Present
 
-\vspace{1.5mm}
+    \vspace{1.5mm}
 
-\textsc{Society for Industrial and Applied Mathematics} (SIAM)\hfill Oct 2021 to Present\\
+    \textsc{Society for Industrial and Applied Mathematics} (SIAM)\hfill Oct 2021 to Present\\
 \end{minipage}
 
 \vspace{4mm}
@@ -610,10 +407,10 @@ Present\\
 %%%%%%%%%%%%%%% THIRD PAGE %%%%%%%%%%%%%%%%%%
 \begin{tikzpicture}[overlay,remember picture]
     \draw [line width=3.5pt,rounded corners=4pt,
-        ]
-        ($ (current page.north west) + (1cm,-1cm) $)
-        rectangle
-        ($ (current page.south east) + (-1cm,1cm) $);
+    ]
+    ($ (current page.north west) + (1cm,-1cm) $)
+    rectangle
+    ($ (current page.south east) + (-1cm,1cm) $);
 \end{tikzpicture}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -625,63 +422,64 @@ Present\\
 \vspace{4mm}
 
 \begin{minipage}[ct]{0.9\linewidth}
-\textsc{Program Lead/Graduate Research Assistant}\hfill Jan 2023 to Present\\
-{\emph{San Francisco State University} - San Francisco, CA}\\
-Artificial Intelligence Scholarships that Improve Academic Achievement, Retention, and Career Success (AI-STAARS)
+    \textsc{Program Lead/Graduate Researcher}\hfill Jan 2023 to Aug
+    2023\\
+    {\emph{San Francisco State University} - San Francisco, CA}\\
+    Artificial Intelligence Scholarships that Improve Academic Achievement, Retention, and Career Success (AI-STAARS)
 \end{minipage}
 
 \vspace{2.5mm}
 
 \begin{minipage}[ct]{0.9\linewidth}
-\textsc{Mathematics Program Liaison}\hfill Jan 2024 to Present\\
-\textsc{CS Program Liaison}\hfill Aug 2023 to Dec 2023\\
-{\emph{San Francisco State University} - San Francisco, CA}\\
-Center for Science and Mathematics Education (CSME)
+    \textsc{Graduate Researcher}\hfill Aug 2023 to Present\\
+    {\emph{San Francisco State University} - San Francisco, CA}\\
+    Research in Foundation Models for Student Advising
 \end{minipage}
 
 \vspace{2.5mm}
 
 \begin{minipage}[ct]{0.9\linewidth}
-\textsc{Graduate Research Assistant}\hfill Aug 2023 to Present\\
-{\emph{San Francisco State University} - San Francisco, CA}\\
-Research in Foundation Models for Student Advising
+    \textsc{Mathematics Program Liaison}\hfill Jan 2024 to May 2024\\
+    \textsc{CS Program Liaison}\hfill Aug 2023 to Dec 2023\\
+    {\emph{San Francisco State University} - San Francisco, CA}\\
+    Center for Science and Mathematics Education (CSME)
 \end{minipage}
 
 \vspace{2.5mm}
 
 \begin{minipage}[ct]{0.9\linewidth}
-\textsc{Facilitator}\hfill Jan 2021 to May 2023\\
-{\emph{San Francisco State University} - San Francisco, CA}\\
-Center for Science and Mathematics Education (CSME)
+    \textsc{Facilitator}\hfill Jan 2021 to May 2023\\
+    {\emph{San Francisco State University} - San Francisco, CA}\\
+    Center for Science and Mathematics Education (CSME)
 \end{minipage}
 
 \vspace{2.5mm}
 
 \begin{minipage}[ct]{0.9\linewidth}
-\textsc{Undergraduate Teaching Assistant}\hfill Aug 2019 to Dec 2020\\
-{\emph{San Francisco State University} - San Francisco, CA}\\
-Department of Mathematics
+    \textsc{Undergraduate Teaching Assistant}\hfill Aug 2019 to Dec 2020\\
+    {\emph{San Francisco State University} - San Francisco, CA}\\
+    Department of Mathematics
 \end{minipage}
 
 \vspace{2.5mm}
 
 \begin{minipage}[ct]{0.9\linewidth}
-\textsc{Financial Center Manager}, AVP\hfill 2017 to 2018\\
-{\emph{Bank of America} - Belmont, CA}
+    \textsc{Financial Center Manager}, AVP\hfill 2017 to 2018\\
+    {\emph{Bank of America} - Belmont, CA}
 \end{minipage}
 
 \vspace{2.5mm}
 
 \begin{minipage}[ct]{0.9\linewidth}
-\textsc{Founder/CEO}\hfill 2005 to 2017\\
-{\emph{Kindred Enterprises Incorporated} - San Francisco, CA}
+    \textsc{Founder/CEO}\hfill 2005 to 2017\\
+    {\emph{Kindred Enterprises Incorporated} - San Francisco, CA}
 \end{minipage}
 
 \vspace{2.5mm}
 
 \begin{minipage}[ct]{0.9\linewidth}
-\textsc{Landing Support Specialist}, Corporal\hfill 1995 to 2001\\
-{\emph{United States Marine Corps Reserve} - San Jose, CA}
+    \textsc{Landing Support Specialist}, Corporal\hfill 1995 to 2001\\
+    {\emph{United States Marine Corps Reserve} - San Jose, CA}
 \end{minipage}
 
 \vspace{7mm}
@@ -695,56 +493,246 @@ Department of Mathematics
 \vspace{4mm}
 
 \begin{minipage}[ct]{0.9\linewidth}
-\textsc{Languages: } Python, Java, C/C++, JavaScript, HTML, CSS, MySQL, Matlab, R
+    \textsc{Languages: } Python, Java, C/C++, JavaScript, HTML, CSS, MySQL, Matlab, R
 
-% \vspace{1.5mm}
+    % \vspace{1.5mm}
 
-% \textsc{Operating Systems: } Windows, MacOS, Linux (Ubuntu, Debian)
+    % \textsc{Operating Systems: } Windows, MacOS, Linux (Ubuntu, Debian)
 
-\vspace{1.5mm}
+    \vspace{1.5mm}
 
-\textsc{Web Frameworks/Environments: } Node.js, Express.js, React.js, Handlebars.js
+    \textsc{Web Frameworks/Environments: } Node.js, Express.js, React.js, Handlebars.js
 
-\vspace{1.5mm}
+    \vspace{1.5mm}
 
-\textsc{Libraries: } Pandas, NumPy, scikit-learn, Matplotlib, BeautifulSoup,
-Plotly, Dash
+    \textsc{Libraries: } PyTorch, Pandas, NumPy, scikit-learn, Matplotlib,
+    BeautifulSoup, Plotly, Dash
 
-\vspace{1.5mm}
+    \vspace{1.5mm}
 
-\textsc{Deployment/Cloud Computing:} AWS (EC$2$, S$3$, and Route$53$),
-Google Cloud (Compute Engine, Storage, Domains), Google Analytics, Oracle Cloud
-Infrastructure, NGINX
+    \textsc{Deployment/Cloud Computing:} AWS (EC$2$, S$3$, and Route$53$),
+    Google Cloud (Compute Engine, Storage, Domains), Google Analytics, Oracle Cloud Infrastructure, NGINX
 
-\vspace{1.5mm}
+    \vspace{1.5mm}
 
-\textsc{Development Platforms: } Docker, Git, Jupyter, Conda
+    \textsc{Development Platforms: } Docker, Git, Jupyter, Conda
 
-% \vspace{1.5mm}
+    % \vspace{1.5mm}
 
-% \textsc{Development Environments: } VSCode, IntelliJ IDEA, Visual Studio,
-% PyCharm
+    % \textsc{Development Environments: } VSCode, IntelliJ IDEA, Visual Studio,
+    % PyCharm
 
-\vspace{1.5mm}
+    \vspace{1.5mm}
 
-\textsc{Other: } \LaTeX, Adobe Creative Suite (XD, Illustrator, InDesign, Photoshop)
+    \textsc{Other: } \LaTeX, Adobe Creative Suite (XD, Illustrator, InDesign, Photoshop)
 \end{minipage}
 
 }
 
 \begin{tikzpicture}[overlay,remember picture]
-	\node (address) at ($ (current page.south east) - (1.5,-2.9)$) 
-	{\href{mailto:mkim797@yahoo.com}{\includegraphics[scale=0.08]{env.png}}};
-	\node (address) at ($ (current page.south east) - (1.5,-2.2)$) 
-	{\href{https://www.linkedin.com/in/mkim797}{\includegraphics[scale=0.08]{li.png}}};
-	\node (address) at ($ (current page.south east) - (1.5,-1.5)$) 
-	{\href{https://github.com/mkim797/}{\includegraphics[scale=0.08]{gh.png}}};
+    \node (address) at ($ (current page.south east) - (1.5,-2.9)$)
+    {\href{mailto:mkim797@yahoo.com}{\includegraphics[scale=0.08]{env.png}}};
+    \node (address) at ($ (current page.south east) - (1.5,-2.2)$)
+    {\href{https://www.linkedin.com/in/mkim797}{\includegraphics[scale=0.08]{li.png}}};
+    \node (address) at ($ (current page.south east) - (1.5,-1.5)$)
+    {\href{https://github.com/mk-imagine/}{\includegraphics[scale=0.08]{gh.png}}};
     \draw [fill=white,draw=none]
-    	($ (current page.south east) - (1.9cm,-0.5cm) $)
-		rectangle
-		($ (current page.south east) - (6.7cm,-1.5cm) $);
-	\node [draw=none] at (14.95,-7.4) {\fontsize{23}{23}\selectfont
-	\textbf{Mark S. Kim}};
+    ($ (current page.south east) - (1.9cm,-0.5cm) $)
+    rectangle
+    ($ (current page.south east) - (6.7cm,-1.5cm) $);
+    \node [draw=none] at (14.95,-7.4) {\fontsize{23}{23}\selectfont
+        \textbf{Mark S. Kim}};
 \end{tikzpicture}
 
 \end{document}
+
+% \hypersetup{
+% pdftitle={Resume},
+% pdfsubject={Resume},
+% pdfauthor={Mark Kim}
+% pdfkeywords={YA.NET (A\#/A sharp), A-0 System, A+ (A plus), A++, ABAP, ABC, ABC
+% ALGOL, ACC, Accent (Rational Synergy), Ace DASL (Distributed Application
+% Specification Language), Action!, ActionScript, Actor, Ada, Adenine (Haystack),
+% AdvPL, Agda, Agilent VEE (Keysight VEE), Agora, AIMMS, Aldor, Alef, ALF, ALGOL
+% 58, ALGOL 60, ALGOL 68, ALGOL W, Alice (Alice ML), Alma-0, AmbientTalk, Amiga E,
+% AMOS (AMOS BASIC), AMPL, Analitik, AngelScript, Apache Pig latin, Apex
+% (Salesforce.com, Inc), APL, App Inventor for Android's visual block language
+% (MIT App Inventor), AppleScript, APT, Arc, ARexx, Argus, Assembly language
+% (ASM), AutoHotkey, AutoIt, AutoLISP / Visual LISP, Averest, AWK, Axum, Babbage,
+% Ballerina, Bash, BASIC, Batch file (Windows/MS-DOS), bc (basic calculator),
+% BCPL, BeanShell, Bertrand, BETA, BLISS, Blockly, BlooP, Boo, Boomerang, Bosque,
+% C – ISO/IEC 9899, C-- (C minus minus), C++ (C plus plus) – ISO/IEC 14882, C*,
+% C\# (C sharp) – ISO/IEC 23270, C/AL, Caché ObjectScript, C Shell (csh), Caml,
+% Carbon, Cayenne (Lennart Augustsson), CDuce, Cecil, CESIL (Computer Education in
+% Schools Instruction Language), Céu, Ceylon, CFEngine, Cg (High-Level
+% Shader/Shading Language [HLSL]), Ch, Chapel (Cascade High Productivity
+% Language), Charm, CHILL, CHIP-8, ChucK, Cilk (also Cilk++ and Cilk plus),
+% Control Language, Claire, Clarion, Clean, Clipper, CLIPS, CLIST, Clojure, CLU,
+% CMS-2, COBOL – ISO/IEC 1989, CobolScript – COBOL Scripting language, Cobra,
+% CoffeeScript, ColdFusion, COMAL, COMIT, Common Intermediate Language (CIL),
+% Common Lisp (also known as CL), COMPASS, Component Pascal, Constraint Handling
+% Rules (CHR), COMTRAN, Cool, Coq, Coral 66, CorVision, COWSEL, CPL, Cryptol,
+% Crystal, Csound, Cuneiform, Curl, Curry, Cybil, Cyclone, Cypher Query Language,
+% Cython, CEEMAC, Dart, Darwin, DataFlex, Datalog, DATATRIEVE, dBase, dc, DCL
+% (DIGITAL Command Language), Delphi, DinkC, DIBOL, Dog, Draco, DRAKON, Dylan,
+% DYNAMO, DAX (Data Analysis Expressions), E, Ease, Easy PL/I, EASYTRIEVE PLUS,
+% eC, ECMAScript, Edinburgh IMP, EGL, Eiffel, ELAN, Elixir, Elm, Emacs Lisp,
+% Emerald, Epigram, EPL (Easy Programming Language), Erlang, es, Escher, ESPOL,
+% Esterel, Etoys, Euclid, Euler, Euphoria, EusLisp Robot Programming Language, CMS
+% EXEC (EXEC), EXEC 2, Executable UML, Ezhil, F\# (F sharp), F*, Factor, Fantom,
+% FAUST, FFP, fish, Fjölnir, FL, FlagShip, Flavors, Flex, Flix, FlooP, FLOW-MATIC
+% (B0), FOCAL (Formulating On-Line Calculations in Algebraic Language/FOrmula
+% CALculator), FOCUS, FOIL, FORMAC (FORMula MAnipulation Compiler), @Formula,
+% Forth, Fortran – ISO/IEC 1539, Fortress, FP, FoxBase/FoxPro, Franz Lisp,
+% Futhark, F-Script, Game Maker Language, GameMonkey Script, GAMS (General
+% Algebraic Modeling System), GAP, G-code, GDScript (Godot), Genie, GDL (Geometric
+% Description Language), GEORGE, GLSL (OpenGL Shading Language), GNU E, GNU Guile
+% (GNU Ubiquitous Intelligent Language for Extensions), Go, Go!, GOAL (Game
+% Oriented Assembly Lisp), Gödel, Golo, GOM (Good Old Mad), Google Apps Script,
+% Gosu, GOTRAN (IBM 1620), GPSS (General Purpose Simulation System), GraphTalk
+% (Computer Sciences Corporation), GRASS, Grasshopper, Groovy (Apache Groovy),
+% Hack, HAGGIS, HAL/S, Halide (programming language), Hamilton C shell, Harbour,
+% Hartmann pipelines, Haskell, Haxe, Hermes, High Level Assembly (HLA), HLSL,
+% Hollywood, HolyC (TempleOS), Hop, Hopscotch, Hope, Hume, HyperTalk, Hy, Io,
+% Icon, IBM Basic assembly language, IBM HAScript, IBM Informix-4GL, IBM RPG, IDL,
+% Idris, Inform, ISLISP, J\# (J sharp), J++ (J plus plus), JADE, Jai, JAL, Janus
+% (concurrent constraint programming language), Janus (time-reversible computing
+% programming language), JASS, Java, JavaFX Script, JavaScript, Jess, JCL, JEAN,
+% Join Java, JOSS, Joule, JOVIAL, Joy, JScript, JScript .NET, Julia, Jython,
+% Kaleidoscope, Karel, KEE, Kixtart, Klerer-May System, KIF (Knowledge Interchange
+% Format), Kojo, Kotlin, KRC, KRL, KRL (KUKA Robot Language), KRYPTON, KornShell
+% (ksh), Kodu, Kv (Kivy), LabVIEW, Ladder, LANSA, Lasso, Lava, LC-3, Lean,
+% Legoscript, LIL, LilyPond, Limbo, Limnor, LINC, Lingo, LINQ, LIS, LISA, Language
+% H, Lisp – ISO/IEC 13816, Lite-C, Lithe, Little b, LLL, Logo, Logtalk,
+% LotusScript, LPC, LSE, LSL, LiveCode, LiveScript, Lua, Lucid, Lustre, LYaPAS,
+% Lynx, M Formula language, M2001, M4, M\#, Machine code, MAD (Michigan Algorithm
+% Decoder), MAD/I, Magik, Magma, Máni, Maple, MAPPER (now part of BIS), MARK-IV
+% (now VISION:BUILDER), Mary, MATLAB, MASM Microsoft Assembly x86, MATH-MATIC,
+% Maude system, Maxima (see also Macsyma), Max (Max Msp – Graphical Programming
+% Environment), MaxScript internal language 3D Studio Max, Maya (MEL), MDL,
+% Mercury, Mesa, MHEG-5 (Interactive TV programming language), Microcode,
+% Microsoft Power Fx, MIIS, Milk (programming language), MIMIC, Mirah, Miranda,
+% MIVA Script, ML, Model 204, Modelica, Modula, Modula-2, Modula-3, Mohol, MOO,
+% Mortran, Mouse, MPD, MSL, MUMPS, MuPAD, Mutan, Mystic Programming Language
+% (MPL), NASM, Napier88, Neko, Nemerle, NESL, Net.Data, NetLogo, NetRexx, NewLISP,
+% NEWP, Newspeak, NewtonScript, Nial, Nickle (NITIN), Nim, Nix (Systems
+% configuration language), NPL, Not eXactly C (NXC), Not Quite C (NQC), NSIS, Nu,
+% NWScript, NXT-G, o:XML, Oak, Oberon, OBJ2, Object Lisp, ObjectLOGO, Object REXX,
+% Object Pascal, Objective-C, Obliq, OCaml, occam, occam-pi, Octave, OmniMark,
+% Opa, Opal, Open Programming Language (OPL), OpenCL, OpenEdge Advanced Business
+% Language (ABL), OpenVera, OpenQASM, OPS5, OptimJ, Orc, ORCA/Modula-2, Oriel,
+% Orwell, Oxygene, Oz, P, P4, ParaSail, PARI/GP, Pascal – ISO 7185, Pascal Script,
+% PCASTL, PCF, PEARL, PeopleCode, Perl, PDL, Pharo, PHP, Pico, Picolisp, Pict,
+% Pike, PILOT, Pipelines, Pizza, PL-11, PL/0, PL/B, PL/C, PL/I – ISO 6160, PL/M,
+% PL/P, PL/S, PL/SQL, PL360, PLANC, Plankalkül, Planner, PLEX, PLEXIL, Plus,
+% POP-11, POP-2, PostScript, PortablE, POV-Ray SDL, Powerhouse, PowerBuilder – 4GL
+% GUI application generator from Sybase, PowerShell, PPL, Processing,
+% Processing.js, Prograph, Project Verona, Prolog, PROMAL, Promela, PROSE modeling
+% language, PROTEL, ProvideX, Pro*C, Pure, Pure Data, PureScript, PWCT, Python, Q
+% (programming language from Kx Systems), Q\# (Microsoft programming language),
+% Qalb, Quantum Computation Language, QtScript, QuakeC, QPL, .QL, R, R++, Racket,
+% Raku, RAPID, Rapira, Ratfiv, Ratfor, rc, Reason, REBOL, Red, Redcode, REFAL,
+% REXX, Ring, ROOP, RPG, RPL, RSL, RTL/2, Ruby, Rust, S, S2, S3, S-Lang, S-PLUS,
+% SA-C, SabreTalk, SAIL, SAKO, SAS, SASL, Sather, Sawzall, Scala, Scheme, Scilab,
+% Scratch, Script.NET, Sed, Seed7, Self, SenseTalk, SequenceL, Serpent, SETL,
+% Short Code, SIMPOL, SIGNAL, SiMPLE, SIMSCRIPT, Simula, Simulink, SISAL, SKILL,
+% SLIP, SMALL, Smalltalk, SML, Strongtalk, Snap!, SNOBOL (SPITBOL), Snowball, SOL,
+% Solidity, SOPHAEROS, Source, SPARK, Speakeasy, Speedcode, SPIN, SP/k, SPS, SQL,
+% SQR, Squeak, Squirrel, SR, S/SL, Starlogo, Strand, Stata, Stateflow, Subtext,
+% SBL, SuperCollider, Superplan, SuperTalk, Swift (Apple programming language),
+% Swift (parallel scripting language), SYMPL, TACL, TACPOL, TADS (Text Adventure
+% Development System), TAL, Tcl, Tea, TECO (Text Editor and Corrector), TELCOMP,
+% TeX, TEX (Text Executive Programming Language), TIE, TMG (TransMo Griffer),
+% compiler-compiler, Tom, Toi, Topspeed (Clarion), TPU (Text Processing Utility),
+% Trac, TTM, T-SQL (Transact-SQL), Transcript (LiveCode), TTCN (Tree and Tabular
+% Combined Notation), Turing, TUTOR (PLATO Author Language), TXL, TypeScript,
+% Tynker, Ubercode, UCSD Pascal, Umple, Unicon, Uniface, UNITY, UnrealScript,
+% Vala, Vim script, Viper (Ethereum/Ether (ETH)), Visual DataFlex, Visual
+% DialogScript, Visual FoxPro, Visual J++ (Visual J plus plus), Visual LISP,
+% Visual Objects, Visual Prolog, WATFIV, WATFOR (WATerloo FORtran IV),
+% WebAssembly, WebDNA, Whiley, Winbatch, Wolfram Language, Wyvern, X++ (X plus
+% plus/Microsoft Dynamics AX), X10, xBase++ (xBase plus plus), XBL, XC (targets
+% XMOS architecture), xHarbour, XL, Xojo, XOTcl, Xod, XPL, XPL0, XQuery, XSB,
+% XSharp (X\#), XSLT, Xtend, Yorick, YQL, Yoix, Z notation, Z shell, Zebra, ZPL,
+% ZPL2, Zeno, ZetaLisp, Zig, Zonnon, ZOPL, ZPL, Z++}
+% }
+
+% \newcommand{\altura}{.45cm}
+% \begin{tikzpicture}[remember picture, overlay, x=1cm, y=-\altura, node distance=0,outer sep=0,inner sep=0, opacity=0]
+%     \tikzset{xshift=-1cm,yshift=-0.2cm}
+%     \tikzstyle{nome}=[draw, rectangle,anchor=west, minimum height=\altura,
+%     minimum width=25cm,fill=yellow!30,text width=25cm, scale=0.75]
+%     \node[nome] (p0) {\parbox{25cm}{A.NET (A\#/A sharp), A-0 System, A+ (A plus), A++, ABAP, ABC, ABC ALGOL, ACC, Accent (Rational Synergy), MATLAB, Net.Data, XSB, XSharp (X\#), }};
+%     \node[nome] (p1) [below = of p0] {\parbox{25cm}{Ace DASL (Distributed Application Specification Language), Action!, ActionScript, Actor, Ada, Adenine (Haystack), AdvPL, Agda, XSLT, Xtend, }};
+%     \node[nome] (p2) [below = of p1] {\parbox{25cm}{Agilent VEE (Keysight VEE), Agora, AIMMS, Aldor, Alef, ALF, ALGOL 58, ALGOL 60, ALGOL 68, ALGOL W, Alice (Alice ML), Alma-0, AmbientTalk, }};
+%     \node[nome] (p3) [below = of p2] {\parbox{25cm}{Amiga E, AMOS (AMOS BASIC), AMPL, Analitik, AngelScript, Apache Pig latin, Apex (Salesforce.com, Inc), APL, X++ (X plus plus/Microsoft Dynamics AX), }};
+%     \node[nome] (p4) [below = of p3] {\parbox{25cm}{App Inventor for Android's visual block language (MIT App Inventor), AppleScript, APT, Arc, ARexx, Argus, Assembly language (ASM), AutoHotkey, }};
+%     \node[nome] (p5) [below = of p4] {\parbox{25cm}{AutoIt, AutoLISP / Visual LISP, Averest, AWK, Axum, Babbage, Ballerina, Bash, BASIC, Batch file (Windows/MS-DOS), bc (basic calculator), BCPL, }};
+%     \node[nome] (p6) [below = of p5] {\parbox{25cm}{BeanShell, Bertrand, BETA, BLISS, Blockly, BlooP, Boo, Boomerang, Bosque, C – ISO/IEC 9899, C-- (C minus minus), Xojo, XOTcl, Xod, XPL, }};
+%     \node[nome] (p7) [below = of p6] {\parbox{25cm}{C++ (C plus plus) – ISO/IEC 14882, C*, C\# (C sharp) – ISO/IEC 23270, C/AL, Caché ObjectScript, C Shell (csh), Caml, Carbon, XPL0, XQuery, }};
+%     \node[nome] (p8) [below = of p7] {\parbox{25cm}{Cayenne (Lennart Augustsson), CDuce, Cecil, CESIL (Computer Education in Schools Instruction Language), Céu, Ceylon, CFEngine, Yorick, YQL, }};
+%     \node[nome] (p9) [below = of p8] {\parbox{25cm}{Cg (High-Level Shader/Shading Language [HLSL]), Ch, Chapel (Cascade High Productivity Language), Charm, CHILL, CHIP-8, ChucK, Yoix, Z notation, }};
+%     \node[nome] (p10) [below = of p9] {\parbox{25cm}{Cilk (also Cilk++ and Cilk plus), Control Language, Claire, Clarion, Clean, Clipper, CLIPS, CLIST, Clojure, CLU, CMS-2, COBOL – ISO/IEC 1989, }};
+%     \node[nome] (p11) [below = of p10] {\parbox{25cm}{CobolScript – COBOL Scripting language, Cobra, CoffeeScript, ColdFusion, COMAL, COMIT, Common Intermediate Language (CIL), }};
+%     \node[nome] (p12) [below = of p11] {\parbox{25cm}{Common Lisp (also known as CL), COMPASS, Component Pascal, Constraint Handling Rules (CHR), COMTRAN, Cool, Coq, Coral 66, CorVision, }};
+%     \node[nome] (p13) [below = of p12] {\parbox{25cm}{CPL, Cryptol, Crystal, Csound, Cuneiform, Curl, Curry, Cybil, Cyclone, Cypher Query Language, Cython, CEEMAC, Dart, Darwin, DataFlex, Datalog, }};
+%     \node[nome] (p14) [below = of p13] {\parbox{25cm}{DATATRIEVE, dBase, dc, DCL (DIGITAL Command Language), Delphi, DinkC, DIBOL, Dog, Draco, DRAKON, Dylan, DYNAMO, COWSEL, }};
+%     \node[nome] (p15) [below = of p14] {\parbox{25cm}{DAX (Data Analysis Expressions), E, Ease, Easy PL/I, EASYTRIEVE PLUS, eC, ECMAScript, Edinburgh IMP, EGL, Eiffel, ELAN, Elixir, Elm, }};
+%     \node[nome] (p16) [below = of p15] {\parbox{25cm}{Emacs Lisp, Emerald, Epigram, EPL (Easy Programming Language), Erlang, es, Escher, ESPOL, Esterel, Etoys, Euclid, Euler, Euphoria, Z shell, Zebra, ZPL, }};
+%     \node[nome] (p17) [below = of p16] {\parbox{25cm}{EusLisp Robot Programming Language, CMS EXEC (EXEC), EXEC 2, Executable UML, Ezhil, F\# (F sharp), F*, Factor, Fantom, FAUST, FFP, fish, }};
+%     \node[nome] (p18) [below = of p17] {\parbox{25cm}{Fjölnir, FL, FlagShip, Flavors, Flex, Flix, FlooP, FLOW-MATIC (B0), X10, xBase++ (xBase plus plus), XBL, XC (targets XMOS architecture), xHarbour, XL, }};
+%     \node[nome] (p19) [below = of p18] {\parbox{25cm}{FOCAL (Formulating On-Line Calculations in Algebraic Language/FOrmula CALculator), FOCUS, FOIL, FORMAC (FORMula MAnipulation Compiler), }};
+%     \node[nome] (p20) [below = of p19] {\parbox{25cm}{@Formula, Forth, Fortran – ISO/IEC 1539, Fortress, FP, FoxBase/FoxPro, Franz Lisp, Futhark, F-Script, Game Maker Language, GameMonkey Script, }};
+%     \node[nome] (p21) [below = of p20] {\parbox{25cm}{GAMS (General Algebraic Modeling System), GAP, G-code, GDScript (Godot), Genie, GDL (Geometric Description Language), GEORGE, Zonnon, ZOPL, }};
+%     \node[nome] (p22) [below = of p21] {\parbox{25cm}{GLSL (OpenGL Shading Language), GNU E, GNU Guile (GNU Ubiquitous Intelligent Language for Extensions), Go, Go!, ZPL2, Zeno, ZetaLisp, Zig, }};
+%     \node[nome] (p23) [below = of p22] {\parbox{25cm}{GOAL (Game Oriented Assembly Lisp), Gödel, Golo, GOM (Good Old Mad), Google Apps Script, Gosu, GOTRAN (IBM 1620), ZPL, Z++}};
+%     \node[nome] (p24) [below = of p23] {\parbox{25cm}{GPSS (General Purpose Simulation System), GraphTalk (Computer Sciences Corporation), GRASS, Grasshopper, Groovy (Apache Groovy), Hack, HAGGIS, }};
+%     \node[nome] (p25) [below = of p24] {\parbox{25cm}{HAL/S, Halide (programming language), Hamilton C shell, Harbour, Hartmann pipelines, Haskell, Haxe, Hermes, High Level Assembly (HLA), HLSL, }};
+%     \node[nome] (p26) [below = of p25] {\parbox{25cm}{Hollywood, HolyC (TempleOS), Hop, Hopscotch, Hope, Hume, HyperTalk, Hy, Io, Icon, IBM Basic assembly language, IBM HAScript, IBM Informix-4GL, }};
+%     \node[nome] (p27) [below = of p26] {\parbox{25cm}{IBM RPG, IDL, Idris, Inform, ISLISP, J\# (J sharp), J++ (J plus plus), JADE, Jai, JAL, Janus (concurrent constraint programming language), }};
+%     \node[nome] (p28) [below = of p27] {\parbox{25cm}{Janus (time-reversible computing programming language), JASS, Java, JavaFX Script, JavaScript, Jess, JCL, JEAN, Join Java, JOSS, Joule, JOVIAL, }};
+%     \node[nome] (p29) [below = of p28] {\parbox{25cm}{Joy, JScript, JScript .NET, Julia, Jython, Kaleidoscope, Karel, KEE, Kixtart, Klerer-May System, KIF (Knowledge Interchange Format), Kojo, }};
+%     \node[nome] (p30) [below = of p29] {\parbox{25cm}{Kotlin, KRC, KRL, KRL (KUKA Robot Language), KRYPTON, KornShell (ksh), Kodu, Kv (Kivy), LabVIEW, Ladder, LANSA, Lasso, Lava, LC-3, Lean, }};
+%     \node[nome] (p31) [below = of p30] {\parbox{25cm}{Legoscript, LIL, LilyPond, Limbo, Limnor, LINC, Lingo, LINQ, LIS, LISA, Language H, Lisp – ISO/IEC 13816, Lite-C, Lithe, Little b, LLL, Logo, }};
+%     \node[nome] (p32) [below = of p31] {\parbox{25cm}{Logtalk, LotusScript, LPC, LSE, LSL, LiveCode, LiveScript, Lua, Lucid, Lustre, LYaPAS, Lynx, M Formula language, M2001, M4, M\#, Machine code, }};
+%     \node[nome] (p33) [below = of p32] {\parbox{25cm}{MAD (Michigan Algorithm Decoder), MAD/I, Magik, Magma, Máni, Maple, MAPPER (now part of BIS), MARK-IV (now VISION:BUILDER), Mary, }};
+%     \node[nome] (p34) [below = of p33] {\parbox{25cm}{MASM Microsoft Assembly x86, MATH-MATIC, Maude system, Maxima (see also Macsyma), Max (Max Msp – Graphical Programming Environment), }};
+%     \node[nome] (p35) [below = of p34] {\parbox{25cm}{MaxScript internal language 3D Studio Max, Maya (MEL), MDL, Mercury, Mesa, MHEG-5 (Interactive TV programming language), Microcode, }};
+%     \node[nome] (p36) [below = of p35] {\parbox{25cm}{Microsoft Power Fx, MIIS, Milk (programming language), MIMIC, Mirah, Miranda, MIVA Script, ML, Model 204, Modelica, Modula, Modula-2, Modula-3, }};
+%     \node[nome] (p37) [below = of p36] {\parbox{25cm}{Mohol, MOO, Mortran, Mouse, MPD, MSL, MUMPS, MuPAD, Mutan, Mystic Programming Language (MPL), NASM, Napier88, Neko, Nemerle, NESL, }};
+%     \node[nome] (p38) [below = of p37] {\parbox{25cm}{NetLogo, NetRexx, NewLISP, NEWP, Newspeak, NewtonScript, Nial, Nickle (NITIN), Nim, Nix (Systems configuration language), NPL, }};
+%     \node[nome] (p39) [below = of p38] {\parbox{25cm}{Not eXactly C (NXC), Not Quite C (NQC), NSIS, Nu, NWScript, NXT-G, o:XML, Oak, Oberon, OBJ2, Object Lisp, ObjectLOGO, Object REXX, }};
+%     \node[nome] (p40) [below = of p39] {\parbox{25cm}{Object Pascal, Objective-C, Obliq, OCaml, occam, occam-$\pi$, Octave, OmniMark, Opa, Opal, Open Programming Language (OPL), OpenCL, }};
+%     \node[nome] (p41) [below = of p40] {\parbox{25cm}{OpenEdge Advanced Business Language (ABL), OpenVera, OpenQASM, OPS5, OptimJ, Orc, ORCA/Modula-2, Oriel, Orwell, Oxygene, Oz, P, P4, ParaSail, }};
+%     \node[nome] (p42) [below = of p41] {\parbox{25cm}{PARI/GP, Pascal – ISO 7185, Pascal Script, PCASTL, PCF, PEARL, PeopleCode, Perl, PDL, Pharo, PHP, Pico, Picolisp, Pict, Pike, PILOT, Pipelines, }};
+%     \node[nome] (p43) [below = of p42] {\parbox{25cm}{Pizza, PL-11, PL/0, PL/B, PL/C, PL/I – ISO 6160, PL/M, PL/P, PL/S, PL/SQL, PL360, PLANC, Plankalkül, Planner, PLEX, PLEXIL, Plus, POP-11, }};
+%     \node[nome] (p44) [below = of p43] {\parbox{25cm}{POP-2, PostScript, PortablE, POV-Ray SDL, Powerhouse, PowerBuilder – 4GL GUI application generator from Sybase, PowerShell, PPL, Processing, }};
+%     \node[nome] (p45) [below = of p44] {\parbox{25cm}{Processing.js, Prograph, Project Verona, Prolog, PROMAL, Promela, PROSE modeling language, PROTEL, ProvideX, Pro*C, Pure, Pure Data, }};
+%     \node[nome] (p46) [below = of p45] {\parbox{25cm}{PureScript, PWCT, Python, Q (programming language from Kx Systems), Q\# (Microsoft programming language), Qalb, Quantum Computation Language, }};
+%     \node[nome] (p47) [below = of p46] {\parbox{25cm}{QtScript, QuakeC, QPL, .QL, R, R++, Racket, Raku, RAPID, Rapira, Ratfiv, Ratfor, rc, Reason, REBOL, Red, Redcode, REFAL, REXX, Ring, ROOP, RPG, }};
+%     \node[nome] (p48) [below = of p47] {\parbox{25cm}{RPL, RSL, RTL/2, Ruby, Rust, S, S2, S3, S-Lang, S-PLUS, SA-C, SabreTalk, SAIL, SAKO, SAS, SASL, Sather, Sawzall, Scala, Scheme, Scilab, }};
+%     \node[nome] (p49) [below = of p48] {\parbox{25cm}{Scratch, Script.NET, Sed, Seed7, Self, SenseTalk, SequenceL, Serpent, SETL, Short Code, SIMPOL, SIGNAL, SiMPLE, SIMSCRIPT, Simula, Simulink, }};
+%     \node[nome] (p50) [below = of p49] {\parbox{25cm}{SISAL, SKILL, SLIP, SMALL, Smalltalk, SML, Strongtalk, Snap!, SNOBOL (SPITBOL), Snowball, SOL, Solidity, SOPHAEROS, Source, SPARK, Speakeasy, }};
+%     \node[nome] (p51) [below = of p50] {\parbox{25cm}{Speedcode, SPIN, SP/k, SPS, SQL, SQR, Squeak, Squirrel, SR, S/SL, Starlogo, Strand, Stata, Stateflow, Subtext, SBL, SuperCollider, Superplan, }};
+%     \node[nome] (p52) [below = of p51] {\parbox{25cm}{SuperTalk, Swift (Apple programming language), Swift (parallel scripting language), SYMPL, TACL, TACPOL, }};
+%     \node[nome] (p53) [below = of p52] {\parbox{25cm}{TADS (Text Adventure Development System), TAL, Tcl, Tea, TECO (Text Editor and Corrector), TELCOMP, TeX, }};
+%     \node[nome] (p54) [below = of p53] {\parbox{25cm}{TEX (Text Executive Programming Language), TIE, TMG (TransMo Griffer), compiler-compiler, Tom, Toi, Topspeed (Clarion), }};
+%     \node[nome] (p55) [below = of p54] {\parbox{25cm}{TPU (Text Processing Utility), Trac, TTM, T-SQL (Transact-SQL), Transcript (LiveCode), TTCN (Tree and Tabular Combined Notation), Turing, }};
+%     \node[nome] (p56) [below = of p55] {\parbox{25cm}{TUTOR (PLATO Author Language), TXL, TypeScript, Tynker, Ubercode, UCSD Pascal, Umple, Unicon, Uniface, UNITY, UnrealScript, Vala, Vim script, }};
+%     \node[nome] (p57) [below = of p56] {\parbox{25cm}{Viper (Ethereum/Ether (ETH)), Visual DataFlex, Visual DialogScript, Visual FoxPro, Visual J++ (Visual J plus plus), Visual LISP, }};
+%     \node[nome] (p58) [below = of p57] {\parbox{25cm}{Visual Objects, Visual Prolog, WATFIV, WATFOR (WATerloo FORtran IV), WebAssembly, WebDNA, Whiley, Winbatch, Wolfram Language, Wyvern, }};
+%     \node[nome] (p59) [below = of p58] {\parbox{25cm}{}};
+%     \node[nome] (p60) [below = of p59] {\parbox{25cm}{}};
+%     \node[nome] (p61) [below = of p60] {\parbox{25cm}{}};
+%     \node[nome] (p62) [below = of p61] {\parbox{25cm}{}};
+%     \node[nome] (p63) [below = of p62] {\parbox{25cm}{}};
+%     \node[nome] (p64) [below = of p63] {\parbox{25cm}{}};
+%     \node[nome] (p65) [below = of p64] {\parbox{25cm}{}};
+%     \node[nome] (p66) [below = of p65] {\parbox{25cm}{}};
+%     \node[nome] (p67) [below = of p66] {\parbox{25cm}{}};
+%     \node[nome] (p68) [below = of p67] {\parbox{25cm}{}};
+%     \node[nome] (p69) [below = of p68] {\parbox{25cm}{}};
+%     \node[nome] (p70) [below = of p69] {\parbox{25cm}{}};
+%     \node[nome] (p71) [below = of p70] {\parbox{25cm}{}};
+%     \node[nome] (p72) [below = of p71] {\parbox{25cm}{}};
+% \end{tikzpicture}
