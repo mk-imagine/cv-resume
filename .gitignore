@@ -1,25 +1,12 @@
-# MacOS
-.DS_Store
-
-# vscode
-.vscode
-
-# Adobe Stock Images
-AdobeStock*.*
-
-# LaTeX auxiliary build files
-*.log
-*.toc
-*.out
+# LaTeX
 *.aux
-*.gz
-*.bak
-*.bbl
-*.bcf
-*.blg
 *.fdb_latexmk
 *.fls
-*.run.xml
-*/*.pdf
-**/aux/
-*.xdv
+*.log
+*.synctex.gz
+
+# VS Code
+.vscode
+
+# MacOS
+.DS_Store
