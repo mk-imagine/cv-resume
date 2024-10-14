@@ -63,11 +63,10 @@
 % \end{tikzpicture}
 
 \begin{tikzpicture}[overlay,remember picture]
-    \node (address) at ($ (current page.north east) + (-5.2,-.9) $)
+    \node (address) at ($ (current page.north east) + (-5,-.9) $)
     {\large{
-            \raisebox{-0.8mm}
-            {\includegraphics[scale=0.055]{phone.png}}
-            \, 510.499.7953
+            \href{tel:5104997953}{\raisebox{-0.8mm}
+                {\includegraphics[scale=0.052]{phone.png}}\,\ 510.499.7953}
             \enspace {\scriptsize{$\blacklozenge$}} \enspace
             \href{mailto:mkim797@yahoo.com}
             {\raisebox{-0.8mm}
@@ -91,7 +90,7 @@
     ($ (current page.north west) + (2cm,-0.5cm) $)
     rectangle
     ($ (current page.north west) + (8.85cm,-2cm) $);
-    \node [draw=none] at (3.05,0.9)
+    \node [draw=none] at ($ (current page.north west) + (5.4cm,-1.25cm) $)
     {\fontsize{33}{21}\selectfont \textbf{Mark S. Kim}};
 \end{tikzpicture}
 
@@ -102,9 +101,9 @@
 {\centering
 \vspace{5mm}
 
-\hrulefill{\fontsize{14}{14}\selectfont \textbf{\ \ Education\ \ }}\hrulefill
+{\fontsize{14}{14}\selectfont \textbf{\ \ Education\ \ }}\hrulefill
 
-\vspace{3mm}
+\vspace{5mm}
 
 \begin{minipage}[ct]{0.9\linewidth}
     {\textsc{San Francisco State University}}\hfill 2023 to Present\\
@@ -113,7 +112,7 @@
     Anticipated Graduation: May 2025
 \end{minipage}
 
-\vspace{3mm}
+\vspace{4mm}
 
 \begin{minipage}[ct]{0.9\linewidth}
     {\textsc{San Francisco State University}}\hfill 2018 to 2023\\
@@ -130,16 +129,16 @@
 % \emph{Uncompleted Genetics B.S.}
 % \end{minipage}
 
-\vspace{5mm}
+\vspace{7mm}
 {\centering
 
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     % RESEARCH EXPERIENCE
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-    \hrulefill{\fontsize{14}{14}\selectfont \textbf{\ \ Research Experience\ \ }}\hrulefill
+    {\fontsize{14}{14}\selectfont \textbf{\ \ Research Experience\ \ }}\hrulefill
 
-    \vspace{3mm}
+    \vspace{5mm}
 
     \begin{minipage}[ct]{0.9\linewidth}
         \textbf{Graduate Researcher}\hfill Aug 2023 to Present\\
@@ -147,16 +146,13 @@
         Principal Investigator: Dr. Hui Yang\\
         {\textsc{AdvisingGPT: Foundation Models for Student Advising}}
         \vspace{1mm}\\
-        An exploration of using foundation models such as ChatGPT, Mistral, Llama$3$, and Google
-        Gemini Pro, to provide automated course equivalency evaluation and personalized
-        program roadmaps to maximize student success rates. The techniques employed
-        include: prompt engineering, in-context learning, and instruction fine-tuning of
-        foundation and embedding models;
-        document-level embeddings search and ranking; and retrieval augmented
-        generation.
+        An exploration of using proprietary and open-source foundation models to provide automated course equivalency evaluation and
+        personalized program roadmaps to maximize student success rates. The techniques employed include: prompt engineering, in-context
+        learning, and instruction fine-tuning of foundation and embedding models; document-level embeddings search and ranking; and
+        retrieval augmented generation.
     \end{minipage}
 
-    \vspace{3mm}
+    \vspace{4mm}
 
     \begin{minipage}[ct]{0.9\linewidth}
         \textbf{Graduate Researcher/Program Lead}\hfill Jan 2023 to Present\\
@@ -168,14 +164,13 @@
         % foundational knowledge, providing intensive advising, and engaging students in a
         % winter and summer accelerated pathways Machine Learning and AI program.  Besides providing these
         % activities, the program was
-        Program developed to investigate how to improve
-        students' sense of belonging and identity with the field of Computer Science,
-        and the effect that they may have on students' retention and success.
-        Qualitative research is ongoing through observations of student engagement
-        during discussions, interviews, and surveys.
+        Program developed to investigate how to improve students' sense of belonging and identity with the field of Computer Science,
+        and what effect that may have on students' retention and success.  Qualitative research on metacognition through a comparative
+        analysis of in-class assessed performance against students' perceived understanding.  Data is collected through interviews, surveys,
+        and observations of students during discussions.
     \end{minipage}
 
-    \vspace{3mm}
+    \vspace{4mm}
 
     \begin{minipage}[ct]{0.9\linewidth}
         \textbf{Research Engineering Intern}\hfill Jun 2022 to Aug 2022\\
@@ -183,14 +178,11 @@
         Research Supervisor: Chip McSweeney, Senior Research Engineer\\
         {\textsc{Phishing Emails: Clustering and Analysis}}
         \vspace{1mm}\\
-        An investigation of clustering for the early detection and categorization of
-        phishing emails with an emphasis on computational speed and performance.  Python
-        C extensions that parse and analyze emails were restructured and optimized,
-        which reduced memory usage by $95$\% and increased data utilization by $5$\%.
-        Similarly, development and validation of thead-based and process-based
-        asynchronous parallelization of the Python code base reduced processing time by
-        $80$\%. Tradeoffs between dimensional reduction (PCA) and maintaining data
-        precision were examined and analyzed.
+        An investigation of clustering for the early detection and categorization of phishing emails with an emphasis on computational speed
+        and performance.  Python C extensions that parse and analyze emails were restructured and optimized, which reduced memory usage by
+        $95$\% and increased data utilization by $5$\%. Similarly, development and validation of thead-based and process-based asynchronous
+        parallelization of the Python code base reduced processing time by $80$\%. Tradeoffs between dimensional reduction (PCA) and
+        maintaining data precision were examined and analyzed.
         % \makeatletter
         % \let\orig@listi\@listi
         % \def\@listi{\orig@listi\topsep=0.25\baselineskip}
@@ -210,7 +202,7 @@
         % \end{itemize}
     \end{minipage}
 
-    \vspace{3mm}
+    \vspace{4mm}
 
     % \begin{minipage}[ct]{0.9\linewidth}
     %     \textbf{Independent Study and Research Literature Review}\hfill Jan 2022 to May 2022\\
@@ -233,7 +225,7 @@
     %     % \end{itemize}
     % \end{minipage}
 
-    % \vspace{3mm}
+    % \vspace{4mm}
 
     \begin{minipage}[ct]{0.9\linewidth}
         \textbf{NSF REU Scholar and Researcher}\hfill Jun 2021 to Aug 2021\\
@@ -243,11 +235,9 @@
         Research Supervisor: Dr. Ionnis Pavlidis\\
         {\textsc{Frontiers of Data-Driven Computing REU}}
         \vspace{1mm}\\
-        Developed and implemented multi-threaded retrieval algorithms for over 10 million
-        records of affective research data (documents and authors) from Scopus, PubMed,
-        and Web of Science. Performed exploratory clustering and co-occurrence matrix
-        analysis of retrieved data to facilitate the investigation of a quantitative history of
-        affective research.
+        Developed and implemented multi-threaded retrieval algorithms for over 10 million records of affective research data (documents and
+        authors) from Scopus, PubMed, and Web of Science. Performed exploratory clustering and co-occurrence matrix analysis of retrieved
+        data to facilitate the investigation of a quantitative history of affective research.
         % \makeatletter
         % \let\orig@listi\@listi
         % \def\@listi{\orig@listi\topsep=0.25\baselineskip}
@@ -261,27 +251,27 @@
         % \end{itemize}
     \end{minipage}
 
-    \vspace{3mm}
+    \vspace{7mm}
 
-    \begin{minipage}[ct]{0.9\linewidth}
-        \textbf{Innovation and Entrepreneurship Fellow}\hfill Sept 2020 to May 2021\\
-        \emph{San Francisco State University Lam Family College of Business} -- San Francisco, CA\\
-        Faculty Director: Dr. Sybil Yang\\
-        {\textsc{COB Innovation and Entrepreneurship Fellowship}}
-        \vspace{1mm}\\
-        Collaborated with co-founders to design and develop a software-based test
-        preparation platform for disenfranchised students.
-        % \makeatletter
-        % \let\orig@listi\@listi
-        % \def\@listi{\orig@listi\topsep=0.25\baselineskip}
-        % \makeatother
-        % \begin{itemize}
-        % 	\setlength\itemsep{-0.25em}
-        % 	\item Cross-functional collaboration with co-founders to design and develop test preparation platform for disenfranchised students.
-        % \end{itemize}
-    \end{minipage}
+    % \begin{minipage}[ct]{0.9\linewidth}
+    %     \textbf{Innovation and Entrepreneurship Fellow}\hfill Sept 2020 to May 2021\\
+    %     \emph{San Francisco State University Lam Family College of Business} -- San Francisco, CA\\
+    %     Faculty Director: Dr. Sybil Yang\\
+    %     {\textsc{COB Innovation and Entrepreneurship Fellowship}}
+    %     \vspace{1mm}\\
+    %     Collaborated with co-founders to design and develop a software-based test
+    %     preparation platform for disenfranchised students.
+    %     % \makeatletter
+    %     % \let\orig@listi\@listi
+    %     % \def\@listi{\orig@listi\topsep=0.25\baselineskip}
+    %     % \makeatother
+    %     % \begin{itemize}
+    %     % 	\setlength\itemsep{-0.25em}
+    %     % 	\item Cross-functional collaboration with co-founders to design and develop test preparation platform for disenfranchised students.
+    %     % \end{itemize}
+    % \end{minipage}
 
-    \vspace{3mm}
+    % \vspace{4mm}
 
     \begin{minipage}[ct]{0.9\linewidth}
         \textbf{Undergraduate Research Assistant}\hfill Apr 2020 to Jun 2020\\
@@ -289,9 +279,8 @@
         Research Supervisor: Dr. Shandy Hauk\\
         {\textsc{Remote Instruction Pedagogy in Mathematics}}
         \vspace{1mm}\\
-        Provided an academic literature review of research in pedagogical best practices
-        for remote instruction.  This review was to inform new research in remote
-        instruction in response to the COVID-$19$ pandemic.
+        Provided an academic literature review of research in pedagogical best practices for remote instruction.  This review was to inform
+        new research in remote instruction in response to the COVID-$19$ pandemic.
         % \makeatletter
         % \let\orig@listi\@listi
         % \def\@listi{\orig@listi\topsep=0.25\baselineskip}
@@ -302,7 +291,7 @@
         % \end{itemize}
     \end{minipage}
 
-    \vspace{3mm}
+    \vspace{4mm}
 
     %%%%%%%%%%%%%%% SECOND PAGE %%%%%%%%%%%%%%%%%%
     \begin{tikzpicture}[overlay,remember picture]
@@ -319,10 +308,8 @@
         Research Supervisor: Dr. Alexandra Piryatinska\\
         {\textsc{Change-point Analysis Algorithm Development}}
         \vspace{1mm}\\
-        Attended workshops in numerical methods and statistics theory in preparation for
-        research in change-point analysis and algorithm development.  Studied completed
-        change-point analysis research and began work on adapting existing Matlab code
-        to Python.
+        Attended workshops in numerical methods and statistics theory in preparation for research in change-point analysis and algorithm
+        development.  Studied completed change-point analysis research and began work on adapting existing Matlab code to Python.
         % \makeatletter
         % \let\orig@listi\@listi
         % \def\@listi{\orig@listi\topsep=0.25\baselineskip}
@@ -338,26 +325,26 @@
     \end{minipage}
 }
 
-\vspace{5mm}
+\vspace{7mm}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Teaching and Advising
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\hrulefill{\fontsize{14}{14}\selectfont \textbf{\ \ Teaching \& Advising\ \ }}\hrulefill
+{\fontsize{14}{14}\selectfont \textbf{\ \ Teaching \& Advising\ \ }}\hrulefill
 
-\vspace{3mm}
+\vspace{5mm}
 
 \begin{minipage}[ct]{0.9\linewidth}
     \textsc{Program Lead/Graduate Researcher}\hfill Jan 2023 to Present\\
     {\emph{San Francisco State University} - San Francisco, CA}\\
     Artificial Intelligence Scholarships that Improve Academic Achievement, Retention, and Career Success (AI-STAARS)\\
-    Develop and lead a three pronged support system to improve student success by reinforcing
-    foundational knowledge, providing intensive advising, and engaging students with activities and exercises. This includes a weeklong
-    programming foundations bootcamp and a 10 week long accelerated course in Machine Learning and Artificial Intelligence.
+    Develop and lead a three pronged support system to improve student success by reinforcing foundational knowledge, providing intensive
+    advising, and engaging students with activities and exercises. This includes a weeklong programming foundations bootcamp and a 10 week
+    long accelerated course in Machine Learning and Artificial Intelligence.
 \end{minipage}
 
-\vspace{2.5mm}
+\vspace{4mm}
 
 \begin{minipage}[ct]{0.9\linewidth}
     \textsc{Mathematics Program Liaison}\hfill Jan 2024 to May 2024\\
@@ -368,7 +355,7 @@
     Science.
 \end{minipage}
 
-\vspace{2.5mm}
+\vspace{4mm}
 
 \begin{minipage}[ct]{0.9\linewidth}
     \textsc{Facilitator}\hfill Jan 2021 to May 2023\\
@@ -378,7 +365,7 @@
     knowledge and improve student outcomes in their parent courses.
 \end{minipage}
 
-\vspace{2.5mm}
+\vspace{4mm}
 
 \begin{minipage}[ct]{0.9\linewidth}
     \textsc{Undergraduate Teaching Assistant}\hfill Aug 2019 to Dec 2020\\
@@ -386,35 +373,37 @@
     Department of Mathematics
 \end{minipage}
 
-\vspace{2.5mm}
+\vspace{4mm}
+
+\vspace{7mm}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Conferences
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\hrulefill{\fontsize{14}{14}\selectfont \textbf{\ \ Conferences\ \ }}\hrulefill
+{\fontsize{14}{14}\selectfont \textbf{\ \ Conferences\ \ }}\hrulefill
 
-\vspace{3mm}
-
-\begin{minipage}[ct]{0.9\linewidth}
-    ``Metacognition in Computer Science Learning: Perception vs. Reality,'' National Association of
-    School Psychologists Annual Convention.  Seattle, WA, USA. Accepted and forthcoming.
-\end{minipage}
-
-\vspace{2.5mm}
+\vspace{5mm}
 
 \begin{minipage}[ct]{0.9\linewidth}
-    ``Foundation Models for Course Equivalency Evaluation,'' IEEE International
-    Conference on Data Mining.  Abu Dhabi, UAE.  Accepted and forthcoming.
+    ``Metacognition in Computer Science Learning: Perception vs. Reality,'' National Association of School Psychologists Annual Convention.
+    Seattle, WA, USA. Accepted and forthcoming, February 2025.
 \end{minipage}
 
-\vspace{2.5mm}
+\vspace{4mm}
+
+\begin{minipage}[ct]{0.9\linewidth}
+    ``Foundation Models for Course Equivalency Evaluation,'' IEEE International Conference on Data Mining.  Abu Dhabi, UAE.  Accepted and
+    forthcoming, December 2024.
+\end{minipage}
+
+\vspace{4mm}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % HONORS & AWARDS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% \hrulefill{\fontsize{14}{14}\selectfont \textbf{\ \ Honors \& Awards\ \ }}\hrulefill
+% {\fontsize{14}{14}\selectfont \textbf{\ \ Honors \& Awards\ \ }}\hrulefill
 
 % \vspace{3mm}
 
@@ -432,15 +421,15 @@
 %     Dean's List, San Francisco State University\hfill 2018, 2019, 2020, 2021, 2022, 2023
 % \end{minipage}
 
-% \vspace{5mm}
+% \vspace{7mm}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % LEADERSHIP
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \pagebreak
-\hrulefill{\fontsize{14}{14}\selectfont \textbf{\ \ Leadership\ \ }}\hrulefill
+{\fontsize{14}{14}\selectfont \textbf{\ \ Leadership\ \ }}\hrulefill
 
-\vspace{3mm}
+\vspace{4mm}
 
 \begin{minipage}[ct]{0.9\linewidth}
     \textsc{Association for Computing Machinery} (ACM), SFSU Student Chapter\hfill
@@ -448,51 +437,77 @@
     \emph{Graduate Mentor}, May 2024 to Present\\
     \emph{Treasurer}, May 2023 to May 2024\\
     \emph{President}, Jan 2022 to May 2023
-
-    \vspace{1.5mm}
-
-    \textsc{SF Hacks}\hfill May 2022 to Present\\
-    \emph{Graduate Mentor}, May 2024 to Present\\
-    \emph{Treasurer}, May 2022 to May 2024
-
-    \vspace{1.5mm}
-
-    \textsc{CS}\{\textsc{Research}\}\textsc{ Club}\hfill Aug 2023 to Present\\
-    \emph{President/Founder}, Aug 2023 to Present
-
-    \vspace{1.5mm}
-
-    \textsc{Artificial Intelligence Club}\hfill Aug 2023 to Present\\
-    \emph{Treasurer}, Aug 2023 to Present
-
-    \vspace{1.5mm}
-
-    \textsc{Korean Student Association}\hfill Aug 2024 to Present\\
-    \emph{President}, Aug 2024 to Present
-
-    \vspace{1.5mm}
-
-    \textsc{Society for Industrial and Applied Mathematics} (SIAM)\hfill Oct 2021 to Present\\
 \end{minipage}
 
 \vspace{3mm}
+
+\begin{minipage}[ct]{0.9\linewidth}
+    \textsc{SF Hacks}\hfill May 2022 to Present\\
+    \emph{Graduate Mentor}, May 2024 to Present\\
+    \emph{Treasurer}, May 2022 to May 2024
+\end{minipage}
+
+\vspace{3mm}
+
+\begin{minipage}[ct]{0.9\linewidth}
+    \textsc{CS}\{\textsc{Research}\}\textsc{ Club}\hfill Aug 2023 to Present\\
+    \emph{President/Founder}, Aug 2023 to Present
+\end{minipage}
+
+\vspace{3mm}
+
+\begin{minipage}[ct]{0.9\linewidth}
+    \textsc{Artificial Intelligence Club}\hfill Aug 2023 to Present\\
+    \emph{Treasurer}, Aug 2023 to Present
+\end{minipage}
+
+\vspace{3mm}
+
+\begin{minipage}[ct]{0.9\linewidth}
+    \textsc{Korean Student Association}\hfill Aug 2024 to Present\\
+    \emph{President}, Aug 2024 to Present
+\end{minipage}
+
+\vspace{7mm}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Professional Memberships
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\hrulefill{\fontsize{14}{14}\selectfont \textbf{\ \ Professional Memberships\ \ }}\hrulefill
+{\fontsize{14}{14}\selectfont \textbf{\ \ Professional Memberships\ \ }}\hrulefill
 
 \vspace{3mm}
 
 \begin{minipage}[ct]{0.9\linewidth}
-    \textsc{Society for Industrial and Applied Mathematics} (SIAM)\\
-    \textsc{Association for Computing Machinery} (ACM)\\
-    \textsc{National Association of School Psychologists} (NASP)\\
+    \textsc{Society for Industrial and Applied Mathematics} (SIAM)
+\end{minipage}
+
+\vspace{0.5mm}
+
+\begin{minipage}[ct]{0.9\linewidth}
+    \textsc{Association for Computing Machinery} (ACM)
+\end{minipage}
+
+\vspace{0.5mm}
+
+\begin{minipage}[ct]{0.9\linewidth}
+    \textsc{National Association of School Psychologists} (NASP)
+\end{minipage}
+
+\vspace{0.5mm}
+
+\begin{minipage}[ct]{0.9\linewidth}
     \textsc{Institute of Electrical and Electronics Engineers} (IEEE)
 \end{minipage}
 
-\vspace{3mm}
+\vspace{-2mm}
+
+% \vspace{1mm}
+% \textsc{Association for Computing Machinery} (ACM)\\
+% \vspace{1mm}
+% \textsc{National Association of School Psychologists} (NASP)\\
+% \vspace{1mm}
+% \textsc{Institute of Electrical and Electronics Engineers} (IEEE)
 
 %%%%%%%%%%%%%%% THIRD PAGE %%%%%%%%%%%%%%%%%%
 \begin{tikzpicture}[overlay,remember picture]
@@ -506,37 +521,44 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % PROFESSIONAL EXPERIENCE
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\vspace{5mm}
-\hrulefill{\fontsize{14}{14}\selectfont \textbf{\ \ Professional Experience\ \ }}\hrulefill
+\vspace{7mm}
+{\fontsize{14}{14}\selectfont \textbf{\ \ Professional Experience\ \ }}\hrulefill
 
 \vspace{3mm}
 
 \begin{minipage}[ct]{0.9\linewidth}
-    \textsc{Financial Center Manager}, AVP\hfill 2017 to 2018\\
+    \textsc{Financial Center Manager, AVP}\hfill 2017 to 2018\\
     {\emph{Bank of America} - Belmont, CA}
 \end{minipage}
 
 \vspace{2.5mm}
 
 \begin{minipage}[ct]{0.9\linewidth}
-    \textsc{Founder/CEO}\hfill 2005 to 2017\\
+    \textsc{Founder/CEO}\hfill 2012 to 2017\\
     {\emph{Kindred Enterprises Incorporated} - San Francisco, CA}
 \end{minipage}
 
-\vspace{2.5mm}
+% \vspace{2.5mm}
 
-\begin{minipage}[ct]{0.9\linewidth}
-    \textsc{Landing Support Specialist}, Corporal\hfill 1995 to 2001\\
-    {\emph{United States Marine Corps Reserve} - San Jose, CA}
-\end{minipage}
+% \begin{minipage}[ct]{0.9\linewidth}
+%     \textsc{Founder/CEO}\hfill 2005 to 2017\\
+%     {\emph{Kindred Enterprises Incorporated} - San Francisco, CA}
+% \end{minipage}
 
-\vspace{5mm}
+% \vspace{2.5mm}
+
+% \begin{minipage}[ct]{0.9\linewidth}
+%     \textsc{Landing Support Specialist}, Corporal\hfill 1995 to 2001\\
+%     {\emph{United States Marine Corps Reserve} - San Jose, CA}
+% \end{minipage}
+
+\vspace{7mm}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % References
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\hrulefill{\fontsize{14}{14}\selectfont \textbf{\ \ References\ \ }}\hrulefill
+{\fontsize{14}{14}\selectfont \textbf{\ \ References\ \ }}\hrulefill
 
 \vspace{3mm}
 
@@ -546,39 +568,39 @@
         \emph{Associate Professor}\\
         \textsc{Department of Computer Science}\\
         San Francisco State University\\
-        (415) 338-2221, \href{mailto:huiyang@sfsu.edu}\\
+        \href{tel:4153382221}{415.338.2221}, \href{mailto:huiyang@sfsu.edu}{huiyang@sfsu.edu}\\
 
-        \vspace{1mm}
-
-        \textbf{Anagha Kulkarni}\\
-        \emph{Professor and Associate Department Chair}\\
-        \textsc{Department of Computer Science}\\
-        San Francisco State University\\
-        (415) 338-2539, \href{mailto:ak@sfsu.edu}\\
-
-        \vspace{1mm}
+        \vspace{-1mm}
 
         \textbf{Arno Puder}\\
         \emph{Professor and Department Chair}\\
         \textsc{Department of Computer Science}\\
         San Francisco State University\\
-        (415) 338-2853, \href{mailto:arno@sfsu.edu}\\
+        \href{tel:4153382853}{415.338.2853}, \href{mailto:arno@sfsu.edu}{arno@sfsu.edu}\\
 
-        \columnbreak
-
-        \textbf{Shasta Ihorn}\\
-        \emph{Associate Professor}\\
-        \textsc{Department of Psychology}\\
-        San Francisco State University\\
-        (415) 338-3218, \href{mailto:sihorn@sfsu.edu}\\
-
-        \vspace{1mm}
+        \vspace{-1mm}
 
         \textbf{Jessica Fielder}\\
         \emph{Supplemental Instruction Program Director}\\
         \textsc{Center for Science and Mathematics Education}\\
         San Francisco State University\\
-        (415)-405-0540, \href{mailto:jfielder@sfsu.edu}\\
+        \href{tel:4154050540}{415.405.0540}, \href{mailto:jfielder@sfsu.edu}{jfielder@sfsu.edu}\\
+
+        \columnbreak
+
+        \textbf{Anagha Kulkarni}\\
+        \emph{Professor and Associate Department Chair}\\
+        \textsc{Department of Computer Science}\\
+        San Francisco State University\\
+        \href{tel:4153382539}{415.338.2539}, \href{mailto:ak@sfsu.edu}{ak@sfsu.edu}\\
+
+        \vspace{-1mm}
+
+        \textbf{Shasta Ihorn}\\
+        \emph{Associate Professor}\\
+        \textsc{Department of Psychology}\\
+        San Francisco State University\\
+        \href{tel:4153383218}{415.338.3218}, \href{mailto:sihorn@sfsu.edu}{sihorn@sfsu.edu}\\
     \end{multicols*}
 
     % \textsc{Operating Systems: } Windows, MacOS, Linux (Ubuntu, Debian)
@@ -588,7 +610,7 @@
 % SKILLS & COMPETENCIES
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% \hrulefill{\fontsize{14}{14}\selectfont \textbf{\ \ Skills \& Competencies\ \ }}\hrulefill
+% {\fontsize{14}{14}\selectfont \textbf{\ \ Skills \& Competencies\ \ }}\hrulefill
 
 % \vspace{3mm}
 
@@ -630,6 +652,8 @@
 }
 
 \begin{tikzpicture}[overlay,remember picture]
+    \node (address) at ($ (current page.south east) - (1.5,-3.6)$)
+    {\href{tel:5104997953}{\includegraphics[scale=0.08]{phone.png}}};
     \node (address) at ($ (current page.south east) - (1.5,-2.9)$)
     {\href{mailto:mkim797@yahoo.com}{\includegraphics[scale=0.08]{env.png}}};
     \node (address) at ($ (current page.south east) - (1.5,-2.2)$)
@@ -640,7 +664,7 @@
     ($ (current page.south east) - (1.9cm,-0.5cm) $)
     rectangle
     ($ (current page.south east) - (6.7cm,-1.5cm) $);
-    \node [draw=none] at (14.95,-4.22) {\fontsize{23}{23}\selectfont
+    \node [draw=none] at ($ (current page.south east) - (4.3,-1.01)$) {\fontsize{23}{23}\selectfont
         \textbf{Mark S. Kim}};
 \end{tikzpicture}
 
