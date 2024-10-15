@@ -51,35 +51,37 @@
 \pagestyle{empty}
 
 \begin{tikzpicture}[overlay,remember picture]
-    \node (address) at ($ (current page.north east) + (-5,-.9) $)
-    {\large{
-            \href{tel:5104997953}{\raisebox{-0.8mm}
-                {\includegraphics[scale=0.052]{phone.png}}\,\ 510.499.7953}
-            \enspace {\scriptsize{$\blacklozenge$}} \enspace
-            \href{mailto:mkim797@yahoo.com}
-            {\raisebox{-0.8mm}
-                {\includegraphics[scale=0.055]{env.png}}
-                mkim797@yahoo.com}}};
-    \node (address) at ($ (current page.north east) + (-4,-1.75) $)
-    {\large\href{https://www.linkedin.com/in/mkim797}
-        {\raisebox{-0.8mm}
-            {\includegraphics[scale=0.055]{li.png}}
-            \hspace{0.7mm} mkim797}
-        \enspace {\scriptsize{$\blacklozenge$}} \enspace
-        \href{https://github.com/mk-imagine/}
-        {\raisebox{-0.8mm}
-            {\includegraphics[scale=0.055]{gh.png}}
-            \hspace{0.5mm} mk-imagine}};
-    \draw [line width=3.5pt,rounded corners=4pt]
-    ($ (current page.north west) + (1cm,-1.3cm) $)
-    rectangle
-    ($ (current page.south east) + (-1cm,1cm) $);
-    \draw [fill=white,draw=none]
-    ($ (current page.north west) + (2cm,-0.5cm) $)
-    rectangle
-    ($ (current page.north west) + (8.85cm,-2cm) $);
-    \node [draw=none] at ($ (current page.north west) + (5.4cm,-1.25cm) $)
-    {\fontsize{33}{21}\selectfont \textbf{Mark S. Kim}};
+    % \node (address) at ($ (current page.north east) + (-5,-.9) $)
+    % {\large{
+    %         \href{tel:5104997953}{\raisebox{-0.8mm}
+    %             {\includegraphics[scale=0.052]{phone.png}}\,\ 510.499.7953}
+    %         \enspace {\scriptsize{$\blacklozenge$}} \enspace
+    %         \href{mailto:mkim797@yahoo.com}
+    %         {\raisebox{-0.8mm}
+    %             {\includegraphics[scale=0.055]{env.png}}
+    %             mkim797@yahoo.com}}};
+    % \node (address) at ($ (current page.north east) + (-4,-1.75) $)
+    % {\large\href{https://www.linkedin.com/in/mkim797}
+    %     {\raisebox{-0.8mm}
+    %         {\includegraphics[scale=0.055]{li.png}}
+    %         \hspace{0.7mm} mkim797}
+    %     \enspace {\scriptsize{$\blacklozenge$}} \enspace
+    %     \href{https://github.com/mk-imagine/}
+    %     {\raisebox{-0.8mm}
+    %         {\includegraphics[scale=0.055]{gh.png}}
+    %         \hspace{0.5mm} mk-imagine}};
+    % \draw [line width=3.5pt,rounded corners=4pt]
+    % ($ (current page.north west) + (1cm,-1.3cm) $)
+    % rectangle
+    % ($ (current page.south east) + (-1cm,1cm) $);
+    % \draw [fill=white,draw=none]
+    % ($ (current page.north west) + (2cm,-0.5cm) $)
+    % rectangle
+    % ($ (current page.north west) + (8.85cm,-2cm) $);
+    \node [draw=none] at ($ (current page.north) + (0,-1.25cm) $)
+    {\fontsize{20}{20}\selectfont \textbf{Mark S. Kim}};
+    \node [draw=none] at ($ (current page.north) + (0,-1.85cm) $)
+    {\fontsize{12}{12}\selectfont \href{tel:5104997953}{510.499.7953}\enspace{\scriptsize{$\blacklozenge$}}\enspace\href{mailto:mkim797@yahoo.com}{mkim797@yahoo.com}};
 \end{tikzpicture}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -87,13 +89,13 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 {\centering
-\vspace{5mm}
+\vspace{\contentspacing}
 
 {\fontsize{14}{14}\selectfont \textbf{\ \ Education\ \ }}\hrulefill
 
 \vspace{\sectiontocontentspacing}
 
-\begin{minipage}[ct]{0.9\linewidth}
+\begin{minipage}[ct]{\contentwidth}
     {\textsc{San Francisco State University}}\hfill 2023 to Present\\
     \emph{Data Science and Artificial Intelligence, M.S.}\\
     GPA: $4.00$\\
@@ -102,7 +104,7 @@
 
 \vspace{\contentspacing}
 
-\begin{minipage}[ct]{0.9\linewidth}
+\begin{minipage}[ct]{\contentwidth}
     {\textsc{San Francisco State University}}\hfill 2018 to 2023\\
     \emph{Computer Science, B.S.}\\
     GPA: $4.00$\\
@@ -110,9 +112,9 @@
     GPA: $3.98$
 \end{minipage}
 
-% \vspace{3mm}
+% \vspace{\contentspacing}
 
-% \begin{minipage}[ct]{0.9\linewidth}
+% \begin{minipage}[ct]{\contentwidth}
 % {\textsc{University of California at Davis}}\hfill 1995 to 2000\\
 % \emph{Uncompleted Genetics B.S.}
 % \end{minipage}
@@ -275,13 +277,13 @@
     \vspace{\contentspacing}
 
     %%%%%%%%%%%%%%% SECOND PAGE %%%%%%%%%%%%%%%%%%
-    \begin{tikzpicture}[overlay,remember picture]
-        \draw [line width=3.5pt,rounded corners=4pt,
-        ]
-        ($ (current page.north west) + (1cm,-1cm) $)
-        rectangle
-        ($ (current page.south east) + (-1cm,1cm) $);
-    \end{tikzpicture}
+    % \begin{tikzpicture}[overlay,remember picture]
+    %     \draw [line width=3.5pt,rounded corners=4pt,
+    %     ]
+    %     ($ (current page.north west) + (1cm,-1cm) $)
+    %     rectangle
+    %     ($ (current page.south east) + (-1cm,1cm) $);
+    % \end{tikzpicture}
 
     \begin{minipage}[ct]{\contentwidth}
         \textbf{Undergraduate Research Assistant}\hfill Nov 2019 to Jan 2020\\
@@ -383,9 +385,9 @@
 
 % {\fontsize{14}{14}\selectfont \textbf{\ \ Honors \& Awards\ \ }}\hrulefill
 
-% \vspace{3mm}
+% \vspace{\contentspacing}
 
-% \begin{minipage}[ct]{0.9\linewidth}
+% \begin{minipage}[ct]{\contentwidth}
 %     First place final presentation -- Frontiers in Data-Driven Computing REU,
 %     University of Houston\hfill Aug 2021
 
@@ -404,12 +406,12 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % LEADERSHIP
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\pagebreak
+
 {\fontsize{14}{14}\selectfont \textbf{\ \ Leadership\ \ }}\hrulefill
 
 \vspace{\sectiontocontentspacing}
 
-\begin{minipage}[ct]{0.9\linewidth}
+\begin{minipage}[ct]{\contentwidth}
     \textsc{Association for Computing Machinery} (ACM), SFSU Student Chapter\hfill
     Sept 2019 to Present\\
     \emph{Graduate Mentor}, May 2024 to Present\\
@@ -417,31 +419,31 @@
     \emph{President}, Jan 2022 to May 2023
 \end{minipage}
 
-\vspace{3mm}
+\vspace{\contentspacing}
 
-\begin{minipage}[ct]{0.9\linewidth}
+\begin{minipage}[ct]{\contentwidth}
     \textsc{SF Hacks}\hfill May 2022 to Present\\
     \emph{Graduate Mentor}, May 2024 to Present\\
     \emph{Treasurer}, May 2022 to May 2024
 \end{minipage}
 
-\vspace{3mm}
+\vspace{\contentspacing}
 
-\begin{minipage}[ct]{0.9\linewidth}
+\begin{minipage}[ct]{\contentwidth}
     \textsc{CS}\{\textsc{Research}\}\textsc{ Club}\hfill Aug 2023 to Present\\
     \emph{President/Founder}, Aug 2023 to Present
 \end{minipage}
 
-\vspace{3mm}
+\vspace{\contentspacing}
 
-\begin{minipage}[ct]{0.9\linewidth}
+\begin{minipage}[ct]{\contentwidth}
     \textsc{Artificial Intelligence Club}\hfill Aug 2023 to Present\\
     \emph{Treasurer}, Aug 2023 to Present
 \end{minipage}
 
-\vspace{3mm}
+\vspace{\contentspacing}
 
-\begin{minipage}[ct]{0.9\linewidth}
+\begin{minipage}[ct]{\contentwidth}
     \textsc{Korean Student Association}\hfill Aug 2024 to Present\\
     \emph{President}, Aug 2024 to Present
 \end{minipage}
@@ -456,25 +458,25 @@
 
 \vspace{\sectiontocontentspacing}
 
-\begin{minipage}[ct]{0.9\linewidth}
+\begin{minipage}[ct]{\contentwidth}
     \textsc{Society for Industrial and Applied Mathematics} (SIAM)
 \end{minipage}
 
 \vspace{0.5mm}
 
-\begin{minipage}[ct]{0.9\linewidth}
+\begin{minipage}[ct]{\contentwidth}
     \textsc{Association for Computing Machinery} (ACM)
 \end{minipage}
 
 \vspace{0.5mm}
 
-\begin{minipage}[ct]{0.9\linewidth}
+\begin{minipage}[ct]{\contentwidth}
     \textsc{National Association of School Psychologists} (NASP)
 \end{minipage}
 
 \vspace{0.5mm}
 
-\begin{minipage}[ct]{0.9\linewidth}
+\begin{minipage}[ct]{\contentwidth}
     \textsc{Institute of Electrical and Electronics Engineers} (IEEE)
 \end{minipage}
 
@@ -488,13 +490,13 @@
 % \textsc{Institute of Electrical and Electronics Engineers} (IEEE)
 
 %%%%%%%%%%%%%%% THIRD PAGE %%%%%%%%%%%%%%%%%%
-\begin{tikzpicture}[overlay,remember picture]
-    \draw [line width=3.5pt,rounded corners=4pt,
-    ]
-    ($ (current page.north west) + (1cm,-1cm) $)
-    rectangle
-    ($ (current page.south east) + (-1cm,1cm) $);
-\end{tikzpicture}
+% \begin{tikzpicture}[overlay,remember picture]
+%     \draw [line width=3.5pt,rounded corners=4pt,
+%     ]
+%     ($ (current page.north west) + (1cm,-1cm) $)
+%     rectangle
+%     ($ (current page.south east) + (-1cm,1cm) $);
+% \end{tikzpicture}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % PROFESSIONAL EXPERIENCE
@@ -516,16 +518,16 @@
     {\textsc{Kindred Enterprises Incorporated} - San Francisco, CA}
 \end{minipage}
 
-% \vspace{2.5mm}
+% \vspace{\contentspacing}
 
-% \begin{minipage}[ct]{0.9\linewidth}
+% \begin{minipage}[ct]{\contentwidth}
 %     \textbf{Founder/CEO}\hfill 2005 to 2017\\
 %     {\textsc{Kindred Enterprises Incorporated} - San Francisco, CA}
 % \end{minipage}
 
-% \vspace{2.5mm}
+% \vspace{\contentspacing}
 
-% \begin{minipage}[ct]{0.9\linewidth}
+% \begin{minipage}[ct]{\contentwidth}
 %     \textbf{Landing Support Specialist}, Corporal\hfill 1995 to 2001\\
 %     {\textsc{United States Marine Corps Reserve} - San Jose, CA}
 % \end{minipage}
@@ -588,9 +590,9 @@
 
 % {\fontsize{14}{14}\selectfont \textbf{\ \ Skills \& Competencies\ \ }}\hrulefill
 
-% \vspace{3mm}
+% \vspace{\contentspacing}
 
-% \begin{minipage}[ct]{0.9\linewidth}
+% \begin{minipage}[ct]{\contentwidth}
 %     \textsc{Languages: } Python, Java, C/C++, JavaScript, HTML, CSS, MySQL, Matlab, R
 
 %     % \vspace{1.5mm}
@@ -627,22 +629,22 @@
 
 }
 
-\begin{tikzpicture}[overlay,remember picture]
-    \node (address) at ($ (current page.south east) - (1.5,-3.6)$)
-    {\href{tel:5104997953}{\includegraphics[scale=0.08]{phone.png}}};
-    \node (address) at ($ (current page.south east) - (1.5,-2.9)$)
-    {\href{mailto:mkim797@yahoo.com}{\includegraphics[scale=0.08]{env.png}}};
-    \node (address) at ($ (current page.south east) - (1.5,-2.2)$)
-    {\href{https://www.linkedin.com/in/mkim797}{\includegraphics[scale=0.08]{li.png}}};
-    \node (address) at ($ (current page.south east) - (1.5,-1.5)$)
-    {\href{https://github.com/mk-imagine/}{\includegraphics[scale=0.08]{gh.png}}};
-    \draw [fill=white,draw=none]
-    ($ (current page.south east) - (1.9cm,-0.5cm) $)
-    rectangle
-    ($ (current page.south east) - (6.7cm,-1.5cm) $);
-    \node [draw=none] at ($ (current page.south east) - (4.3,-1.01)$) {\fontsize{23}{23}\selectfont
-        \textbf{Mark S. Kim}};
-\end{tikzpicture}
+% \begin{tikzpicture}[overlay,remember picture]
+%     \node (address) at ($ (current page.south east) - (1.5,-3.6)$)
+%     {\href{tel:5104997953}{\includegraphics[scale=0.08]{phone.png}}};
+%     \node (address) at ($ (current page.south east) - (1.5,-2.9)$)
+%     {\href{mailto:mkim797@yahoo.com}{\includegraphics[scale=0.08]{env.png}}};
+%     \node (address) at ($ (current page.south east) - (1.5,-2.2)$)
+%     {\href{https://www.linkedin.com/in/mkim797}{\includegraphics[scale=0.08]{li.png}}};
+%     \node (address) at ($ (current page.south east) - (1.5,-1.5)$)
+%     {\href{https://github.com/mk-imagine/}{\includegraphics[scale=0.08]{gh.png}}};
+%     \draw [fill=white,draw=none]
+%     ($ (current page.south east) - (1.9cm,-0.5cm) $)
+%     rectangle
+%     ($ (current page.south east) - (6.7cm,-1.5cm) $);
+%     \node [draw=none] at ($ (current page.south east) - (4.3,-1.01)$) {\fontsize{23}{23}\selectfont
+%         \textbf{Mark S. Kim}};
+% \end{tikzpicture}
 
 \end{document}
 
