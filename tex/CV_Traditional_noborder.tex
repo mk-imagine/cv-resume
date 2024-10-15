@@ -41,10 +41,34 @@
 
 \setlength\columnsep{1pt}
 
-\newcommand{\contentwidth}{0.9\linewidth}
-\newcommand{\contentspacing}{2.5mm}
-\newcommand{\sectionspacing}{8mm}
-\newcommand{\sectiontocontentspacing}{4mm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Element Spacing
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\contentwidth{0.9\linewidth}    % width of content (under the section names)
+\def\contentspacing{2.5mm}          % spacing between content elements
+\def\sectionspacing{8mm}            % spacing between last element in contents and next section
+\def\sectiontocontentspacing{4mm}   % spacing between the section titles and the first content element
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Section Headers
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\makeatletter
+\renewcommand{\section}[1]{
+    {\fontsize{14}{14}\selectfont \textsc{\textbf{\ \ #1\ \ }}}\hrulefill
+}
+\makeatother
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Personal Information Variables
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\def\fullname{Mark S. Kim}                              % Full Name
+\def\phonenumber{5104997953}                            % Phone Number (for tel link)
+\def\phonenumberdisplay{510.499.7953}                   % Displayed Phone Number
+\def\email{mkim797@yahoo.com}                           % Email Address
+\def\linkedinname{mkim797}                              % LinkedIn Username
+\def\linkedinurl{https://www.linkedin.com/in/mkim797}   % LinkedIn Profile URL
+\def\githubname{mk-imagine}                             % GitHub Username
+\def\githuburl{https://github.com/mk-imagine/}          % GitHub Profile URL
 
 \begin{document}
 
@@ -53,23 +77,23 @@
 \begin{tikzpicture}[overlay,remember picture]
     % \node (address) at ($ (current page.north east) + (-5,-.9) $)
     % {\large{
-    %         \href{tel:5104997953}{\raisebox{-0.8mm}
+    %         \href{tel:\phonenumber}{\raisebox{-0.8mm}
     %             {\includegraphics[scale=0.052]{phone.png}}\,\ 510.499.7953}
     %         \enspace {\scriptsize{$\blacklozenge$}} \enspace
-    %         \href{mailto:mkim797@yahoo.com}
+    %         \href{mailto:\email}
     %         {\raisebox{-0.8mm}
     %             {\includegraphics[scale=0.055]{env.png}}
-    %             mkim797@yahoo.com}}};
+    %             \email}}};
     % \node (address) at ($ (current page.north east) + (-4,-1.75) $)
-    % {\large\href{https://www.linkedin.com/in/mkim797}
+    % {\large\href{\linkedinurl}
     %     {\raisebox{-0.8mm}
     %         {\includegraphics[scale=0.055]{li.png}}
-    %         \hspace{0.7mm} mkim797}
+    %         \hspace{0.7mm} \linkedinname}
     %     \enspace {\scriptsize{$\blacklozenge$}} \enspace
-    %     \href{https://github.com/mk-imagine/}
+    %     \href{\githuburl}
     %     {\raisebox{-0.8mm}
     %         {\includegraphics[scale=0.055]{gh.png}}
-    %         \hspace{0.5mm} mk-imagine}};
+    %         \hspace{0.5mm} \githubname}};
     % \draw [line width=3.5pt,rounded corners=4pt]
     % ($ (current page.north west) + (1cm,-1.3cm) $)
     % rectangle
@@ -79,9 +103,9 @@
     % rectangle
     % ($ (current page.north west) + (8.85cm,-2cm) $);
     \node [draw=none] at ($ (current page.north) + (0,-1.25cm) $)
-    {\fontsize{20}{20}\selectfont \textbf{Mark S. Kim}};
+    {\fontsize{20}{20}\selectfont \textbf{\fullname}};
     \node [draw=none] at ($ (current page.north) + (0,-1.85cm) $)
-    {\fontsize{12}{12}\selectfont \href{tel:5104997953}{510.499.7953}\enspace{\scriptsize{$\blacklozenge$}}\enspace\href{mailto:mkim797@yahoo.com}{mkim797@yahoo.com}};
+    {\fontsize{12}{12}\selectfont \href{tel:\phonenumber}{\phonenumberdisplay}\enspace{\scriptsize{$\blacklozenge$}}\enspace\href{mailto:\email}{\email}};
 \end{tikzpicture}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -91,11 +115,11 @@
 {\centering
 \vspace{\contentspacing}
 
-{\fontsize{14}{14}\selectfont \textbf{\ \ Education\ \ }}\hrulefill
+\section{Education}
 
 \vspace{\sectiontocontentspacing}
 
-\begin{minipage}[ct]{\contentwidth}
+\begin{minipage}[ct]{0.9\linewidth}
     {\textsc{San Francisco State University}}\hfill 2023 to Present\\
     \emph{Data Science and Artificial Intelligence, M.S.}\\
     GPA: $4.00$\\
@@ -126,7 +150,7 @@
     % RESEARCH EXPERIENCE
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-    {\fontsize{14}{14}\selectfont \textbf{\ \ Research Experience\ \ }}\hrulefill
+    \section{Research Experience}
 
     \vspace{\sectiontocontentspacing}
 
@@ -152,8 +176,8 @@
         % foundational knowledge, providing intensive advising, and engaging students in a
         % winter and summer accelerated pathways Machine Learning and AI program.  Besides providing these
         % activities, the program was
-        Program developed to investigate how to improve students' sense of belonging and identity with the field of Computer Science,
-        and what effect that may have on students' retention and success.  Qualitative research on metacognition through a comparative
+        An examination of methods to improve students' sense of belonging and identity with the field of Computer Science,
+        and the effect it may have on students' retention and success.  Qualitative research on metacognition through a comparative
         analysis of in-class assessed performance against students' perceived understanding.  Data is collected through interviews, surveys,
         and observations of students during discussions.
     \end{minipage}
@@ -292,10 +316,6 @@
         {\textit{Change-point Analysis Algorithm Development}}\\
         Attended workshops in numerical methods and statistics theory in preparation for research in change-point analysis and algorithm
         development.  Studied completed change-point analysis research and began work on adapting existing Matlab code to Python.
-        % \makeatletter
-        % \let\orig@listi\@listi
-        % \def\@listi{\orig@listi\topsep=0.25\baselineskip}
-        % \makeatother
         % \begin{itemize}
         %     \setlength\itemsep{-0.25em}
         %     \item Workshops in numerical methods and statistics theory in
@@ -313,7 +333,7 @@
 % Teaching and Advising
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-{\fontsize{14}{14}\selectfont \textbf{\ \ Teaching \& Advising\ \ }}\hrulefill
+\section{Teaching \& Advising}
 
 \vspace{\sectiontocontentspacing}
 
@@ -322,15 +342,16 @@
     {\textsc{San Francisco State University} - San Francisco, CA}\\
     \textit{Artificial Intelligence Scholarships that Improve Academic Achievement, Retention, and Career Success (AI-STAARS)}\\
     Develop and lead a three pronged support system to improve student success by reinforcing foundational knowledge, providing intensive
-    advising, and engaging students with activities and exercises. This includes a weeklong programming foundations bootcamp and a 10 week
-    long accelerated course in Machine Learning and Artificial Intelligence.
+    advising, and engaging students with activities and exercises. This includes: a weekly intra-term lecture and workshop series; a weeklong
+    programming foundations bootcamp to reduce learning loss; and a 10 week accelerated summer course in Machine Learning and
+    Artificial Intelligence.
 \end{minipage}
 
 \vspace{\contentspacing}
 
 \begin{minipage}[ct]{\contentwidth}
     \textbf{Mathematics Program Liaison}\hfill Jan 2024 to May 2024\\
-    \textbf{CS Program Liaison}\hfill Aug 2023 to Dec 2023\\
+    \textbf{Computer Science Program Liaison}\hfill Aug 2023 to Dec 2023\\
     {\textsc{San Francisco State University} - San Francisco, CA}\\
     \textit{Center for Science and Mathematics Education (CSME)}\\
     Lead a team of undergraduate facilitators that teach and support students taking supplementary courses in Mathematics and Computer
@@ -361,7 +382,7 @@
 % Conferences
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-{\fontsize{14}{14}\selectfont \textbf{\ \ Conferences\ \ }}\hrulefill
+\section{Conferences}
 
 \vspace{\sectiontocontentspacing}
 
@@ -383,7 +404,7 @@
 % HONORS & AWARDS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% {\fontsize{14}{14}\selectfont \textbf{\ \ Honors \& Awards\ \ }}\hrulefill
+% \section{Honors \& Awards}
 
 % \vspace{\contentspacing}
 
@@ -407,7 +428,7 @@
 % LEADERSHIP
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-{\fontsize{14}{14}\selectfont \textbf{\ \ Leadership\ \ }}\hrulefill
+\section{Leadership}
 
 \vspace{\sectiontocontentspacing}
 
@@ -454,7 +475,7 @@
 % Professional Memberships
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-{\fontsize{14}{14}\selectfont \textbf{\ \ Professional Memberships\ \ }}\hrulefill
+\section{Professional Memberships}
 
 \vspace{\sectiontocontentspacing}
 
@@ -502,7 +523,7 @@
 % PROFESSIONAL EXPERIENCE
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \vspace{\sectionspacing}
-{\fontsize{14}{14}\selectfont \textbf{\ \ Professional Experience\ \ }}\hrulefill
+\section{Professional Experience}
 
 \vspace{\sectiontocontentspacing}
 
@@ -538,7 +559,7 @@
 % References
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-{\fontsize{14}{14}\selectfont \textbf{\ \ References\ \ }}\hrulefill
+\section{References}
 
 \vspace{\sectiontocontentspacing}
 
@@ -588,7 +609,7 @@
 % SKILLS & COMPETENCIES
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% {\fontsize{14}{14}\selectfont \textbf{\ \ Skills \& Competencies\ \ }}\hrulefill
+% \section{Skills \& Competencies}
 
 % \vspace{\contentspacing}
 
@@ -643,7 +664,7 @@
 %     rectangle
 %     ($ (current page.south east) - (6.7cm,-1.5cm) $);
 %     \node [draw=none] at ($ (current page.south east) - (4.3,-1.01)$) {\fontsize{23}{23}\selectfont
-%         \textbf{Mark S. Kim}};
+%         \textbf{\fullname}};
 % \end{tikzpicture}
 
 \end{document}
