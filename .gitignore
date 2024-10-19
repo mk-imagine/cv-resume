@@ -9,6 +9,7 @@
 *.blg
 *.out
 *.run.xml
+*.xdv
 
 # VS Code
 .vscode
