@@ -1,13 +1,26 @@
 import os
 import re
+from typing import List, Dict
 from pathlib import Path
 
-archive = Path("./archive")
-other = Path("./other")
-tex = Path("./tex")
+folders: Dict[str, Path] = {
+    "archive": Path("./archive"),
+    "cvs and resumes": Path("./cvs and resumes"),
+    "essays": Path("./essays"),
+    "other": Path("./other"),
+    "speeches": Path("./speeches")
+}
 
-pattern = re.compile(r"\.(aux|fdb_latexmk|fls|log|synctex.gz|bbl|bcf|blg|out|run.xml|xdv)")
+pattern: re.Pattern = re.compile(r"\.(aux|fdb_latexmk|fls|log|synctex.gz|bbl|bcf|blg|out|run.xml|xdv)")
 
-for p in tex.rglob("*"):
-    if pattern.search(p.name):
-        print(p)
+files_removed: List[Path | None]  = []
+
+for k, v in folders.items():
+    for p in v.rglob("*"):
+        if pattern.search(p.name):
+            os.remove(p)
+            files_removed.append(p)
+        
+print("Files Removed")
+for file in files_removed:
+    print(f"\t{file}")
