@@ -12,6 +12,7 @@
 *.xdv
 
 # VS Code
+.history
 .vscode
 
 # MacOS
