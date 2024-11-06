@@ -1,0 +1,88 @@
+\documentclass[12pt]{article}
+\usepackage[letterpaper]{geometry}
+\usepackage{setspace}
+\geometry{top=0.9in, bottom=0.9in, left=0.9in, right=0.9in}
+\doublespacing
+
+\makeatletter
+\def\@maketitle{%
+  \newpage
+  \null
+  \vskip 2em%
+  \begin{center}%
+    {\large
+        \begin{tabular}[t]{c}%
+        \@author
+        \end{tabular}\par}%
+  \let \footnote \thanks
+    {\LARGE \@title \par}%
+    %{\large \@date}%
+  \end{center}%
+  \par
+  \vskip 1.5em}
+\makeatother
+
+\author{Mark Kim}
+\title{Essay 1}
+
+\begin{document}
+\maketitle
+% Prepare a concise one or two page essay in PDF or Word format that describes your primary areas of interest, your related experiences, and
+% your objective in pursuing a graduate degree at Carnegie Mellon. Your essay should include your name and be specific in describing your
+% interests and motivations. When describing your interests, you should explain why you think they are important areas of study and why you
+% are particularly well-suited to pursue them. You should describe any relevant education, research, commercial, government, or teaching
+% experience.
+
+% Our review committees in every program value applicants who display persistence and resilience in the face of challenge and adversity,
+% demonstrate a commitment to ethics, show concern for others and for their community, and/or exhibit leadership in one or more endeavors. 
+
+As a graduate student researcher at San Francisco State University (SFSU), I have had the opportunity to explore diverse research areas. My
+current work under Prof. Hui Yang on the ``AdvisingGPT'' project involves using foundation models for automated course equivalency evaluation and
+personalized academic advising. This research focuses on utilizing foundation and embedding models to enhance student success, while
+employing techniques such as instruction fine-tuning, retrieval-augmented generation, and prompt engineering. In addition, I am leading
+the ``AI-STAARS'' project under Prof. Anagha Kulkarni, where we aim to improve retention and academic achievement in Computer Science through
+providing academic support and stimulating students' sense of belonging and identity.  This work has informed the forthcoming
+poster presentation ``Metacognition in Computer Science Learning: Perception vs. Reality,'' at the National Association of School
+Psychologists Annual Convention.  In previous research roles, I have also delved into topics like clustering and analysis of phishing emails
+as a research engineer intern at Cofense Inc., where I significantly improved computational efficiency and data utilization. My work at the
+University of Houston's NSF REU program equipped me with skills in multi-threaded algorithm development and exploratory clustering.  During
+my undergraduate studies at SFSU, I was also provided the opportunity to work closely with several professors in the fields of
+Statistics, Mathematics, and Mathematics Education, which included change-point analysis, graphical models for brain networks, and remote
+instruction pedagogy in Mathematics.
+
+Beyond research-related experiences, I was also very active with instructional activities.  These roles included grading, teaching
+assistant, facilitator, program liaison, and as an instructor.  I started as a simple grader for Multivariate Calculus and expanded to being
+a full teaching assistant before moving on to facilitating my own supplemental instruction courses.  As a facilitator, I was provided the
+opportunity to teach supplemental courses in: Calculus, up to and including Multivariate Calculus; Introduction to Programming; Data
+Structures; and Programming Methodology.  After completing my undergraduate studies, I was offered a program liaison position, whose role
+is to lead and manage the facilitators in the Supplemental Instruction Program.  These roles have refined my ability to communicate complex
+concepts effectively to diverse audiences and provide mentorship for facilitators.
+
+State-of-the-art deep learning algorithms today rely on mechanisms that are
+biologically implausible.  They depend on gradient back-propagation, which
+computes the gradient of an objective function with respect to the weights of a
+neural network.  Such back-propagation raises problematic issues that
+demonstrate the improbability of such a process in biology.  First,
+back-propagation is a purely linear computation, while biological neurons apply
+both linear and non-linear operations. Credit assignment, which is the act of
+determining the influence that an action taken will have on future rewards, in
+such a paradigm, would require precise knowledge of the gradient in both
+directions and exact symmetry for the weights.  Futhermore, artificial neurons
+communicate by continuous values, while their biological counterparts
+communicate through action potentials, which are binary in nature.  
+
+One
+area of research that is of particular interest to me is continual learning, which is a
+hallmark of human intelligence.  Recent work into continual learning use a
+combination of multiple techniques to allow artificial neural networks to
+consolidate synapses to mitigate forgetting and strengthen connections between
+contextual information.  Nevertheless, the research still relied on
+back-propagation of fully connected networks.  Brain synapses are unidirectional
+with physically distinct feed-forward and feedback connections. It is also
+believed that the brain is capable of localized learning. Investigating neuron
+architectures with these features in continual learning is an exciting prospect
+of study for me.
+
+Ultimately, however, I would like to investigate the relationship of affect, behavior, and cognition through computational models.
+
+\end{document}
