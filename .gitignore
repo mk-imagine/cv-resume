@@ -17,3 +17,6 @@
 
 # MacOS
 .DS_Store
+
+# PyEnv
+.python-version
