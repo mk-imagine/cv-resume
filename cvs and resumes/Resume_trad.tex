@@ -45,9 +45,11 @@
 % Element Spacing
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \def\contentwidth{0.9\linewidth}    % width of content (under the section names)
-\def\contentspacing{2.5mm}          % spacing between content elements
-\def\sectionspacing{6mm}            % spacing between last element in contents and next section
+\def\contentblockspacing{2.5mm}     % spacing between content blocks
+\def\contentheaderspacing{1mm}      % spacing between content header and content title/body
+\def\sectionspacing{5mm}            % spacing between last element in contents and next section
 \def\sectiontocontentspacing{4mm}   % spacing between the section titles and the first content element
+\def\pagebreakspacing{-1mm}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Section Settings
@@ -105,13 +107,13 @@
     \node [draw=none] at ($ (current page.north west) + (5.4cm,-1.25cm) $)
     {\fontsize{33}{21}\selectfont \textbf{\fullname}};
 \end{tikzpicture}
+\vspace*{\fill}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % EDUCATION
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-{\centering
-\vspace{5mm}
+\centering
 
 \section{Education}
 
@@ -124,7 +126,7 @@
     Anticipated Graduation: May 2025
 \end{minipage}
 
-\vspace{\contentspacing}
+\vspace{\contentblockspacing}
 
 \begin{minipage}[ct]{0.9\linewidth}
     {\textsc{San Francisco State University}}\hfill 2018 to 2023\\
@@ -144,10 +146,10 @@
 \vspace{\sectionspacing}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% RESEARCH & FELLOWSHIPS
+% RESEARCH & INTERNSHIPS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Research \& Fellowships}
+\section{Research \& Internships}
 
 \vspace{\sectiontocontentspacing}
 
@@ -162,22 +164,22 @@
     retrieval augmented generation.
 \end{minipage}
 
-\vspace{\contentspacing}
+\vspace{\contentblockspacing}
 
 \begin{minipage}[ct]{0.9\linewidth}
-    \textbf{Program Lead/Graduate Researcher}\hfill Jan 2023 to Present\\
+    \textbf{Graduate Researcher/Program Lead}\hfill Jan 2023 to Present\\
     \textsc{San Francisco State University} -- San Francisco, CA\\
     Principal Investigator: Dr. Anagha Kulkarni\vspace{1mm}\\
     {\textit{Artificial Intelligence Scholarships that Improve Academic Achievement, Retention, and Career Success (AI-STAARS)}}\\
-    Develop and lead a comprehensive support system to enhance student success through foundational knowledge reinforcement, intensive
+    Develop and lead a comprehensive support system to enhance student success through reinforcing foundational knowledge, intensive
     advising, and engaging activities. This initiative includes a weekly lecture and workshop series, a weeklong programming bootcamp to
     mitigate learning loss, and a 10-week accelerated summer course in Machine Learning and Artificial Intelligence. Additionally, research
     is being conducted to foster students' sense of belonging and identity in Computer Science and its impact on retention and success.
-    Qualitative studies focus on metacognition through comparative analysis of in-class performance and students' self-assessed
-    understanding, with data collected via interviews, surveys, and observations.
+    Qualitative studies focus on metacognition through comparative analysis of in-class performance and students' perceived understanding, 
+    with data collected via interviews, surveys, and observations.
 \end{minipage}
 
-\vspace{\contentspacing}
+\vspace{\contentblockspacing}
 
 \begin{minipage}[ct]{0.9\linewidth}
     \textbf{Research Engineering Intern}\hfill Jun 2022 to Aug 2022\\
@@ -208,7 +210,7 @@
     % \end{itemize}
 \end{minipage}
 
-\vspace{\contentspacing}
+\vspace{\contentblockspacing}
 
 \begin{minipage}[ct]{0.9\linewidth}
     \textbf{Independent Study and Research Literature Review}\hfill Jan 2022 to May 2022\\
@@ -230,8 +232,19 @@
     % \end{itemize}
 \end{minipage}
 
-\vspace{\contentspacing}
+%%%%%%%%%%%%%%% SECOND PAGE %%%%%%%%%%%%%%%%%%
+\vspace*{\fill}
+\pagebreak
+\begin{tikzpicture}[overlay,remember picture]
+    \draw [line width=3.5pt,rounded corners=4pt,
+    ]
+    ($ (current page.north west) + (1cm,-1cm) $)
+    rectangle
+    ($ (current page.south east) + (-1cm,1cm) $);
+\end{tikzpicture}
+\vspace*{\fill}
 
+\vspace{\contentblockspacing}
 \begin{minipage}[ct]{0.9\linewidth}
     \textbf{NSF REU Scholar and Researcher}\hfill Jun 2021 to Aug 2021\\
     \textsc{University of Houston Department of Computer Science} -- Houston, TX\\
@@ -257,7 +270,7 @@
     % \end{itemize}
 \end{minipage}
 
-\vspace{\contentspacing}
+\vspace{\contentblockspacing}
 
 \begin{minipage}[ct]{0.9\linewidth}
     \textbf{Innovation and Entrepreneurship Fellow}\hfill Sept 2020 to May 2021\\
@@ -276,7 +289,7 @@
     % \end{itemize}
 \end{minipage}
 
-\vspace{\contentspacing}\vspace{1mm}
+\vspace{\contentblockspacing}\vspace{1mm}
 
 \begin{minipage}[ct]{0.9\linewidth}
     \textbf{Undergraduate Research Assistant}\hfill Apr 2020 to Jun 2020\\
@@ -296,17 +309,7 @@
     % \end{itemize}
 \end{minipage}
 
-\vspace{\contentspacing}
-
-%%%%%%%%%%%%%%% SECOND PAGE %%%%%%%%%%%%%%%%%%
-\begin{tikzpicture}[overlay,remember picture]
-    \draw [line width=3.5pt,rounded corners=4pt,
-    ]
-    ($ (current page.north west) + (1cm,-1cm) $)
-    rectangle
-    ($ (current page.south east) + (-1cm,1cm) $);
-\end{tikzpicture}
-
+\vspace{\contentblockspacing}
 \begin{minipage}[ct]{0.9\linewidth}
     \textbf{Undergraduate Research Assistant}\hfill Nov 2019 to Jan 2020\\
     \textsc{San Francisco State University Department of Mathematics} -- San Francisco, CA\\
@@ -334,20 +337,30 @@
 % Conference Publications
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-{\fontsize{14}{14}\selectfont \textsc{\textbf{\ \ Conference Publications\ \ }}}\hrulefill
+\section{Conferences}
 
 \vspace{\sectiontocontentspacing}
 
 \begin{minipage}[ct]{\contentwidth}
-    ``Metacognition in Computer Science Learning: Perception vs. Reality,'' National Association of School Psychologists Annual Convention.
-    Seattle, WA, USA. Accepted and forthcoming, February 2025.
+    Kim, M., Simon, H., Stipe, C., \& Ihorn, S. (2025). Metacognition in Computer Science Learning: Perception vs. Reality. Poster to be presented at the annual meeting of the National Association of School Psychologists, Seattle, WA.
 \end{minipage}
 
-\vspace{\contentspacing}
+\vspace{\contentblockspacing}
 
 \begin{minipage}[ct]{\contentwidth}
-    ``Foundation Models for Course Equivalency Evaluation,'' IEEE International Conference on Data Mining.  Abu Dhabi, UAE.  Accepted and
-    forthcoming, December 2024.
+    Simon, H., Kim, M., \& Ihorn, S. (2025). The Impact of Early Exposure to Computing on Identity Development. Poster to be presented at the annual meeting of the National Association of School Psychologists, Seattle, WA.
+\end{minipage}
+
+\vspace{\contentblockspacing}
+
+\begin{minipage}[ct]{\contentwidth}
+    Kim, M., Puder A., Hayward C., \& Yang H. (2024). Foundation Models for Course Equivalency Evaluation. Paper presented at the IEEE International Conference on Data Mining: Workshop on Information Seeking with Big Models, Abu Dhabi, UAE.
+\end{minipage}
+
+\vspace{\contentblockspacing}
+
+\begin{minipage}[ct]{\contentwidth}
+    Kim, M., Simon, H., Ihorn, S., \& Kulkarni, A. (2024). Bridging the Experience Chasm in Computer Science: An Inter-term Bootcamp Approach. Poster presented at the San Francisco State University College of Science and Engineering Graduate Research and Creative Works Showcase, San Francisco, CA.
 \end{minipage}
 
 \vspace{\sectionspacing}
@@ -374,15 +387,25 @@
     Dean's List, San Francisco State University\hfill 2018, 2019, 2020, 2021, 2022, 2023
 \end{minipage}
 
-\vspace{\sectionspacing}
+%%%%%%%%%%%%%%% SECOND PAGE %%%%%%%%%%%%%%%%%%
+\vspace*{\fill}
+\pagebreak
+\begin{tikzpicture}[overlay,remember picture]
+    \draw [line width=3.5pt,rounded corners=4pt,
+    ]
+    ($ (current page.north west) + (1cm,-1cm) $)
+    rectangle
+    ($ (current page.south east) + (-1cm,1cm) $);
+\end{tikzpicture}
+\vspace*{\fill}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % LEADERSHIP
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\vspace{\sectionspacing}
 \section{Leadership}
-
 \vspace{\sectiontocontentspacing}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{minipage}[ct]{0.9\linewidth}
     \textsc{Association for Computing Machinery} (ACM), Student Chapter at SFSU\hfill Sept 2019 to Present\\
@@ -391,7 +414,7 @@
     \emph{President}, Jan 2022 to May 2023
 \end{minipage}
 
-\vspace{\contentspacing}
+\vspace{\contentblockspacing}
 
 \begin{minipage}[ct]{0.9\linewidth}
     \textsc{SF Hacks}\hfill May 2022 to Present\\
@@ -399,31 +422,21 @@
     \emph{Treasurer}, May 2022 to May 2024
 \end{minipage}
 
-\vspace{\contentspacing}
+\vspace{\contentblockspacing}
 
 \begin{minipage}[ct]{0.9\linewidth}
     \textsc{CS}\{\textsc{Research}\}\textsc{ Club}\hfill Aug 2023 to Present\\
     \emph{President/Founder}, Aug 2023 to Present
 \end{minipage}
 
-\vspace{\contentspacing}
-
-%%%%%%%%%%%%%%% THIRD PAGE %%%%%%%%%%%%%%%%%%
-\begin{tikzpicture}[overlay,remember picture]
-    \draw [line width=3.5pt,rounded corners=4pt,
-    ]
-    ($ (current page.north west) + (1cm,-1cm) $)
-    rectangle
-    ($ (current page.south east) + (-1cm,1cm) $);
-\end{tikzpicture}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{\contentblockspacing}
 
 \begin{minipage}[ct]{0.9\linewidth}
     \textsc{Artificial Intelligence Club}\hfill Aug 2023 to Present\\
     \emph{Treasurer}, Aug 2023 to Present
 \end{minipage}
 
-\vspace{\contentspacing}
+\vspace{\contentblockspacing}
 
 \begin{minipage}[ct]{0.9\linewidth}
     \textsc{Korean Student Association}\hfill Aug 2024 to Present\\
@@ -445,7 +458,7 @@
     \textit{Artificial Intelligence Scholarships that Improve Academic Achievement, Retention, and Career Success (AI-STAARS)}
 \end{minipage}
 
-\vspace{\contentspacing}
+\vspace{\contentblockspacing}
 
 \begin{minipage}[ct]{0.9\linewidth}
     \textbf{Graduate Researcher}\hfill Aug 2023 to Present\\
@@ -453,7 +466,7 @@
     \textit{Research in Foundation Models for Student Advising}
 \end{minipage}
 
-\vspace{\contentspacing}
+\vspace{\contentblockspacing}
 
 \begin{minipage}[ct]{0.9\linewidth}
     \textbf{Mathematics Program Liaison}\hfill Jan 2024 to May 2024\\
@@ -462,7 +475,7 @@
     \textit{Center for Science and Mathematics Education (CSME)}
 \end{minipage}
 
-\vspace{\contentspacing}
+\vspace{\contentblockspacing}
 
 \begin{minipage}[ct]{0.9\linewidth}
     \textbf{Facilitator}\hfill Jan 2021 to May 2023\\
@@ -470,7 +483,7 @@
     \textit{Center for Science and Mathematics Education (CSME)}
 \end{minipage}
 
-\vspace{\contentspacing}
+\vspace{\contentblockspacing}
 
 \begin{minipage}[ct]{0.9\linewidth}
     \textbf{Undergraduate Teaching Assistant}\hfill Aug 2019 to Dec 2020\\
@@ -478,21 +491,21 @@
     \textit{Department of Mathematics}
 \end{minipage}
 
-\vspace{\contentspacing}
+\vspace{\contentblockspacing}
 
 \begin{minipage}[ct]{0.9\linewidth}
     \textbf{Financial Center Manager}, AVP\hfill 2017 to 2018\\
     {\textsc{Bank of America} - Belmont, CA}
 \end{minipage}
 
-\vspace{\contentspacing}
+\vspace{\contentblockspacing}
 
 \begin{minipage}[ct]{0.9\linewidth}
     \textbf{Founder/CEO}\hfill 2012 to 2017\\
     {\textsc{Kindred Enterprises Incorporated} - San Francisco, CA}
 \end{minipage}
 
-% \vspace{\contentspacing}
+% \vspace{\contentblockspacing}
 
 % \begin{minipage}[ct]{0.9\linewidth}
 %     \textbf{Landing Support Specialist}, Corporal\hfill 1995 to 2001\\
@@ -531,6 +544,31 @@
 \end{minipage}
 
 \vspace{\sectionspacing}
+
+%%%%%%%%%%%%%%% THIRD PAGE %%%%%%%%%%%%%%%%%%
+\vspace*{\fill}
+\pagebreak
+\begin{tikzpicture}[overlay,remember picture]
+    \node (address) at ($ (current page.south east) - (1.5,-3.6)$)
+    {\href{tel:\phonenumber}{\includegraphics[scale=0.08]{phone.png}}};
+    \node (address) at ($ (current page.south east) - (1.5,-2.9)$)
+    {\href{mailto:\email}{\includegraphics[scale=0.08]{env.png}}};
+    \node (address) at ($ (current page.south east) - (1.5,-2.2)$)
+    {\href{\linkedinurl}{\includegraphics[scale=0.08]{li.png}}};
+    \node (address) at ($ (current page.south east) - (1.5,-1.5)$)
+    {\href{\githuburl}{\includegraphics[scale=0.08]{gh.png}}};
+    \draw [line width=3.5pt,rounded corners=4pt]
+    ($ (current page.north west) + (1cm,-1.3cm) $)
+    rectangle
+    ($ (current page.south east) + (-1cm,1cm) $);
+    \draw [fill=white,draw=none]
+    ($ (current page.south east) - (1.9cm,-0.5cm) $)
+    rectangle
+    ($ (current page.south east) - (6.7cm,-1.5cm) $);
+    \node [draw=none] at ($ (current page.south east) - (4.3,-1.01)$) {\fontsize{23}{23}\selectfont
+        \textbf{Mark S. Kim}};
+\end{tikzpicture}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % SKILLS & COMPETENCIES
@@ -574,25 +612,6 @@
 
     \textsc{Other: } \LaTeX, Adobe Creative Suite (XD, Illustrator, InDesign, Photoshop)
 \end{minipage}
-
-}
-
-\begin{tikzpicture}[overlay,remember picture]
-    \node (address) at ($ (current page.south east) - (1.5,-3.6)$)
-    {\href{tel:\phonenumber}{\includegraphics[scale=0.08]{phone.png}}};
-    \node (address) at ($ (current page.south east) - (1.5,-2.9)$)
-    {\href{mailto:\email}{\includegraphics[scale=0.08]{env.png}}};
-    \node (address) at ($ (current page.south east) - (1.5,-2.2)$)
-    {\href{\linkedinurl}{\includegraphics[scale=0.08]{li.png}}};
-    \node (address) at ($ (current page.south east) - (1.5,-1.5)$)
-    {\href{\githuburl}{\includegraphics[scale=0.08]{gh.png}}};
-    \draw [fill=white,draw=none]
-    ($ (current page.south east) - (1.9cm,-0.5cm) $)
-    rectangle
-    ($ (current page.south east) - (6.7cm,-1.5cm) $);
-    \node [draw=none] at ($ (current page.south east) - (4.3,-1.01)$) {\fontsize{23}{23}\selectfont
-        \textbf{Mark S. Kim}};
-\end{tikzpicture}
 
 \end{document}
 

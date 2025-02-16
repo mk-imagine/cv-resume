@@ -51,6 +51,7 @@
 \def\contentheaderspacing{1mm}      % spacing between content header and content title/body
 \def\sectionspacing{8mm}            % spacing between last element in contents and next section
 \def\sectiontocontentspacing{4mm}   % spacing between the section titles and the first content element
+\def\pagebreakspacing{-1mm}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Section Settings
@@ -77,6 +78,7 @@
 
 \pagestyle{empty}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% FIRST PAGE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{tikzpicture}[overlay,remember picture]
     \node (address) at ($ (current page.north east) + (-4.45,-0.98) $)
     {{
@@ -108,13 +110,13 @@
     \node [draw=none] at ($ (current page.north west) + (5.4cm,-1.25cm) $)
     {\fontsize{33}{21}\selectfont \textbf{\fullname}};
 \end{tikzpicture}
+\vspace*{\fill}
+\centering
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % EDUCATION
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-{\centering
-\vspace{5mm}
 
 \section{Education}
 
@@ -144,15 +146,66 @@
 % \emph{Uncompleted Genetics B.S.}
 % \end{minipage}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Conferences
 \vspace{\sectionspacing}
+\section{Conferences}
+\vspace{\sectiontocontentspacing}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[ct]{\contentwidth}
+    Kim, M., Simon, H., Stipe, C., \& Ihorn, S. (2025). Metacognition in Computer Science Learning: Perception vs. Reality. Poster to be presented at the annual meeting of the National Association of School Psychologists, Seattle, WA.
+\end{minipage}
+
+\vspace{\contentblockspacing}
+
+\begin{minipage}[ct]{\contentwidth}
+    Simon, H., Kim, M., \& Ihorn, S. (2025). The Impact of Early Exposure to Computing on Identity Development. Poster to be presented at the annual meeting of the National Association of School Psychologists, Seattle, WA.
+\end{minipage}
+
+\vspace{\contentblockspacing}
+
+\begin{minipage}[ct]{\contentwidth}
+    Kim, M., Puder A., Hayward C., \& Yang H. (2024). Foundation Models for Course Equivalency Evaluation. Paper presented at the IEEE International Conference on Data Mining: Workshop on Information Seeking with Big Models, Abu Dhabi, UAE.
+\end{minipage}
+
+\vspace{\contentblockspacing}
+
+\begin{minipage}[ct]{\contentwidth}
+    Kim, M., Simon, H., Ihorn, S., \& Kulkarni, A. (2024). Bridging the Experience Chasm in Computer Science: An Inter-term Bootcamp Approach. Poster presented at the San Francisco State University College of Science and Engineering Graduate Research and Creative Works Showcase, San Francisco, CA.
+\end{minipage}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% HONORS & AWARDS
+\vspace{\sectionspacing}
+\section{Honors \& Awards}
+\vspace{\sectiontocontentspacing}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[ct]{\contentwidth}
+    ICDM 2024 NSF Travel Award -- ICDM 2024, Abu Dhabi, UAE, \$800\hfill Nov 2024
+\end{minipage}
+
+\vspace{\contentblockspacing}
+
+\begin{minipage}[ct]{\contentwidth}
+    First place final presentation -- Frontiers in Data-Driven Computing REU,
+    University of Houston\hfill Aug 2021
+\end{minipage}
+
+\vspace{\contentblockspacing}
+
+\begin{minipage}[ct]{\contentwidth}
+    Finalist -- Entrepreneurship Symposium Innovation Pitch Competition, San
+    Francisco State University\hfill May 2021
+\end{minipage}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % RESEARCH EXPERIENCE
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\vspace{\sectionspacing}
 \section{Research Experience}
-
 \vspace{\sectiontocontentspacing}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{minipage}[ct]{\contentwidth}
     \textbf{Graduate Researcher}\hfill Aug 2023 to Present\\
@@ -171,7 +224,7 @@
 \begin{minipage}[ct]{\contentwidth}
     \textbf{Graduate Researcher/Program Lead}\hfill Jan 2023 to Present\\
     \textsc{San Francisco State University} -- San Francisco, CA\\
-    Principal Investigator: Dr. Anagha Kulkarni
+    Principal Investigators: Dr. Anagha Kulkarni and Dr. Shasta Ihorn
     \vspace{\contentheaderspacing}\\
     {\textit{Artificial Intelligence Scholarships that Improve Academic Achievement, Retention, and Career Success (AI-STAARS)}}\\
     % Lead a three pronged support system to improve student success by reinforcing
@@ -184,14 +237,27 @@
     and observations of students during discussions.
 \end{minipage}
 
-\vspace{\contentblockspacing}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% PAGE 2 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace*{\fill}
+\pagebreak
+\begin{tikzpicture}[overlay,remember picture]
+    \draw [line width=3.5pt,rounded corners=4pt,
+    ]
+    ($ (current page.north west) + (1cm,-1cm) $)
+    rectangle
+    ($ (current page.south east) + (-1cm,1cm) $);
+\end{tikzpicture}
+\vspace*{\fill}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\vspace{\contentblockspacing}
+\vspace*{-6mm} % contentblockspacing adjustment
 \begin{minipage}[ct]{\contentwidth}
     \textbf{Research Engineering Intern}\hfill Jun 2022 to Aug 2022\\
     \textsc{Cofense Inc.} -- Leesburg, VA\\
     Research Supervisor: Chip McSweeney, Senior Research Engineer
     \vspace{\contentheaderspacing}\\
-    {\textit{Phishing Emails: Clustering and Analysis}}\\
+    {\textit{Phishing Emails: High Speed Clustering and Analysis}}\\
     An investigation of clustering for the early detection and categorization of phishing emails with an emphasis on computational speed
     and performance.  Python C extensions that parse and analyze emails were restructured and optimized, which reduced memory usage by
     $95$\% and increased data utilization by $5$\%. Similarly, development and validation of thead-based and process-based asynchronous
@@ -216,8 +282,7 @@
     % \end{itemize}
 \end{minipage}
 
-\vspace{\contentblockspacing}
-
+% \vspace{\contentblockspacing}
 % \begin{minipage}[ct]{\contentwidth}
 %     \textbf{Independent Study and Research Literature Review}\hfill Jan 2022 to May 2022\\
 %     \textsc{San Francisco State University Department of Mathematics} -- San Francisco, CA\\
@@ -239,14 +304,13 @@
 %     % \end{itemize}
 % \end{minipage}
 
-% \vspace{\contentblockspacing}
-
+\vspace{\contentblockspacing}
 \begin{minipage}[ct]{\contentwidth}
     \textbf{NSF REU Scholar and Researcher}\hfill Jun 2021 to Aug 2021\\
     \textsc{University of Houston} -- Houston, TX\\
     Funding by the National Science Foundation\\
-    Principal Investigator: Dr. Ernst Leiss\\
-    Research Supervisor: Dr. Ionnis Pavlidis
+    Program Director: Dr. Ionnis Pavlidis\\
+    Principal Investigator: Dr. Ernst Leiss
     \vspace{\contentheaderspacing}\\
     {\textit{Frontiers of Data-Driven Computing REU}}\\
     Developed and implemented multi-threaded retrieval algorithms for over 10 million records of affective research data (documents and
@@ -265,8 +329,7 @@
     % \end{itemize}
 \end{minipage}
 
-\vspace{\sectionspacing}
-
+% \vspace{\contentblockspacing}
 % \begin{minipage}[ct]{\contentwidth}
 %     \textbf{Innovation and Entrepreneurship Fellow}\hfill Sept 2020 to May 2021\\
 %     \textsc{San Francisco State University Lam Family College of Business} -- San Francisco, CA\\
@@ -285,8 +348,8 @@
 %     % \end{itemize}
 % \end{minipage}
 
-% \vspace{\contentblockspacing}
-
+\vspace{\contentblockspacing}
+\vspace{-0.5mm} % contentblockspacing adjustment
 \begin{minipage}[ct]{\contentwidth}
     \textbf{Undergraduate Research Assistant}\hfill Apr 2020 to Jun 2020\\
     \textsc{San Francisco State University} -- San Francisco, CA\\
@@ -306,16 +369,6 @@
 \end{minipage}
 
 \vspace{\contentblockspacing}
-
-%%%%%%%%%%%%%%% SECOND PAGE %%%%%%%%%%%%%%%%%%
-\begin{tikzpicture}[overlay,remember picture]
-    \draw [line width=3.5pt,rounded corners=4pt,
-    ]
-    ($ (current page.north west) + (1cm,-1cm) $)
-    rectangle
-    ($ (current page.south east) + (-1cm,1cm) $);
-\end{tikzpicture}
-
 \begin{minipage}[ct]{\contentwidth}
     \textbf{Undergraduate Research Assistant}\hfill Nov 2019 to Jan 2020\\
     \textsc{San Francisco State University} -- San Francisco, CA\\
@@ -324,10 +377,6 @@
     {\textit{Change-point Analysis Algorithm Development}}\\
     Attended workshops in numerical methods and statistics theory in preparation for research in change-point analysis and algorithm
     development.  Studied completed change-point analysis research and began work on adapting existing Matlab code to Python.
-    % \makeatletter
-    % \let\orig@listi\@listi
-    % \def\@listi{\orig@listi\topsep=0.25\baselineskip}
-    % \makeatother
     % \begin{itemize}
     %     \setlength\itemsep{-0.25em}
     %     \item Workshops in numerical methods and statistics theory in
@@ -338,15 +387,12 @@
     % \end{itemize}
 \end{minipage}
 
-\vspace{\sectionspacing}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Teaching and Advising
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\vspace{\sectionspacing}
 \section{Teaching \& Advising}
-
 \vspace{\sectiontocontentspacing}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{minipage}[ct]{\contentwidth}
     \textbf{Program Lead/Graduate Researcher}\hfill Jan 2023 to Present\\
@@ -360,7 +406,6 @@
 \end{minipage}
 
 \vspace{\contentblockspacing}
-
 \begin{minipage}[ct]{\contentwidth}
     \textbf{Mathematics Program Liaison}\hfill Jan 2024 to May 2024\\
     \textbf{Computer Science Program Liaison}\hfill Aug 2023 to Dec 2023\\
@@ -372,7 +417,6 @@
 \end{minipage}
 
 \vspace{\contentblockspacing}
-
 \begin{minipage}[ct]{\contentwidth}
     \textbf{Facilitator}\hfill Jan 2021 to May 2023\\
     {\textsc{San Francisco State University} - San Francisco, CA}\\
@@ -382,68 +426,34 @@
     knowledge and improve student outcomes in their parent courses.
 \end{minipage}
 
-\vspace{\contentblockspacing}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% PAGE 3 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace*{\fill}
+\pagebreak
+\begin{tikzpicture}[overlay,remember picture]
+    \draw [line width=3.5pt,rounded corners=4pt,
+    ]
+    ($ (current page.north west) + (1cm,-1cm) $)
+    rectangle
+    ($ (current page.south east) + (-1cm,1cm) $);
+\end{tikzpicture}
+\vspace*{\fill}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\vspace{\contentblockspacing}
+\vspace*{-6mm} % contentblockspacing adjustment
 \begin{minipage}[ct]{\contentwidth}
     \textbf{Undergraduate Teaching Assistant}\hfill Aug 2019 to Dec 2020\\
     {\textsc{San Francisco State University} - San Francisco, CA}\\
-    \textit{Department of Mathematics}
+    \textit{Department of Mathematics}\\
+    Grade and provide feedback for homework assignments and exams.  Maintain online learning management system (iLearn).
 \end{minipage}
-
-\vspace{\sectionspacing}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Conferences
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-{\fontsize{14}{14}\selectfont \textsc{\textbf{\ \ Conferences\ \ }}}\hrulefill
-
-\vspace{\sectiontocontentspacing}
-
-\begin{minipage}[ct]{\contentwidth}
-    ``Metacognition in Computer Science Learning: Perception vs. Reality,'' National Association of School Psychologists Annual Convention.
-    Seattle, WA, USA. Accepted and forthcoming, February 2025.
-\end{minipage}
-
-\vspace{\contentblockspacing}
-
-\begin{minipage}[ct]{\contentwidth}
-    ``Foundation Models for Course Equivalency Evaluation,'' IEEE International Conference on Data Mining.  Abu Dhabi, UAE.  Accepted and
-    forthcoming, December 2024.
-\end{minipage}
-
-\vspace{\sectionspacing}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% HONORS & AWARDS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% \section{Honors \& Awards}
-
-% \vspace{3mm}
-
-% \begin{minipage}[ct]{0.9\linewidth}
-%     First place final presentation -- Frontiers in Data-Driven Computing REU,
-%     University of Houston\hfill Aug 2021
-
-%     \vspace{1.5mm}
-
-%     Finalist -- Entrepreneurship Symposium Innovation Pitch Competition, San
-%     Francisco State University\hfill May 2021
-
-%     \vspace{1.5mm}
-
-%     Dean's List, San Francisco State University\hfill 2018, 2019, 2020, 2021, 2022, 2023
-% \end{minipage}
-
-% \vspace{\sectionspacing}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % LEADERSHIP
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\vspace{\sectionspacing}
 \section{Leadership}
 \vspace{\sectiontocontentspacing}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{minipage}[ct]{0.9\linewidth}
     \textsc{Association for Computing Machinery} (ACM), SFSU Student Chapter\hfill
@@ -455,15 +465,6 @@
 
 \vspace{\contentblockspacing}
 
-%%%%%%%%%%%%%%% THIRD PAGE %%%%%%%%%%%%%%%%%%
-\begin{tikzpicture}[overlay,remember picture]
-    \draw [line width=3.5pt,rounded corners=4pt,
-    ]
-    ($ (current page.north west) + (1cm,-1cm) $)
-    rectangle
-    ($ (current page.south east) + (-1cm,1cm) $);
-\end{tikzpicture}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{minipage}[ct]{0.9\linewidth}
     \textsc{SF Hacks}\hfill May 2022 to Present\\
     \emph{Graduate Mentor}, May 2024 to Present\\
@@ -491,14 +492,12 @@
     \emph{President}, Aug 2024 to Present
 \end{minipage}
 
-\vspace{\sectionspacing}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Professional Memberships
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\vspace{\sectionspacing}
 \section{Professional Memberships}
 \vspace{\sectiontocontentspacing}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{minipage}[ct]{0.9\linewidth}
     \textsc{Society for Industrial and Applied Mathematics} (SIAM)
@@ -522,100 +521,144 @@
     \textsc{Institute of Electrical and Electronics Engineers} (IEEE)
 \end{minipage}
 
-\vspace{\sectionspacing}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % PROFESSIONAL EXPERIENCE
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{\sectionspacing}
 \section{Professional Experience}
-
 \vspace{\sectiontocontentspacing}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{minipage}[ct]{\contentwidth}
-    \textbf{Financial Center Manager}, AVP\hfill 2017 to 2018\\
+    \textbf{Financial Center Manager}, Assistant Vice President\hfill 2017 to 2018\\
     {\textsc{Bank of America} - Belmont, CA}
 \end{minipage}
 
 \vspace{\contentblockspacing}
 
-\begin{minipage}[ct]{0.9\linewidth}
+\begin{minipage}[ct]{\contentwidth}
     \textbf{Founder/CEO}\hfill 2005 to 2017\\
     {\textsc{Kindred Enterprises Incorporated} - San Francisco, CA}
 \end{minipage}
 
 \vspace{\contentblockspacing}
 
-\begin{minipage}[ct]{0.9\linewidth}
+\begin{minipage}[ct]{\contentwidth}
+    \textbf{Loan Officer}\hfill 2003 to 2005\\
+    {\textsc{BayCal Financial} - San Jose, CA}
+\end{minipage}
+
+\vspace{\contentblockspacing}
+
+\begin{minipage}[ct]{\contentwidth}
+    \textbf{Outside Sales Representative}\hfill 2001 to 2003\\
+    {\textsc{TransWestern Publishing Company} - Petaluma, CA}
+\end{minipage}
+
+\vspace{\contentblockspacing}
+
+\begin{minipage}[ct]{\contentwidth}
     \textbf{Landing Support Specialist}, Corporal\hfill 1995 to 2001\\
     {\textsc{United States Marine Corps Reserve} - San Jose, CA}
 \end{minipage}
 
-\vspace{\sectionspacing}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % References
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\vspace{\sectionspacing}
 \section{References}
-
 \vspace{\sectiontocontentspacing}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{minipage}[ct]{\contentwidth}
     \begin{multicols}{2}
         \textbf{Hui Yang}\\
-        \emph{Associate Professor}\\
+        \emph{Professor}\\
         {Department of Computer Science}\\
         \textsc{San Francisco State University}\\
         \href{tel:4153382221}{415.338.2221}, \href{mailto:huiyang@sfsu.edu}{huiyang@sfsu.edu}\\
-
-        \vspace{-1mm}
-
-        \textbf{Arno Puder}\\
-        \emph{Professor and Department Chair}\\
-        {Department of Computer Science}\\
-        \textsc{San Francisco State University}\\
-        \href{tel:4153382853}{415.338.2853}, \href{mailto:arno@sfsu.edu}{arno@sfsu.edu}\\
-
-        \vspace{-1mm}
-
-        \textbf{Jessica Fielder}\\
-        \emph{Supplemental Instruction Program Director}\\
-        {Center for Science and Mathematics Education}\\
-        \textsc{San Francisco State University}\\
-        \href{tel:4154050540}{415.405.0540}, \href{mailto:jfielder@sfsu.edu}{jfielder@sfsu.edu}\\
-
-        \columnbreak
 
         \textbf{Anagha Kulkarni}\\
         \emph{Professor and Associate Department Chair}\\
         {Department of Computer Science}\\
         \textsc{San Francisco State University}\\
         \href{tel:4153382539}{415.338.2539}, \href{mailto:ak@sfsu.edu}{ak@sfsu.edu}\\
+    \end{multicols}
+\end{minipage}
 
-        \vspace{-1mm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% FINAL PAGE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace*{\fill}
+\pagebreak
+\begin{tikzpicture}[overlay,remember picture]
+    \node (address) at ($ (current page.south east) - (1.5,-3.6)$)
+    {\href{tel:\phonenumber}{\includegraphics[scale=0.08]{phone.png}}};
+    \node (address) at ($ (current page.south east) - (1.5,-2.9)$)
+    {\href{mailto:\email}{\includegraphics[scale=0.08]{env.png}}};
+    \node (address) at ($ (current page.south east) - (1.5,-2.2)$)
+    {\href{\linkedinurl}{\includegraphics[scale=0.08]{li.png}}};
+    \node (address) at ($ (current page.south east) - (1.5,-1.5)$)
+    {\href{\githuburl}{\includegraphics[scale=0.08]{gh.png}}};
+    \draw [line width=3.5pt,rounded corners=4pt]
+    ($ (current page.north west) + (1cm,-1.3cm) $)
+    rectangle
+    ($ (current page.south east) + (-1cm,1cm) $);
+    \draw [fill=white,draw=none]
+    ($ (current page.south east) - (1.9cm,-0.5cm) $)
+    rectangle
+    ($ (current page.south east) - (6.7cm,-1.5cm) $);
+    \node [draw=none] at ($ (current page.south east) - (4.3,-1.01)$) {\fontsize{23}{23}\selectfont
+        \textbf{Mark S. Kim}};
+\end{tikzpicture}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\vspace{\contentblockspacing}
+\begin{minipage}[ct]{\contentwidth}
+    \begin{multicols}{2}
         \textbf{Shasta Ihorn}\\
         \emph{Associate Professor}\\
         {Department of Psychology}\\
         \textsc{San Francisco State University}\\
         \href{tel:4153383218}{415.338.3218}, \href{mailto:sihorn@sfsu.edu}{sihorn@sfsu.edu}\\
+
+        \textbf{Arno Puder}\\
+        \emph{Professor and Department Chair}\\
+        {Department of Computer Science}\\
+        \textsc{San Francisco State University}\\
+        \href{tel:4153382853}{415.338.2853}, \href{mailto:arno@sfsu.edu}{arno@sfsu.edu}\\
     \end{multicols}
 \end{minipage}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% SKILLS & COMPETENCIES
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{\contentblockspacing}
+\begin{minipage}[ct]{\contentwidth}
+    \begin{multicols}{2}
+        \textbf{Jessica Fielder}\\
+        \emph{Supplemental Instruction Program Director}\\
+        {Center for Science and Mathematics Education}\\
+        \textsc{San Francisco State University}\\
+        \href{tel:4154050540}{415.405.0540}, \href{mailto:jfielder@sfsu.edu}{jfielder@sfsu.edu}\\
 
+        \textbf{Dragutin Petkovic}\\
+        \emph{Professor}\\
+        {Department of Computer Science}\\
+        \textsc{San Francisco State University}\\
+        \href{tel:4153382261}{415.338.2261}, \href{mailto:petkovic@sfsu.edu}{petkovic@sfsu.edu}\\
+    \end{multicols}
+\end{minipage}
+
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% % SKILLS & COMPETENCIES
+% \vspace{\sectionspacing}
 % \section{Skills \& Competencies}
-
-% \vspace{3mm}
+% \vspace{\sectiontocontentspacing}
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % \begin{minipage}[ct]{0.9\linewidth}
-%     \textsc{Languages: } Python, Java, C/C++, JavaScript, HTML, CSS, MySQL, Matlab, R
+%     \textsc{Languages: } Python, Java, C/C++, JavaScript, HTML, CSS, R, Matlab
 
-%     % \vspace{1.5mm}
+%     \vspace{1.5mm}
 
-%     % \textsc{Operating Systems: } Windows, MacOS, Linux (Ubuntu, Debian)
+%     \textsc{Database Systems: } MongoDB, SQL
 
 %     \vspace{1.5mm}
 
@@ -628,7 +671,7 @@
 
 %     \vspace{1.5mm}
 
-%     \textsc{Deployment/Cloud Computing:} AWS (EC$2$, S$3$, and Route$53$),
+%     \textsc{Deployment/Cloud Computing: } AWS (EC$2$, S$3$, and Route$53$),
 %     Google Cloud (Compute Engine, Storage, Domains), Google Analytics, Oracle Cloud Infrastructure, NGINX
 
 %     \vspace{1.5mm}
@@ -644,25 +687,6 @@
 
 %     \textsc{Other: } \LaTeX, Adobe Creative Suite (XD, Illustrator, InDesign, Photoshop)
 % \end{minipage}
-
-}
-
-\begin{tikzpicture}[overlay,remember picture]
-    \node (address) at ($ (current page.south east) - (1.5,-3.6)$)
-    {\href{tel:\phonenumber}{\includegraphics[scale=0.08]{phone.png}}};
-    \node (address) at ($ (current page.south east) - (1.5,-2.9)$)
-    {\href{mailto:\email}{\includegraphics[scale=0.08]{env.png}}};
-    \node (address) at ($ (current page.south east) - (1.5,-2.2)$)
-    {\href{\linkedinurl}{\includegraphics[scale=0.08]{li.png}}};
-    \node (address) at ($ (current page.south east) - (1.5,-1.5)$)
-    {\href{\githuburl}{\includegraphics[scale=0.08]{gh.png}}};
-    \draw [fill=white,draw=none]
-    ($ (current page.south east) - (1.9cm,-0.5cm) $)
-    rectangle
-    ($ (current page.south east) - (6.7cm,-1.5cm) $);
-    \node [draw=none] at ($ (current page.south east) - (4.3,-1.01)$) {\fontsize{23}{23}\selectfont
-        \textbf{Mark S. Kim}};
-\end{tikzpicture}
 
 \end{document}
 
